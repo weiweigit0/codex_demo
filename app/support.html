@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>支持查询 - 财报掘金</title>
+    <link rel="stylesheet" href="./support.css?v=20260617-1" />
+  </head>
+  <body>
+    <main class="support-shell">
+      <header class="support-header">
+        <div>
+          <p>支持查询中心</p>
+          <h1>当前可以查询哪些公司</h1>
+        </div>
+        <div class="header-actions">
+          <a class="back-link" href="./home.html">返回主页</a>
+        </div>
+      </header>
+
+      <section class="coverage-grid" id="coverageGrid"></section>
+
+      <section class="query-panel">
+        <div class="query-row">
+          <select id="marketFilter">
+            <option value="ALL">全部市场</option>
+            <option value="US">美股 SEC</option>
+            <option value="CN">A 股</option>
+          </select>
+          <input id="supportSearch" type="search" placeholder="输入公司名或股票代码，例如 AAPL / MSFT / 贵州茅台" />
+          <button id="supportSearchButton" type="button">查询</button>
+        </div>
+        <p id="resultMeta" class="muted-line">正在加载支持列表...</p>
+      </section>
+
+      <section class="table-panel">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>市场</th>
+                <th>代码</th>
+                <th>公司</th>
+                <th>行业</th>
+                <th>支持状态</th>
+                <th>能力</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody id="supportTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./support.js?v=20260617-1"></script>
+  </body>
+</html>

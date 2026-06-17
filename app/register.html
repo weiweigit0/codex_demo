@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册 - 财报掘金</title>
+    <link rel="stylesheet" href="./account.css?v=20260617-2" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="auth-copy">
+        <a class="brand" href="./home.html">
+          <span class="brand-mark">财</span>
+          财报掘金
+        </a>
+        <h1>创建账号，用 AI 更快看懂财报。</h1>
+        <p>注册后进入产品主页，点击立即体验即可跳转到现有财报掘金服务页。</p>
+        <div class="auth-points">
+          <div class="auth-point"><span>✓</span>用户名和手机号唯一保存</div>
+          <div class="auth-point"><span>✓</span>密码哈希存储，不保存明文</div>
+          <div class="auth-point"><span>✓</span>账号入口与财报服务页解耦</div>
+        </div>
+      </section>
+
+      <section class="auth-card">
+        <h2>注册账号</h2>
+        <p>填写基础信息，创建你的财报掘金账号。</p>
+        <form data-auth-form="register">
+          <div class="form-field">
+            <label for="username">用户名</label>
+            <input id="username" name="username" autocomplete="username" placeholder="3-32 位用户名" />
+          </div>
+          <div class="form-field">
+            <label for="phone">手机号</label>
+            <input id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="请输入手机号" />
+          </div>
+          <div class="form-field">
+            <label for="password">密码</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" placeholder="至少 6 位" />
+          </div>
+          <div class="form-field">
+            <label for="confirmPassword">确认密码</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="再次输入密码" />
+          </div>
+          <div id="formMessage" class="form-message"></div>
+          <button class="primary-button" type="submit">注册并进入主页</button>
+        </form>
+        <p class="auth-switch">已有账号？<a href="./login.html">去登录</a></p>
+      </section>
+    </main>
+    <script src="./auth.js?v=20260617-2"></script>
+  </body>
+</html>

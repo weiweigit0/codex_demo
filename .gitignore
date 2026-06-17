@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+
+backend/storage/*.db
+backend/storage/*.sqlite
+backend/storage/*.sqlite3
+!backend/storage/.gitkeep

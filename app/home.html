@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>财报掘金 - AI 财报分析助手</title>
+    <link rel="stylesheet" href="./account.css?v=20260617-4" />
+  </head>
+  <body>
+    <div class="home-shell">
+      <header class="home-nav">
+        <a class="brand" href="./home.html">
+          <span class="brand-mark">财</span>
+          财报掘金
+        </a>
+        <nav class="nav-links" aria-label="主页导航">
+          <span>首页</span>
+          <span>核心能力</span>
+          <span>使用流程</span>
+          <span>支持市场</span>
+        </nav>
+        <div class="nav-actions">
+          <span id="userLabel" class="user-pill">已登录</span>
+          <button id="logoutButton" class="ghost-button" type="button">退出登录</button>
+        </div>
+      </header>
+
+      <main class="home-main">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">AI 财报与行业洞察助手</p>
+            <h1>让普通人也能看懂财报，看清行业，发现机会。</h1>
+            <p class="hero-copy">
+              自动获取财报、提炼关键指标、识别风险，并用白话解释公司赚钱能力、现金流质量和行业位置。
+            </p>
+            <div class="hero-search" aria-label="选择要分析的公司">
+              <div class="market-toggle" role="group" aria-label="市场选择">
+                <button class="active" type="button" data-market="US">美股</button>
+                <button type="button" data-market="CN">A股</button>
+              </div>
+              <div class="home-options">
+                <label for="documentTypeSelect">一页看懂资料类型</label>
+                <select id="documentTypeSelect">
+                  <option value="auto">自动选择</option>
+                  <option value="annual_report">年度报告</option>
+                  <option value="prospectus">招股说明书</option>
+                </select>
+              </div>
+              <label for="homeTickerInput">输入股票代码或公司名</label>
+              <div class="home-search-row">
+                <input id="homeTickerInput" type="search" placeholder="例如 AAPL / 000333 / 比亚迪" autocomplete="off" />
+                <button id="homeAnalyzeButton" class="hero-cta" type="button">财报掘金</button>
+                <button id="profileAnalyzeButton" class="hero-secondary" type="button">一页看懂公司</button>
+              </div>
+              <div id="homeSearchMessage" class="home-search-message">输入股票代码后，可选择财务分析或公司画像。</div>
+              <div id="homeQuickCompanies" class="quick-companies" aria-label="常用公司快捷入口"></div>
+            </div>
+            <div class="trust-row">
+              <span>支持 A 股 / 美股</span>
+              <span>多期对比分析</span>
+              <span>风险雷达提示</span>
+              <a href="./support.html">查看支持公司</a>
+            </div>
+          </div>
+
+          <div class="dashboard-preview" aria-label="财报分析仪表盘预览">
+            <div class="preview-chrome">
+              <i class="dot"></i>
+              <i class="dot"></i>
+              <i class="dot"></i>
+            </div>
+            <div class="preview-grid">
+              <article class="preview-card">
+                <span>营业收入</span>
+                <strong>423.70B</strong>
+                <small>同比 +17.04%</small>
+              </article>
+              <article class="preview-card">
+                <span>综合评分</span>
+                <div class="score-ring">A-</div>
+              </article>
+              <article class="preview-card wide">
+                <span>核心指标趋势</span>
+                <div class="bars">
+                  <i style="height: 42%"></i>
+                  <i style="height: 56%"></i>
+                  <i style="height: 64%"></i>
+                  <i style="height: 78%"></i>
+                  <i style="height: 92%"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>你是不是也有这些困惑？</h2>
+          <div class="card-grid">
+            <article class="info-card">
+              <b>不知道去哪里看财报</b>
+              <p>公告分散、格式复杂、搜索成本高，很难快速找到想看的报告。</p>
+            </article>
+            <article class="info-card">
+              <b>看不懂关键指标</b>
+              <p>收入、利润、现金流和资产负债表之间的关系不够直观。</p>
+            </article>
+            <article class="info-card">
+              <b>不了解行业位置</b>
+              <p>只看一家公司容易失真，需要结合趋势和同行对比判断。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>核心能力</h2>
+          <div class="card-grid">
+            <article class="info-card">
+              <b>一键获取财报</b>
+              <p>自动获取美股 SEC 和 A 股巨潮公告中的报告期与来源链接。</p>
+            </article>
+            <article class="info-card">
+              <b>白话解读财报</b>
+              <p>把财务指标翻译成普通人能理解的经营结论。</p>
+            </article>
+            <article class="info-card">
+              <b>异常与风险提示</b>
+              <p>识别收入、利润、现金流、存货和应收账款中的异常信号。</p>
+            </article>
+            <article class="info-card">
+              <b>多期对比分析</b>
+              <p>支持多年或多季度趋势对比，避免只看单期数据。</p>
+            </article>
+            <article class="info-card">
+              <b>行业趋势洞察</b>
+              <p>结合行业和同行视角，帮助理解公司所处位置。</p>
+            </article>
+            <article class="info-card">
+              <b>带依据问答</b>
+              <p>围绕分析结果追问现金流、风险和增长质量。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>3 步完成一次财报掘金</h2>
+          <div class="steps">
+            <article class="step">
+              <span>1</span>
+              <div>
+                <b>搜索公司</b>
+                <p>输入公司名或股票代码，选择要分析的报告期。</p>
+              </div>
+            </article>
+            <article class="step">
+              <span>2</span>
+              <div>
+                <b>AI 自动解读</b>
+                <p>提炼指标、风险、趋势和来源依据。</p>
+              </div>
+            </article>
+            <article class="step">
+              <span>3</span>
+              <div>
+                <b>获得结论</b>
+                <p>快速理解公司经营质量和后续关注点。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="bottom-cta">
+          <div>
+            <h2>懂财报，才更懂公司。</h2>
+            <p>输入股票代码，直接进入自动财报分析。</p>
+          </div>
+          <button class="hero-cta" type="button" data-focus-search>开始分析 →</button>
+        </section>
+
+        <footer class="home-footer">
+          <span>© 2026 财报掘金</span>
+          <span>隐私政策 · 用户协议 · 免责声明</span>
+        </footer>
+      </main>
+    </div>
+    <script src="./home.js?v=20260617-5"></script>
+  </body>
+</html>

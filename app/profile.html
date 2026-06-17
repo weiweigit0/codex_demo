@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一页看懂公司 - 财报掘金</title>
+    <link rel="stylesheet" href="./profile.css?v=20260617-1" />
+  </head>
+  <body>
+    <main class="profile-shell">
+      <header class="profile-header">
+        <a class="brand" href="./home.html">
+          <span class="brand-mark">财</span>
+          <span>一页看懂公司</span>
+        </a>
+        <nav class="header-actions">
+          <a href="./home.html">返回主页</a>
+          <button id="financeTopButton" type="button">进入财报掘金</button>
+        </nav>
+      </header>
+
+      <section class="profile-hero">
+        <div>
+          <p id="sourceEyebrow" class="eyebrow">公司画像生成中</p>
+          <h1 id="profileTitle">正在识别公司</h1>
+          <p id="profileSubtitle">仅基于权威披露文件生成，不引入新闻、研报或社区观点。</p>
+        </div>
+        <div class="source-card" id="sourceCard"></div>
+      </section>
+
+      <section class="task-panel" id="taskPanel">
+        <div class="progress-bar"><span id="progressBar"></span></div>
+        <div class="task-meta">
+          <strong id="taskStatus">准备创建任务</strong>
+          <span id="taskStep">等待开始</span>
+        </div>
+      </section>
+
+      <section id="reportLayout" class="report-layout hidden">
+        <div class="report-sections" id="reportSections"></div>
+        <aside class="qa-panel">
+          <div class="finance-card">
+            <h2>想继续看财务？</h2>
+            <p>收入增长、利润率、现金流、资产负债和财务风险交给财报掘金。</p>
+            <button id="financeButton" type="button">进入财报掘金</button>
+          </div>
+          <div class="question-card">
+            <h2>继续追问</h2>
+            <div id="suggestedQuestions" class="suggested-questions"></div>
+            <div class="question-row">
+              <input id="questionInput" type="text" placeholder="问：谁真正控制这家公司？" />
+              <button id="askButton" type="button">提问</button>
+            </div>
+            <div id="answerBox" class="answer-box"></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <aside id="evidenceDrawer" class="evidence-drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <h2>原文依据</h2>
+        <button id="closeEvidenceButton" type="button">关闭</button>
+      </div>
+      <div id="evidenceBody"></div>
+    </aside>
+
+    <script src="./profile.js?v=20260617-2"></script>
+  </body>
+</html>

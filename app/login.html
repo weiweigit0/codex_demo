@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 财报掘金</title>
+    <link rel="stylesheet" href="./account.css?v=20260617-2" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="auth-copy">
+        <a class="brand" href="./home.html">
+          <span class="brand-mark">财</span>
+          财报掘金
+        </a>
+        <h1>欢迎回来，继续看懂公司。</h1>
+        <p>登录后进入财报掘金主页，从公司、财报、行业三个视角快速建立你的投资研究线索。</p>
+        <div class="auth-points">
+          <div class="auth-point"><span>1</span>自动获取财报和报告期</div>
+          <div class="auth-point"><span>2</span>白话解释关键指标和风险</div>
+          <div class="auth-point"><span>3</span>一键进入财报分析服务页</div>
+        </div>
+      </section>
+
+      <section class="auth-card">
+        <h2>登录账号</h2>
+        <p>使用用户名和密码登录财报掘金。</p>
+        <form data-auth-form="login">
+          <div class="form-field">
+            <label for="username">用户名</label>
+            <input id="username" name="username" autocomplete="username" placeholder="请输入用户名" />
+          </div>
+          <div class="form-field">
+            <label for="password">密码</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="请输入密码" />
+          </div>
+          <div id="formMessage" class="form-message"></div>
+          <button class="primary-button" type="submit">登录</button>
+        </form>
+        <p class="auth-switch">还没有账号？<a href="./register.html">立即注册</a></p>
+      </section>
+    </main>
+    <script src="./auth.js?v=20260617-2"></script>
+  </body>
+</html>
