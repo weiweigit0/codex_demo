@@ -59,6 +59,38 @@ class FinancialAnalysisAgentTest(unittest.TestCase):
         self.assertEqual(result["risk_facts"][0]["fact_id"], "risk_fact_0")
         self.assertEqual(result["risk_assessments"][0]["evidence_fact_ids"], ["risk_fact_0"])
 
+    def test_agent_retries_when_us_filing_produces_english_free_text(self):
+        class EnglishFirstResponse:
+            available = True
+            provider = "deepseek"
+            model = "deepseek-v4-flash"
+
+            def __init__(self):
+                self.calls = 0
+                self.systems = []
+
+            def chat_json(self, system, _prompt, timeout=60):
+                self.calls += 1
+                self.systems.append(system)
+                if self.calls == 1:
+                    return {"observations": [{"category": "revenue_driver", "claim": "Revenue grew because of product sales.", "period": "2024-FY", "evidence_block_ids": ["doc-1-b-1"]}], "risk_facts": []}
+                if self.calls == 2:
+                    return {"observations": [{"category": "revenue_driver", "claim": "产品销售带动收入增长。", "period": "2024-FY", "evidence_block_ids": ["doc-1-b-1"]}], "risk_facts": []}
+                if self.calls == 3:
+                    return {"financial_summary": "收入表现需要结合披露持续观察。", "trend_analysis": ["已披露产品销售收入变化。"], "earnings_quality": [], "cash_flow_analysis": [], "balance_sheet_analysis": [], "industry_position": [], "uncertainties": []}
+                return {"risk_assessments": []}
+
+        client = EnglishFirstResponse()
+        result = FinancialAnalysisAgent(client).analyze(
+            {"name": "Apple", "ticker": "AAPL"}, [],
+            [{"block_id": "doc-1-b-1", "page_number": 1, "text": "Product sales increased."}],
+            "annual", ["2024-FY"],
+        )
+
+        self.assertEqual(client.calls, 4)
+        self.assertEqual(result["observations"][0]["claim"], "产品销售带动收入增长。")
+        self.assertIn("上一版存在英文自由文本", client.systems[1])
+
     def test_multi_period_context_is_balanced_across_documents(self):
         class FakeDataService:
             def canonical_document_blocks(self, document):

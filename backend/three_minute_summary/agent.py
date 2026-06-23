@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import json
+import re
 from typing import Optional
 
 from backend.company_profile.llm_client import ModelProviderClient
 
 
-SUMMARY_PROMPT_VERSION = "three_minute_summary_v2"
+SUMMARY_PROMPT_VERSION = "three_minute_summary_v3"
 
 
 class ThreeMinuteSummaryAgent:
@@ -27,8 +28,8 @@ class ThreeMinuteSummaryAgent:
         return {
             "status": "completed", "total_score": total_score,
             "score_cards": score_cards,
-            "one_line_summary": _text(payload.get("one_line_summary")),
-            "three_minute_summary": _text(payload.get("three_minute_summary")),
+            "one_line_summary": _safe_text(payload.get("one_line_summary")),
+            "three_minute_summary": _safe_text(payload.get("three_minute_summary")),
             "key_points": _items(payload.get("key_points"), allowed),
             "risks": _items(payload.get("risks"), allowed),
             "watch_items": _strings(payload.get("watch_items")),
@@ -49,7 +50,7 @@ class ThreeMinuteSummaryAgent:
 
 
 def _summary_system() -> str:
-    return "你是面向普通人的财报解读 Agent。只依据输入的已验证财务事实、公司事实和披露证据块输出 JSON。评分是经营理解分，不是投资评级；不得给出买卖建议、价格预测或编造信息。每个评分卡、重点和风险必须引用真实 evidence_block_ids。"
+    return "你是面向普通人的财报解读 Agent。只依据输入的已验证财务事实、公司事实和披露证据块输出 JSON。评分是经营理解分，不是投资评级；不得给出买卖建议、价格预测或编造信息。严禁使用行业常识、常见风险、外部记忆或未披露的现金、分部、增长、偿债等信息补全结论；证据不足时必须写‘当前证据不足以确认’，并降低置信度。每个评分卡、重点和风险必须引用真实 evidence_block_ids。"
 
 
 def _summary_prompt(context: dict) -> str:
@@ -95,7 +96,7 @@ def _score_cards(items, allowed):
         except (TypeError, ValueError):
             continue
         seen.add(item["dimension"])
-        result.append({"dimension": item["dimension"], "max_score": maximum, "score": score, "reason": _text(item.get("reason")), "confidence": item.get("confidence") if item.get("confidence") in {"high", "medium", "low"} else "low", "evidence_block_ids": refs})
+        result.append({"dimension": item["dimension"], "max_score": maximum, "score": score, "reason": _safe_text(item.get("reason")), "confidence": item.get("confidence") if item.get("confidence") in {"high", "medium", "low"} else "low", "evidence_block_ids": refs})
     return result
 
 
@@ -106,7 +107,7 @@ def _items(items, allowed):
             continue
         refs = [ref for ref in item.get("evidence_block_ids", []) if ref in allowed]
         if refs and _text(item.get("text")):
-            result.append({"title": _text(item.get("title")) or "重点", "text": _text(item.get("text")), "evidence_block_ids": refs})
+            result.append({"title": _safe_text(item.get("title")) or "重点", "text": _safe_text(item.get("text")), "evidence_block_ids": refs})
     return result[:6]
 
 
@@ -121,6 +122,23 @@ def _strings(value):
 
 def _text(value):
     return str(value).strip() if isinstance(value, str) else ""
+
+
+def _safe_text(value):
+    """Downgrade common model overclaims when the evidence packet lacks the fact."""
+    text = _text(value)
+    replacements = {
+        "根据行业常识判断大概率增长": "当前证据不足以判断同比增长趋势",
+        "根据行业常识": "当前证据不足以确认",
+        "实际风险较低": "实际风险仍需结合完整披露进一步确认",
+        "风险可控": "风险程度仍需结合完整披露进一步确认",
+        "典型的优质蓝筹股": "经营表现需结合后续报告持续观察",
+        "自由现金流强劲": "经营现金流表现需结合资本开支进一步确认",
+        "现金充裕": "现金状况需结合现金及有价证券披露进一步确认",
+    }
+    for source, target in replacements.items():
+        text = text.replace(source, target)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def _unavailable(reason, client):

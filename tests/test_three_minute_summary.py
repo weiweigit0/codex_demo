@@ -1,6 +1,7 @@
 import unittest
 
 from backend.three_minute_summary.agent import ThreeMinuteSummaryAgent
+from backend.three_minute_summary.agent import _safe_text
 from backend.three_minute_summary.video_agent import VideoScriptAgent
 
 
@@ -43,6 +44,12 @@ class ThreeMinuteSummaryTests(unittest.TestCase):
         self.assertEqual(result["status"], "completed")
         self.assertNotIn("不影响主营业务", result["segments"][0]["narration"])
         self.assertNotIn("一定会", result["segments"][0]["narration"])
+
+    def test_summary_sanitizes_common_knowledge_overclaim(self):
+        text = _safe_text("根据行业常识判断大概率增长，实际风险较低。")
+
+        self.assertNotIn("行业常识", text)
+        self.assertNotIn("实际风险较低", text)
 
 
 if __name__ == "__main__":

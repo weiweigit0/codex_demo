@@ -1,0 +1,12 @@
+.git
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__
+*.py[cod]
+.pytest_cache
+backend/storage/*
+!backend/storage/.gitkeep
+docs
+tests

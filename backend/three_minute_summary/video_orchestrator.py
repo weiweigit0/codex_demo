@@ -5,6 +5,7 @@ from threading import RLock, Thread
 
 from backend.data_platform.repository import json_hash, utc_now
 from backend.three_minute_summary.video_agent import VIDEO_PROMPT_VERSION, VideoScriptAgent
+from backend.three_minute_summary.video_brief import export_video_brief
 
 
 class VideoScriptOrchestrator:
@@ -34,6 +35,12 @@ class VideoScriptOrchestrator:
         if not script:
             raise KeyError("视频脚本不存在")
         return script
+
+    def export_brief(self, script_id, requester: dict) -> dict:
+        script = self.get_script(script_id)
+        if script.get("status") != "completed":
+            raise ValueError("当前脚本未完成，无法申请视频生产。")
+        return export_video_brief(script, requester)
 
     def _run(self, task, summary_id):
         try:

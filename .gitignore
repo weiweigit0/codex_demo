@@ -14,5 +14,7 @@ node_modules/
 backend/storage/*.db
 backend/storage/*.sqlite
 backend/storage/*.sqlite3
+backend/storage/*.json
+backend/media_storage/
 backend/storage/assets/
 !backend/storage/.gitkeep

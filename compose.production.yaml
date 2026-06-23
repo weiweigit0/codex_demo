@@ -1,0 +1,72 @@
+services:
+  app:
+    build:
+      context: .
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    volumes:
+      - financial_mining_data:/app/backend/storage
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 20s
+
+  media:
+    build:
+      context: .
+      dockerfile: Dockerfile.media
+    restart: unless-stopped
+    command: ["python", "-m", "uvicorn", "backend.media_production.main:app", "--host", "0.0.0.0", "--port", "8001", "--proxy-headers"]
+    env_file:
+      - .env.media.production
+    volumes:
+      - financial_mining_media:/app/backend/media_storage
+    expose:
+      - "8001"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/api/media/health', timeout=5)"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 20s
+
+  media_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.media
+    restart: unless-stopped
+    command: ["python", "-m", "backend.media_production.worker"]
+    env_file:
+      - .env.media.production
+    volumes:
+      - financial_mining_media:/app/backend/media_storage
+    depends_on:
+      media:
+        condition: service_healthy
+
+  caddy:
+    image: caddy:2.8-alpine
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    env_file:
+      - .env.production
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  financial_mining_data:
+  financial_mining_media:
+  caddy_data:
+  caddy_config:

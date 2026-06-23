@@ -1186,5 +1186,33 @@
     "error": null,
     "created_at": "2026-06-22T15:00:31.951110+00:00",
     "updated_at": "2026-06-22T15:01:31.484875+00:00"
+  },
+  "financial_task_52b857b4ca564103": {
+    "task_id": "financial_task_52b857b4ca564103",
+    "ticker": "BIDU",
+    "market": "US",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-BIDU",
+      "cik": "0001329099",
+      "ticker": "BIDU",
+      "name": "Baidu, Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "待识别行业",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_5ef4b28966e946a7",
+    "error": null,
+    "created_at": "2026-06-23T17:00:07.117934+00:00",
+    "updated_at": "2026-06-23T17:00:50.691018+00:00"
   }
 }

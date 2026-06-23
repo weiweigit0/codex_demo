@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -26,9 +27,10 @@ APP_DIR = ROOT_DIR / "app"
 STORAGE_DIR = ROOT_DIR / "backend" / "storage"
 
 app = FastAPI(title="财报掘金 API", version="1.0.0")
+allowed_origins = [item.strip() for item in os.getenv("APP_ALLOWED_ORIGINS", "http://localhost:8765,http://127.0.0.1:8765").split(",") if item.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

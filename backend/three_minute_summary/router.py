@@ -1,4 +1,6 @@
-from fastapi import APIRouter, Depends, HTTPException, Request
+import os
+
+from fastapi import APIRouter, Depends, Header, HTTPException, Request
 
 from backend.three_minute_summary.schemas import CreateSummaryRequest, SummaryQuestionRequest
 
@@ -12,6 +14,14 @@ def orchestrator(request: Request):
 
 def video_orchestrator(request: Request):
     return request.app.state.three_minute_video_orchestrator
+
+
+def current_user(request: Request, authorization: str = Header(default="")):
+    token = authorization[len("Bearer "):].strip() if authorization.startswith("Bearer ") else ""
+    try:
+        return request.app.state.services.auth_service.me(token)
+    except Exception as exc:
+        raise HTTPException(status_code=401, detail="登录后才可申请视频生产。") from exc
 
 
 @router.post("")
@@ -62,3 +72,15 @@ def get_video_script(script_id: str, svc=Depends(video_orchestrator)):
         return svc.get_script(script_id)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc))
+
+
+@router.post("/video-scripts/{script_id}/brief")
+def export_video_brief(script_id: str, user=Depends(current_user), svc=Depends(video_orchestrator)):
+    try:
+        return {"brief": svc.export_brief(script_id, user), "media_url": os.getenv("MEDIA_PRODUCTION_URL", "http://localhost:8766").rstrip("/")}
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc))

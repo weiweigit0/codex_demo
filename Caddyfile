@@ -1,0 +1,10 @@
+{$APP_DOMAIN} {
+  encode zstd gzip
+  handle_path /media/* {
+    reverse_proxy media:8001
+  }
+
+  handle {
+    reverse_proxy app:8000
+  }
+}

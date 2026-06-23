@@ -4,3 +4,4 @@ pydantic<2
 requests==2.22.0
 python-multipart==0.0.6
 pypdf==4.3.1
+cryptography>=42,<46

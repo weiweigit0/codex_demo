@@ -13,7 +13,11 @@ def load_local_env() -> None:
         return
     _LOADED = True
 
-    env_path = Path(__file__).resolve().parents[1] / ".env"
+    load_env_file(Path(__file__).resolve().parents[1] / ".env")
+
+
+def load_env_file(env_path: Path) -> None:
+    """Load an optional local environment file without overriding process env."""
     if not env_path.exists():
         return
 
