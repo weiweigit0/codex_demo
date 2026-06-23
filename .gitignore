@@ -7,8 +7,12 @@ __pycache__/
 .venv/
 venv/
 node_modules/
+.env
+.env.*
+!.env.example
 
 backend/storage/*.db
 backend/storage/*.sqlite
 backend/storage/*.sqlite3
+backend/storage/assets/
 !backend/storage/.gitkeep

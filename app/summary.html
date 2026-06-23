@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3分钟看财报 - 财报掘金</title>
+    <link rel="stylesheet" href="./summary.css?v=1" />
+    <link rel="stylesheet" href="./summary-overrides.css?v=1" />
+  </head>
+  <body>
+    <main class="summary-shell">
+      <header class="summary-header">
+        <a class="brand" href="./home.html"><span>财</span>财报掘金</a>
+        <nav><a href="./home.html">返回主页</a><a id="financialLink" href="#">财报掘金</a><a id="profileLink" href="#">一页看懂公司</a></nav>
+      </header>
+      <section class="summary-hero">
+        <div>
+          <p class="eyebrow">DeepSeek · 经营理解评分</p>
+          <h1 id="summaryTitle">正在准备三分钟财报总结</h1>
+          <p id="summarySubline">读取已验证财务事实、披露证据与公司知识。</p><label class="period-picker">报告类型<select id="periodTypeSelect"><option value="annual">最近完整年报</option><option value="quarterly">最近季度</option></select></label>
+        </div>
+        <div class="score-card"><span>经营理解分</span><strong id="totalScore">--</strong><small id="scoreHint">仅用于财报理解</small></div>
+      </section>
+      <p id="summaryStatus" class="status">正在连接总结 Agent...</p>
+      <section id="summaryContent" class="hidden">
+        <article class="panel featured"><p class="panel-label">一句话看懂</p><h2 id="oneLineSummary"></h2><p id="threeMinuteText"></p></article>
+        <section><div class="section-heading"><h2>六项经营理解</h2><span>每项均有披露依据</span></div><div id="scoreCards" class="score-grid"></div></section>
+        <section class="two-column">
+          <article class="panel"><h2>本期最值得知道的事</h2><div id="keyPoints" class="item-list"></div></article>
+          <article class="panel"><h2>接下来要留意</h2><div id="risks" class="item-list"></div><div id="watchItems" class="watch-list"></div></article>
+        </section>
+        <section class="two-column">
+          <article class="panel"><h2>继续问</h2><div id="questionLog" class="question-log"></div><form id="questionForm" class="question-form"><input id="questionInput" placeholder="例如：公司这期赚钱质量怎么样？" /><button type="submit">提问</button></form></article>
+          <article class="panel action-panel"><h2>转成短视频脚本</h2><p>把已验证结论整理为 3 分钟口播和分镜，适合后续视频制作。</p><button id="videoButton" type="button">生成口播与分镜</button><button id="enrichButton" class="secondary-action" type="button">补充公开资料后重生成</button><small>补充资料仅在公司背景信息不足时访问已支持的百科来源，并会明确标记来源。</small></article>
+        </section>
+        <p id="disclaimer" class="disclaimer"></p>
+      </section>
+    </main>
+    <script src="./summary.js?v=1"></script>
+  </body>
+</html>

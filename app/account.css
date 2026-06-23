@@ -314,6 +314,18 @@ button {
   color: var(--ink);
 }
 
+.summary-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  border: 1px solid #bfd3f7;
+  border-radius: 10px;
+  background: #eef5ff;
+  color: #1554a9;
+  font-weight: 900;
+}
+
 .hero-search {
   max-width: 640px;
   border: 1px solid var(--line);
@@ -379,11 +391,12 @@ button {
 
 .home-search-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
 .home-search-row input {
+  grid-column: 1 / -1;
   height: 50px;
   border: 1px solid var(--line);
   border-radius: 10px;

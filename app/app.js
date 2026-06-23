@@ -213,13 +213,13 @@ async function analyzeOnline() {
   }
   const selected = Array.from(nodes.periodSelect.selectedOptions).map((option) => option.value);
   const originalButtonText = nodes.onlineAnalyzeButton.textContent;
-  setStatus("联网分析中，首次解析巨潮 PDF 可能需要几十秒", "ok");
-  nodes.onlineAnalyzeButton.textContent = "解析中...";
+  setStatus("财报 Agent 正在准备披露证据", "ok");
+  nodes.onlineAnalyzeButton.textContent = "AI 分析中...";
   nodes.onlineAnalyzeButton.disabled = true;
   const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 120000);
+  const timeout = window.setTimeout(() => controller.abort(), 210000);
   try {
-    const data = await api("/api/analysis/report-card", {
+    const task = await api("/api/financial-agent/analyses", {
       method: "POST",
       signal: controller.signal,
       body: JSON.stringify({
@@ -229,6 +229,7 @@ async function analyzeOnline() {
         periods: selected
       })
     });
+    const data = await waitForFinancialAnalysis(task.task_id, controller.signal);
     state.analysis = data;
     state.company = data.company;
     setStatus("分析完成", "ok");
@@ -244,6 +245,30 @@ async function analyzeOnline() {
     nodes.onlineAnalyzeButton.textContent = originalButtonText;
     nodes.onlineAnalyzeButton.disabled = false;
   }
+}
+
+async function waitForFinancialAnalysis(taskId, signal) {
+  while (true) {
+    const task = await api(`/api/financial-agent/tasks/${encodeURIComponent(taskId)}`, { signal });
+    if (task.current_step) setStatus(task.current_step, "ok");
+    if (task.status === "COMPLETED") {
+      return api(`/api/financial-agent/analyses/${encodeURIComponent(task.analysis_id)}`, { signal });
+    }
+    if (task.status === "FAILED") {
+      throw new Error(task.error?.message || "财报 Agent 分析失败");
+    }
+    await delay(1200, signal);
+  }
+}
+
+function delay(milliseconds, signal) {
+  return new Promise((resolve, reject) => {
+    const timer = window.setTimeout(resolve, milliseconds);
+    signal?.addEventListener("abort", () => {
+      window.clearTimeout(timer);
+      reject(new DOMException("请求已取消", "AbortError"));
+    }, { once: true });
+  });
 }
 
 async function analyzeIndustry() {
@@ -371,7 +396,8 @@ function render() {
   nodes.companyTitle.textContent = `${company.name} ${company.ticker ? `(${company.ticker})` : ""}`;
   nodes.oneLineSummary.textContent = analysis.summary;
   nodes.healthScore.textContent = analysis.score;
-  nodes.sourceTag.textContent = company.source || "财报数据";
+  const generation = analysis.generation_meta || {};
+  nodes.sourceTag.textContent = generation.llm_model ? `DeepSeek Agent · ${generation.cache_status || "已生成"}` : (company.source || "财报数据");
   renderStance(analysis.stance);
   renderMetrics(analysis.metrics || {});
   renderReportCard(company, analysis);
@@ -546,7 +572,7 @@ async function askQuestion() {
   try {
     const data = await api("/api/qa", {
       method: "POST",
-      body: JSON.stringify({ question, analysis: state.analysis })
+      body: JSON.stringify({ question, analysis: state.analysis, company_id: state.company?.id })
     });
     const citations = (data.citations || []).map((item) => item.title).join("、");
     appendMessage(`${data.answer}<small>依据：${citations || "当前分析结果"}。${data.disclaimer}</small>`, "agent");

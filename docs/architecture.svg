@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .band { fill: #ffffff; stroke: #d9e1ec; stroke-width: 2; }
+      .card { fill: #ffffff; stroke: #b9c7d8; stroke-width: 1.5; rx: 12; }
+      .front { fill: #e8f3ff; stroke: #84b7e8; }
+      .api { fill: #ecfdf5; stroke: #75c39d; }
+      .svc { fill: #fff7e8; stroke: #d9a441; }
+      .profile { fill: #f1ecff; stroke: #9b7be8; }
+      .support { fill: #eef7f2; stroke: #7bb791; }
+      .data { fill: #fff0f0; stroke: #dc8585; }
+      .store { fill: #eef1f6; stroke: #9da9b7; }
+      .external { fill: #f9fafb; stroke: #8c98a8; stroke-dasharray: 8 6; }
+      .title { font: 700 30px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #10213d; }
+      .subtitle { font: 500 15px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #667085; }
+      .h { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #14213d; }
+      .t { font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1f2a44; }
+      .s { font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #536079; }
+      .tiny { font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #667085; }
+      .line { fill: none; stroke: #6b7a90; stroke-width: 2; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #8a94a6; stroke-width: 2; stroke-dasharray: 7 6; marker-end: url(#arrow); }
+      .couple { fill: none; stroke: #d49a2e; stroke-width: 2.4; marker-end: url(#arrow-gold); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7a90"/>
+    </marker>
+    <marker id="arrow-gold" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d49a2e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1040"/>
+  <text class="title" x="60" y="58">财报掘金当前项目架构图</text>
+  <text class="subtitle" x="60" y="86">静态多页面前端 + FastAPI 后端；财报掘金、查询中心、公司画像通过主页跳转解耦</text>
+
+  <rect class="band" x="40" y="120" width="1520" height="185" rx="18"/>
+  <text class="h" x="70" y="156">前端页面层 app/</text>
+  <text class="subtitle" x="70" y="180">页面之间不共享运行时状态，主要通过 URL 参数跳转</text>
+
+  <rect class="card front" x="80" y="205" width="200" height="70" rx="12"/>
+  <text class="t" x="105" y="232">登录 / 注册</text>
+  <text class="s" x="105" y="254">login.html / register.html</text>
+
+  <rect class="card front" x="330" y="195" width="220" height="90" rx="12"/>
+  <text class="t" x="360" y="224">主页入口</text>
+  <text class="s" x="360" y="247">home.html / home.js</text>
+  <text class="tiny" x="360" y="268">股票代码 / 公司名 / 资料类型</text>
+
+  <rect class="card front" x="610" y="205" width="215" height="70" rx="12"/>
+  <text class="t" x="635" y="232">财报掘金服务页</text>
+  <text class="s" x="635" y="254">index.html / app.js</text>
+
+  <rect class="card front" x="890" y="205" width="215" height="70" rx="12"/>
+  <text class="t" x="915" y="232">一页看懂公司</text>
+  <text class="s" x="915" y="254">profile.html / profile.js</text>
+
+  <rect class="card front" x="1170" y="205" width="215" height="70" rx="12"/>
+  <text class="t" x="1195" y="232">查询支持中心</text>
+  <text class="s" x="1195" y="254">support.html / support.js</text>
+
+  <path class="couple" d="M550 238 C575 238 585 238 610 238"/>
+  <path class="couple" d="M550 240 C700 170 805 170 890 238"/>
+  <path class="couple" d="M550 242 C790 140 1035 150 1170 238"/>
+
+  <rect class="band" x="40" y="335" width="1520" height="300" rx="18"/>
+  <text class="h" x="70" y="371">FastAPI 应用层 backend/</text>
+  <text class="subtitle" x="70" y="395">main.py 统一挂载静态文件和 API Router，ServiceContainer 管理主业务服务依赖</text>
+
+  <rect class="card api" x="80" y="430" width="210" height="120" rx="12"/>
+  <text class="t" x="105" y="458">main.py</text>
+  <text class="s" x="105" y="482">FastAPI App</text>
+  <text class="s" x="105" y="504">CORS / StaticFiles</text>
+  <text class="s" x="105" y="526">Compatibility endpoints</text>
+
+  <rect class="card api" x="350" y="425" width="270" height="130" rx="12"/>
+  <text class="t" x="375" y="452">财报掘金 API</text>
+  <text class="s" x="375" y="476">auth / companies / reports</text>
+  <text class="s" x="375" y="498">analysis / qa / metrics</text>
+  <text class="s" x="375" y="520">watchlists</text>
+
+  <rect class="card svc" x="675" y="425" width="280" height="130" rx="12"/>
+  <text class="t" x="700" y="452">服务层 services/</text>
+  <text class="s" x="700" y="476">AuthService / CompanyService</text>
+  <text class="s" x="700" y="498">ReportService / AnalysisEngine</text>
+  <text class="s" x="700" y="520">RAG / Industry / Watchlist</text>
+
+  <rect class="card profile" x="1010" y="405" width="245" height="165" rx="12"/>
+  <text class="t" x="1035" y="432">公司画像模块</text>
+  <text class="s" x="1035" y="456">company_profile/router.py</text>
+  <text class="s" x="1035" y="478">orchestrator.py</text>
+  <text class="s" x="1035" y="500">llm_extractor.py</text>
+  <text class="tiny" x="1035" y="526">支持年报 / 招股说明书</text>
+  <text class="tiny" x="1035" y="548">LLM 优先，规则兜底</text>
+
+  <rect class="card support" x="1310" y="425" width="205" height="130" rx="12"/>
+  <text class="t" x="1335" y="452">查询中心模块</text>
+  <text class="s" x="1335" y="476">support/router.py</text>
+  <text class="s" x="1335" y="498">support/catalog.py</text>
+  <text class="tiny" x="1335" y="524">独立查询支持公司</text>
+
+  <path class="line" d="M290 490 L350 490"/>
+  <path class="line" d="M620 490 L675 490"/>
+  <path class="line" d="M290 500 C610 610 860 610 1010 500"/>
+  <path class="line" d="M290 510 C700 650 1120 650 1310 505"/>
+
+  <rect class="band" x="40" y="665" width="1520" height="190" rx="18"/>
+  <text class="h" x="70" y="701">数据源与存储层</text>
+  <text class="subtitle" x="70" y="725">美股走 SEC 结构化数据，A 股走巨潮公告/PDF；用户与轻量业务数据存储在本地</text>
+
+  <rect class="card data" x="90" y="755" width="230" height="70" rx="12"/>
+  <text class="t" x="115" y="782">SEC 数据源</text>
+  <text class="s" x="115" y="804">sec_client.py / sec_source.py</text>
+
+  <rect class="card data" x="380" y="755" width="245" height="70" rx="12"/>
+  <text class="t" x="405" y="782">A 股数据源聚合</text>
+  <text class="s" x="405" y="804">ashare_source.py / index</text>
+
+  <rect class="card data" x="690" y="755" width="260" height="70" rx="12"/>
+  <text class="t" x="715" y="782">巨潮资讯客户端</text>
+  <text class="s" x="715" y="804">公告 / PDF / 招股说明书</text>
+
+  <rect class="card store" x="1015" y="745" width="215" height="90" rx="12"/>
+  <text class="t" x="1040" y="772">SQLite</text>
+  <text class="s" x="1040" y="794">backend/storage/app.db</text>
+  <text class="tiny" x="1040" y="816">用户 / 会话等</text>
+
+  <rect class="card store" x="1290" y="745" width="215" height="90" rx="12"/>
+  <text class="t" x="1315" y="772">JsonStore</text>
+  <text class="s" x="1315" y="794">轻量业务缓存</text>
+  <text class="tiny" x="1315" y="816">关注列表等</text>
+
+  <path class="line" d="M795 555 C690 630 420 665 245 755"/>
+  <path class="line" d="M805 555 C765 625 540 680 500 755"/>
+  <path class="line" d="M500 755 C560 730 630 730 690 755"/>
+  <path class="line" d="M1135 570 C1040 625 885 690 820 755"/>
+  <path class="line" d="M815 555 C920 630 1040 675 1100 745"/>
+  <path class="line" d="M835 555 C1030 640 1230 685 1365 745"/>
+
+  <rect class="band" x="40" y="885" width="1520" height="105" rx="18"/>
+  <text class="h" x="70" y="922">外部系统</text>
+  <rect class="card external" x="210" y="930" width="220" height="42" rx="10"/>
+  <text class="s" x="245" y="956">SEC 官方数据接口</text>
+  <rect class="card external" x="550" y="930" width="220" height="42" rx="10"/>
+  <text class="s" x="595" y="956">巨潮资讯 CNINFO</text>
+  <rect class="card external" x="895" y="930" width="260" height="42" rx="10"/>
+  <text class="s" x="935" y="956">OpenAI / 兼容 LLM（可选）</text>
+
+  <path class="dash" d="M210 930 C170 890 160 850 175 825"/>
+  <path class="dash" d="M660 930 C690 885 740 850 775 825"/>
+  <path class="dash" d="M1025 930 C1075 840 1115 690 1130 570"/>
+
+  <text class="tiny" x="60" y="1018">Generated for /Users/weizichao/Documents/hackathon · 2026-06-18</text>
+</svg>

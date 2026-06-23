@@ -13,7 +13,10 @@ CNINFO_QUERY_URL = "http://www.cninfo.com.cn/new/hisAnnouncement/query"
 CNINFO_PDF_BASE_URL = "http://static.cninfo.com.cn/"
 CNINFO_HEADERS = {
     "User-Agent": "Mozilla/5.0 FinancialReportMining/0.3",
+    "Accept": "application/json, text/plain, */*",
+    "Origin": "http://www.cninfo.com.cn",
     "Referer": "http://www.cninfo.com.cn/new/commonUrl/pageOfSearch?url=disclosure/list/search",
+    "X-Requested-With": "XMLHttpRequest",
 }
 
 REPORT_CATEGORIES = "category_ndbg_szsh;category_yjdbg_szsh;category_bndbg_szsh;category_sjdbg_szsh;"
@@ -39,6 +42,9 @@ class CninfoClient:
         self._announcements_cache: Dict[str, List[dict]] = {}
         self._dataset_cache: Dict[str, dict] = {}
         self._last_request = 0.0
+        # Model traffic may require a corporate proxy; public filing sources must not inherit it.
+        self._http = requests.Session()
+        self._http.trust_env = False
 
     def list_reports(self, company: dict, limit: int = 12) -> List[dict]:
         reports = []
@@ -139,13 +145,18 @@ class CninfoClient:
         return {"records": records, "filings": filings}
 
     def extract_pdf_text(self, url: str) -> str:
+        return self.extract_pdf_text_from_bytes(self.download_pdf(url))
+
+    def download_pdf(self, url: str) -> bytes:
         self._throttle()
-        response = requests.get(url, headers=CNINFO_HEADERS, timeout=25)
+        response = self._http.get(url, headers=CNINFO_HEADERS, timeout=25)
         response.raise_for_status()
-        content = response.content
+        return response.content
+
+    def extract_pdf_text_from_bytes(self, content: bytes) -> str:
         try:
             pages = _extract_pages(content, max_pages=120)
-            text = "\n".join(pages)
+            text = "\n\n".join("--- PAGE %s ---\n%s" % (index, page) for index, page in enumerate(pages, start=1))
         except Exception as exc:
             raise CninfoError(f"PDF 文本抽取失败：{exc}") from exc
 
@@ -208,31 +219,32 @@ class CninfoClient:
         org_id = company.get("org_id")
         if not org_id:
             raise CninfoError(f"{company['name']} 缺少巨潮 orgId，无法查询公告。")
-        self._throttle()
-        response = requests.post(
-            CNINFO_QUERY_URL,
-            headers=CNINFO_HEADERS,
-            data={
-                "pageNum": "1",
-                "pageSize": str(page_size),
-                "column": "szse",
-                "tabName": "fulltext",
-                "plate": "",
-                "stock": f"{company['ticker']},{org_id}",
-                "searchkey": searchkey,
-                "secid": "",
-                "category": category,
-                "trade": "",
-                "seDate": se_date,
-                "sortName": "",
-                "sortType": "",
-                "isHLtitle": "true",
-            },
-            timeout=15,
-        )
-        response.raise_for_status()
-        payload = response.json()
-        return payload.get("announcements") or []
+        data = {
+            "pageNum": "1",
+            "pageSize": str(page_size),
+            "column": "szse",
+            "tabName": "fulltext",
+            "plate": "",
+            "stock": f"{company['ticker']},{org_id}",
+            "searchkey": searchkey,
+            "secid": "",
+            "category": category,
+            "trade": "",
+            "seDate": se_date,
+            "sortName": "",
+            "sortType": "",
+            "isHLtitle": "true",
+        }
+        for attempt in range(5):
+            self._throttle()
+            response = self._http.post(CNINFO_QUERY_URL, headers=CNINFO_HEADERS, data=data, timeout=15)
+            response.raise_for_status()
+            announcements = (response.json() or {}).get("announcements") or []
+            if announcements:
+                return announcements
+            if attempt < 4:
+                time.sleep(0.8 * (attempt + 1))
+        return []
 
     def _target_reports(
         self,

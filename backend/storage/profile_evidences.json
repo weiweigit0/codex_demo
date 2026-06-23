@@ -1,0 +1,3026 @@
+{
+  "ev_e063778abda8": {
+    "evidence_id": "ev_e063778abda8",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取各种措施，有效管理 和控制各类...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_41a597d4ab74": {
+    "evidence_id": "ev_41a597d4ab74",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2024-2026年股东回报规划：每年现金分红占可分配利润10%-35%；最近三年均有现金分红，每股金额逐年下降。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取各种措施，有效管理 和控制各类...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_330806d8f396": {
+    "evidence_id": "ev_330806d8f396",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取各种措施，有效管理 和控制各类...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_c692d29d9a24": {
+    "evidence_id": "ev_c692d29d9a24",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "吸收公众存款；发放短期、中期和长期贷款；办理国内外结算；办理票据承兑与贴现；发行金融债券；代理发行、代理兑付、承销政府债券；买卖政府债券、金融债券；从事同业拆借；买卖、代理买卖外汇；从事银行卡业务；提供信用证服务及担保；代理收付款项及代理保险业务；提供保管箱服务；结汇、售汇业务；离岸银行业务；资产托管业务；办理黄金业务；财务顾问、资信调查、咨询、见证业务；经有关监管机构批准的其他业务",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 11,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_011"
+    },
+    "original_text": "--- PAGE 11 --- 第一章公司简介 10平安银行股份有限公司 2025年年度报告 公司聘请的报告期内履行持续督导职责的保荐机构 □适用√不适用 公司聘请的报告期内履行持续督导职责的财务顾问 □适用√不适用 1.2报告期内公司从事的主要业务 1.2.1从事的主要业务 本行是中国内地首家公开上市的全国性股份制商业银行。经过多年发展，本行已逐渐成长为一 家公司治理规范、网点覆盖广泛、产品服务齐全、风险管控有效的全国性股份制商业银行。同时， 本行着力打造独特竞争力，在科技赋能、零售业务、综合金融等领域形成了较为鲜明的经营特色。 本行经有关监管机构批准，经营下列各项商业银行业务：（一）吸收公众存款；（二）发放短 期、中期和长期贷款；（三）办理国内外结算；（四）办理票据承兑与贴现；（五）发行金融债券； （六）代理发行、代理兑付、承销政府债券；（七）买卖政府债券、金融债券；（八）从事同业拆 借；（九）买卖、代理买卖外汇；（十）从事银行卡业务；（十一）提供信用证服务及担保；（十 二）代理收付款项及代理保险业务；（十三）提供保管箱服务；（十四）结汇、售汇业务；（十五） 离岸银行业务；（十六）资产托管业务；（十七）办理黄金业务；（十...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_45194ddb7225": {
+    "evidence_id": "ev_45194ddb7225",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "中国平安保险（集团）股份有限公司",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_010"
+    },
+    "original_text": "--- PAGE 10 --- 第一章公司简介 9平安银行股份有限公司 2025年年度报告 1.1.3信息披露及备置地点 公司披露年度报告的证券交易所网站 深圳证券交易所http://www.szse.cn 公司披露年度报告的媒体名称及网址《中国证券报》《证券时报》 《上海证券报》《证券日报》 巨潮资讯网http://www.cninfo.com.cn 公司年度报告备置地点 深圳证券交易所、平安银行董事会办公室 1.1.4注册变更情况 统一社会信用代码91440300192185379H 公司上市以来主营业 务的变化情况（如有）无变更 历次控股股东的变更 情况中国平安为本行的控股股东。 2010年5月，本行原第一大股东NewbridgeAsiaAIVIII,L.P.（“新桥投资”） 将其所持有的本行520,414,439股股份全部过户至中国平安名下。2010年6月， 本行向中国平安控股子公司平安寿险非公开发行379,580,000股股份。本次发 行后，中国平安及其控股子公司平安寿险合计持有1,045,322,687股本行股份， 约占本行发行后总股本的29.99%。 2011年7月，本行完成向中国平安发行1,638,336,6...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b2a7473bf071": {
+    "evidence_id": "ev_b2a7473bf071",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f4dd66a899f4": {
+    "evidence_id": "ev_f4dd66a899f4",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年度利润分配预案为每10股派发现金股利5.96元；发行了多期债券，合计约1265亿元",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_e8daef6a085d": {
+    "evidence_id": "ev_e8daef6a085d",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_72a8c7424687": {
+    "evidence_id": "ev_72a8c7424687",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "business_model",
+    "claim": "设计、制造和销售智能手机、个人电脑、平板电脑、可穿戴设备和配件，以及销售各种相关服务。",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f5a095074a6c": {
+    "evidence_id": "ev_f5a095074a6c",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "ownership",
+    "claim": "ownership",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_fc6ab877de14": {
+    "evidence_id": "ev_fc6ab877de14",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b28b0af5c932": {
+    "evidence_id": "ev_b28b0af5c932",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_2818247bca17": {
+    "evidence_id": "ev_2818247bca17",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "capital_actions",
+    "claim": "公司积极进行资本回报，包括股票回购和股息，并利用债务融资（债券和商业票据）管理资本结构。",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_8241e4a4a0da": {
+    "evidence_id": "ev_8241e4a4a0da",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_9fb2db09385b": {
+    "evidence_id": "ev_9fb2db09385b",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "吸收公众存款、发放贷款、办理国内外结算、票据承兑与贴现、发行金融债券等商业银行业务",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 11,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_011"
+    },
+    "original_text": "--- PAGE 11 --- 第一章公司简介 10平安银行股份有限公司 2025年年度报告 公司聘请的报告期内履行持续督导职责的保荐机构 □适用√不适用 公司聘请的报告期内履行持续督导职责的财务顾问 □适用√不适用 1.2报告期内公司从事的主要业务 1.2.1从事的主要业务 本行是中国内地首家公开上市的全国性股份制商业银行。经过多年发展，本行已逐渐成长为一 家公司治理规范、网点覆盖广泛、产品服务齐全、风险管控有效的全国性股份制商业银行。同时， 本行着力打造独特竞争力，在科技赋能、零售业务、综合金融等领域形成了较为鲜明的经营特色。 本行经有关监管机构批准，经营下列各项商业银行业务：（一）吸收公众存款；（二）发放短 期、中期和长期贷款；（三）办理国内外结算；（四）办理票据承兑与贴现；（五）发行金融债券； （六）代理发行、代理兑付、承销政府债券；（七）买卖政府债券、金融债券；（八）从事同业拆 借；（九）买卖、代理买卖外汇；（十）从事银行卡业务；（十一）提供信用证服务及担保；（十 二）代理收付款项及代理保险业务；（十三）提供保管箱服务；（十四）结汇、售汇业务；（十五） 离岸银行业务；（十六）资产托管业务；（十七）办理黄金业务；（十...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_eacb37e96d6a": {
+    "evidence_id": "ev_eacb37e96d6a",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "中国平安保险（集团）股份有限公司及其控股子公司平安寿险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_010"
+    },
+    "original_text": "--- PAGE 10 --- 第一章公司简介 9平安银行股份有限公司 2025年年度报告 1.1.3信息披露及备置地点 公司披露年度报告的证券交易所网站 深圳证券交易所http://www.szse.cn 公司披露年度报告的媒体名称及网址《中国证券报》《证券时报》 《上海证券报》《证券日报》 巨潮资讯网http://www.cninfo.com.cn 公司年度报告备置地点 深圳证券交易所、平安银行董事会办公室 1.1.4注册变更情况 统一社会信用代码91440300192185379H 公司上市以来主营业 务的变化情况（如有）无变更 历次控股股东的变更 情况中国平安为本行的控股股东。 2010年5月，本行原第一大股东NewbridgeAsiaAIVIII,L.P.（“新桥投资”） 将其所持有的本行520,414,439股股份全部过户至中国平安名下。2010年6月， 本行向中国平安控股子公司平安寿险非公开发行379,580,000股股份。本次发 行后，中国平安及其控股子公司平安寿险合计持有1,045,322,687股本行股份， 约占本行发行后总股本的29.99%。 2011年7月，本行完成向中国平安发行1,638,336,6...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_a79e90ceba62": {
+    "evidence_id": "ev_a79e90ceba62",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_97fb21017538": {
+    "evidence_id": "ev_97fb21017538",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "公司近年持续进行分红和债券融资，包括发行资本债券、专项金融债券、绿色债券等。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_e8408470a6b8": {
+    "evidence_id": "ev_e8408470a6b8",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b20d41cae2d3": {
+    "evidence_id": "ev_b20d41cae2d3",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "商业银行业务，包括吸收公众存款、发放短期、中期和长期贷款等",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 11,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_011"
+    },
+    "original_text": "--- PAGE 11 --- 第一章公司简介 10平安银行股份有限公司 2025年年度报告 公司聘请的报告期内履行持续督导职责的保荐机构 □适用√不适用 公司聘请的报告期内履行持续督导职责的财务顾问 □适用√不适用 1.2报告期内公司从事的主要业务 1.2.1从事的主要业务 本行是中国内地首家公开上市的全国性股份制商业银行。经过多年发展，本行已逐渐成长为一 家公司治理规范、网点覆盖广泛、产品服务齐全、风险管控有效的全国性股份制商业银行。同时， 本行着力打造独特竞争力，在科技赋能、零售业务、综合金融等领域形成了较为鲜明的经营特色。 本行经有关监管机构批准，经营下列各项商业银行业务：（一）吸收公众存款；（二）发放短 期、中期和长期贷款；（三）办理国内外结算；（四）办理票据承兑与贴现；（五）发行金融债券； （六）代理发行、代理兑付、承销政府债券；（七）买卖政府债券、金融债券；（八）从事同业拆 借；（九）买卖、代理买卖外汇；（十）从事银行卡业务；（十一）提供信用证服务及担保；（十 二）代理收付款项及代理保险业务；（十三）提供保管箱服务；（十四）结汇、售汇业务；（十五） 离岸银行业务；（十六）资产托管业务；（十七）办理黄金业务；（十...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_32710586b172": {
+    "evidence_id": "ev_32710586b172",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "中国平安保险（集团）股份有限公司",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 64,
+      "section_title": "控股股东",
+      "text_block_id": "doc1_txt_064"
+    },
+    "original_text": "--- PAGE 64 --- 第四章公司治理、环境和社会 63平安银行股份有限公司 2025年年度报告 第四章公司治理、环境和社会 4.1公司治理的基本状况 报告期内，本行按照《公司法》《证券法》《商业银行法》等有关法律法规的规定和中国证监 会、国家金融监督管理总局的监管要求，致力于进一步健全公司治理制度，完善公司治理结构。本 行建立了包括公司章程、股东会、董事会和监事会议事规则、董事会和监事会各专门委员会工作细 则、独立董事工作指引、信息披露事务管理制度、投资者关系工作制度、股权事务管理办法、董监 高所持本行股份及其变动管理办法、内幕信息知情人登记管理制度、年报信息披露重大差错责任追 究制度、防范大股东及其关联方资金占用制度、董监事履职评价办法等多项公司治理制度。 报告期内本行股东会严格按照《公司法》《章程》等有关规定，有效发挥职能。董事会向股东 会负责，承担银行经营和管理的最终责任，按照法定程序召开会议，行使职权。监事会本着对全体 股东负责的态度，与董事会、管理层保持密切的联系与沟通，开展董监高履职评价工作，有效履行 各项监督职权和义务。本行管理层遵守诚信原则，谨慎、勤勉地履行职责并按董事会决策开展经营 管理。 202...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_90795df03e32": {
+    "evidence_id": "ev_90795df03e32",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 65,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_065"
+    },
+    "original_text": "--- PAGE 65 --- 第四章公司治理、环境和社会 64平安银行股份有限公司 2025年年度报告 4.4董事、监事和高级管理人员情况 4.4.1基本情况 姓名 职务任职 状态性别年龄任期起止日期期初持 股数 （股）本期增 持股份 数量 （股）本期减 持股份 数量 （股）其他增 减变动 （股）期末持 股数 （股）股份增减 变动的原 因 谢永林 董事长现任男572016.12-换届26,700---26,700 - 冀光恒董事、行长现任男57董事任期： 2023.11-换届 行长任期： 2023.11------ - 郭晓涛 董事现任男542024.9-换届 ----- - 付欣 董事现任女462024.3-换届 ----- - 蔡方方 董事现任女512014.1-换届 ----- - 项有志董事、副行长 首席财务官现任男61董事任期： 2020.1-换届 副行长任期： 2020.6- 首席财务官任 期：2018.1-26,000---26,000 - 杨志群董事、副行长现任男55董事任期： 2020.1-换届 副行长任期： 2019.4-50,000---50,000 - 吴志攀独立董事现任男692023.5-换届 -...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_bc6b2cd83edc": {
+    "evidence_id": "ev_bc6b2cd83edc",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 7,
+      "section_title": "业务模式",
+      "text_block_id": "doc1_txt_007"
+    },
+    "original_text": "--- PAGE 7 --- 行长致辞 6平安银行股份有限公司 2025年年度报告 —以数字金融提升效率体验。筑牢数字金融能力底座，促进科技成果转化，对内降低运营成本， 对外提升客户体验。强化科技基础能力建设，打造新型科技基础设施，全面提升关键业务系统可用 率。加强科技风险管控，持续保持科技“零”重大突发事件。 这一年，我们坚持升级经营体系，持续激活发展动能。我们坚持问题导向、目标导向、结果导 向，有序推进战略升级、结构调整、降本增效、科技赋能、风险管控等重点工作，持续提升核心竞 争力与可持续发展能力。 —推进战略升级，做强主责主业。零售业务坚持提质增效、客户分层、产品优化，不断提升服 务质效与价值贡献；对公业务聚焦“做精行业、做精客户、做精产品”，资源精准投向重点领域、 重点区域、重大项目；资金同业业务坚持专业化经营，提升投研能力与综合服务水平。三大业务板 块协同共进、优势凸显。 —推进结构调整，优化经营品质。主动顺应市场趋势，统筹资产负债平衡发展，持续优化资产 结构、负债结构，推动实现“量、价、险”动态平衡。零售贷款逐步企稳，客群结构和资产结构持 续优化；对公一般贷款增长良好，行业化经营持续深化。加强低成本存款的吸收，提...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_a3b418e29c8b": {
+    "evidence_id": "ev_a3b418e29c8b",
+    "company_id": "CN-SSE-600519",
+    "document_id": "CN-600519-2025-FY",
+    "claim_type": "business_model",
+    "claim": "茅台酒及系列酒的生产与销售",
+    "source": {
+      "document_id": "CN-600519-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "贵州茅台2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-17",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 8,
+      "section_title": "主营业务",
+      "text_block_id": "doc1_txt_008"
+    },
+    "original_text": "--- PAGE 8 --- 贵州茅台酒股份有限公司2025年年度报告 8/143对公司将《公开发行证券的公司信息披露解释性公告第1号——非经常性损益》未列举的项目认定 为非经常性损益项目且金额重大的，以及将《公开发行证券的公司信息披露解释性公告第1号—— 非经常性损益》中列举的非经常性损益项目界定为经常性损益的项目，应说明原因。 □适用√不适用 十一、存在股权激励、员工持股计划的公司可选择披露扣除股份支付影响后的净利润 □适用√不适用 十二、采用公允价值计量的项目 √适用□不适用 单位：元币种：人民币 项目名称 期初余额 期末余额 当期变动对当期利润的影响 金额 交易性金融资产 248,513,280.00 -248,513,280.00 265,351.99 应收款项融资 4,457,064,160.164,457,064,160.16-19,841,855.81 其他非流动金融资产4,028,978,995.564,105,141,593.2276,162,597.66 76,162,597.66 其他债权投资 3,496,539,016.413,496,539,016.41 8,316,130.29 合计 4,277...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_16216019476f": {
+    "evidence_id": "ev_16216019476f",
+    "company_id": "CN-SSE-600519",
+    "document_id": "CN-600519-2025-FY",
+    "claim_type": "ownership",
+    "claim": "贵州省人民政府国有资产监督管理委员会",
+    "source": {
+      "document_id": "CN-600519-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "贵州茅台2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-17",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 5,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_005"
+    },
+    "original_text": "--- PAGE 5 --- 贵州茅台酒股份有限公司2025年年度报告 5/143第一节释义 一、释义 在本报告书中，除非文义另有所指，下列词语具有如下含义： 常用词语释义 证监会 指中国证券监督管理委员会 上交所 指上海证券交易所 本公司、公司 指贵州茅台酒股份有限公司 控股股东、集团公司 指中国贵州茅台酒厂（集团）有限责任公司 报告期 指2025年度 本报告 指2025年年度报告 第二节公司简介和主要财务指标 一、公司信息 公司的中文名称 贵州茅台酒股份有限公司 公司的中文简称 贵州茅台 公司的外文名称 KweichowMoutaiCo.,Ltd. 公司的法定代表人 陈华 二、联系人和联系方式 董事会秘书 证券事务代表 姓名 余思明（代行董事会秘书职责）蔡聪应 联系地址 贵州省仁怀市茅台镇 贵州省仁怀市茅台镇 电话 0851-22386002 0851-22386002 传真 0851-22386193 0851-22386193 电子信箱 mtdm@moutaichina.com mtdm@moutaichina.com 三、基本情况简介 公司注册地址 贵州省仁怀市茅台镇 公司办公地址 贵州省仁怀市茅台镇 公司办公地址...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_949f2bcc9a04": {
+    "evidence_id": "ev_949f2bcc9a04",
+    "company_id": "CN-SSE-600519",
+    "document_id": "CN-600519-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-600519-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "贵州茅台2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-17",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 25,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_025"
+    },
+    "original_text": "--- PAGE 25 --- 贵州茅台酒股份有限公司2025年年度报告 25/143三、董事和高级管理人员的情况 (一)现任及报告期内离任董事和高级管理人员持股变动及薪酬情况 √适用□不适用 单位：股 姓名 职务性 别年 龄任期起始日期 任期终止日期年初 持股 数年末 持股 数年度 内股 份增 减变 动量增减 变动 原因报告期内从 公司获得的 税前薪酬总 额（万元）是否在 公司关 联方获 取薪酬 陈华党委书记男542025年10月27日是董事长、董事 2025年11月28日 王莉党委副书记 女532023年08月17日 是 董事 2023年09月07日 代行总经理职责 2023年08月19日 郭田勇独立董事 男572022年06月16日 20否 盛雷鸣独立董事 男552022年06月16日 20否 王鑫独立董事 男482023年12月06日 20否 周雪董事 女472025年5月19日 是 韦芳职工董事 女532024年10月18日 89.80否 向平党委委员男532024年08月16日 62.89是副总经理 钟正强党委委员男542022年11月03日113.81否副总经理 2015年07月13日 张旭党委委员男52202...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_65707989a60e": {
+    "evidence_id": "ev_65707989a60e",
+    "company_id": "CN-SSE-600519",
+    "document_id": "CN-600519-2025-FY",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "CN-600519-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "贵州茅台2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-17",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 8,
+      "section_title": "主营业务",
+      "text_block_id": "doc1_txt_008"
+    },
+    "original_text": "--- PAGE 8 --- 贵州茅台酒股份有限公司2025年年度报告 8/143对公司将《公开发行证券的公司信息披露解释性公告第1号——非经常性损益》未列举的项目认定 为非经常性损益项目且金额重大的，以及将《公开发行证券的公司信息披露解释性公告第1号—— 非经常性损益》中列举的非经常性损益项目界定为经常性损益的项目，应说明原因。 □适用√不适用 十一、存在股权激励、员工持股计划的公司可选择披露扣除股份支付影响后的净利润 □适用√不适用 十二、采用公允价值计量的项目 √适用□不适用 单位：元币种：人民币 项目名称 期初余额 期末余额 当期变动对当期利润的影响 金额 交易性金融资产 248,513,280.00 -248,513,280.00 265,351.99 应收款项融资 4,457,064,160.164,457,064,160.16-19,841,855.81 其他非流动金融资产4,028,978,995.564,105,141,593.2276,162,597.66 76,162,597.66 其他债权投资 3,496,539,016.413,496,539,016.41 8,316,130.29 合计 4,277...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_837db415e2a5": {
+    "evidence_id": "ev_837db415e2a5",
+    "company_id": "CN-SSE-600519",
+    "document_id": "CN-600519-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年度拟派发现金红利650.33亿元，并实施了首次60亿元股票回购。",
+    "source": {
+      "document_id": "CN-600519-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "贵州茅台2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-17",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "控股股东",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 贵州茅台酒股份有限公司2025年年度报告 2/143重要提示 一、本公司董事会及董事、高级管理人员保证年度报告内容的真实性、准确性、完整性，不存在 虚假记载、误导性陈述或重大遗漏，并承担个别和连带的法律责任。 二、公司全体董事出席董事会会议。 三、天健会计师事务所(特殊普通合伙)为本公司出具了标准无保留意见的审计报告。 四、公司负责人陈华、主管会计工作负责人余思明及会计机构负责人（会计主管人员）蔡聪应 声明：保证年度报告中财务报告的真实、准确、完整。 五、董事会决议通过的本报告期利润分配预案或公积金转增股本预案 公司拟以实施权益分派股权登记日登记的总股本扣除回购专用账户中的股份为基数，实施 2025年年度利润分配。2025年年度利润分配拟向全体股东每股派发现金红利27.993元（含税）， 截至2026年3月31日，公司总股本为1,252,270,215股，回购专用证券账户中的股份数为794,176 股，总股本扣除回购专用证券账户中的股份数为1,251,476,039股，以此计算合计拟派发现金红利 35,032,568,759.73元（含税）。在实施权益分派的股权登记日前公司总股本扣除回购专用证券...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_56455879c765": {
+    "evidence_id": "ev_56455879c765",
+    "company_id": "CN-SSE-600519",
+    "document_id": "CN-600519-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-600519-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "贵州茅台2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-17",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 21,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_021"
+    },
+    "original_text": "--- PAGE 21 --- 贵州茅台酒股份有限公司2025年年度报告 21/143六、公司关于公司未来发展的讨论与分析 (一)行业格局和趋势 √适用□不适用 1.行业格局与趋势。 从宏观经济看，国家经济政策带来了巨大的市场机遇。中央经济工作会议指出，我国经济长 期向好的支撑条件和基本趋势没有改变，2026年要坚持内需主导，建设强大国内市场，提出了“深 入实施提振消费专项行动”“扩大优质商品和服务供给”“清理消费领域不合理限制措施，释放 文旅等服务消费潜力”等措施，释放了积极有利刺激消费的信号。同时，国家“十五五”规划提 出，到2035年，人均GDP达到中等发达国家水平。随着这一目标的实现，全国经济发展和居民收 入增加，消费水平进一步提升，公司将在国家经济发展浪潮中迎来新机遇，获得更广阔的发展空 间。从行业形势看，一方面，白酒具有长期生命力，消费潜能依然有挖掘空间。作为历史经典产 业，酒文化贯穿了人们高兴、欢庆、休闲、纪念等各个重要时刻，我国也成了世界上最大的白酒 消费国，市场还大有潜力可挖。另一方面，行业马太效应愈发凸显，进入行业调整期，行业会通 过“优胜劣汰”的自然法则进行系统性自我调节，资源将进一步向优势企业、优势品...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_684b406ac37c": {
+    "evidence_id": "ev_684b406ac37c",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "business_model",
+    "claim": "The Company designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services.",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_5cd4eb942321": {
+    "evidence_id": "ev_5cd4eb942321",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "ownership",
+    "claim": "ownership",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_c5b3db8d9fa8": {
+    "evidence_id": "ev_c5b3db8d9fa8",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_933a8ae6e755": {
+    "evidence_id": "ev_933a8ae6e755",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_1ec835872cb9": {
+    "evidence_id": "ev_1ec835872cb9",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "capital_actions",
+    "claim": "Apple pays quarterly dividends, conducts large share repurchase programs, and has outstanding fixed-rate notes.",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_c70c254c9985": {
+    "evidence_id": "ev_c70c254c9985",
+    "company_id": "US-AAPL",
+    "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "SEC-AAPL-2025-FY-0000320193-25-000079",
+      "document_type": "annual_report",
+      "document_title": "Apple Inc. 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_08362559825a": {
+    "evidence_id": "ev_08362559825a",
+    "company_id": "US-MSFT",
+    "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+    "claim_type": "business_model",
+    "claim": "Develops and supports software, services, devices, and solutions to empower every person and organization on the planet to achieve more.",
+    "source": {
+      "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+      "document_type": "annual_report",
+      "document_title": "MICROSOFT CORP 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-07-30",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#LongTermInves men s h p://fasb.org/us-gaap/2024#LongTermInves men s h p...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_79683877ee8b": {
+    "evidence_id": "ev_79683877ee8b",
+    "company_id": "US-MSFT",
+    "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+      "document_type": "annual_report",
+      "document_title": "MICROSOFT CORP 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-07-30",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#LongTermInves men s h p://fasb.org/us-gaap/2024#LongTermInves men s h p...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_7cbfa4fd1f42": {
+    "evidence_id": "ev_7cbfa4fd1f42",
+    "company_id": "US-MSFT",
+    "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "SEC-MSFT-2024-FY-0000950170-24-087843",
+      "document_type": "annual_report",
+      "document_title": "MICROSOFT CORP 2024-FY 10-K",
+      "report_period": "2024-FY",
+      "disclosure_date": "2024-07-30",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/msft-20240630.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc2_txt_001"
+    },
+    "original_text": "10-K --06-30 FY 0000789019 false P2Y P5Y P3Y P1Y h p://fasb.org/us-gaap/2023#Deriva iveAsse s h p://fasb.org/us-gaap/2023#Deriva iveAsse s h p://fasb.org/us-gaap/2023#Deriva iveLiabili ies h p://fasb.org/us-gaap/2023#Deriva iveLiabili ies h p://fasb.org/us-gaap/2023#O herAsse sCurren h p://fasb.org/us-gaap/2023#O herAsse sCurren h p://fasb.org/us-gaap/2023#O herAsse sCurren h p://fasb.org/us-gaap/2023#O herAsse sCurren h p://fasb.org/us-gaap/2023#O herAsse sNoncurren h p://fasb.org/us-gaap/2023#O herAsse sNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_0e60eb6b1477": {
+    "evidence_id": "ev_0e60eb6b1477",
+    "company_id": "US-MSFT",
+    "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+    "claim_type": "capital_actions",
+    "claim": "Microsoft has a history of returning capital to shareholders through dividends and share repurchases. In fiscal year 2023, it repurchased 69 million shares for $18.4 billion and paid dividends of $20.2 billion. A $60 billion repurchase program was approved in September 2024.",
+    "source": {
+      "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+      "document_type": "annual_report",
+      "document_title": "MICROSOFT CORP 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-07-30",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#LongTermInves men s h p://fasb.org/us-gaap/2024#LongTermInves men s h p...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6bb45c348c3f": {
+    "evidence_id": "ev_6bb45c348c3f",
+    "company_id": "US-MSFT",
+    "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "SEC-MSFT-2025-FY-0000950170-25-100235",
+      "document_type": "annual_report",
+      "document_title": "MICROSOFT CORP 2025-FY 10-K",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-07-30",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "business",
+      "text_block_id": "doc1_txt_001"
+    },
+    "original_text": "10-K FY false 0000789019 P2Y P5Y P3Y P1Y h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveAsse s h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Deriva iveLiabili ies h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#Shor TermInves men s h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#O herAsse sCurren h p://fasb.org/us-gaap/2024#LongTermInves men s h p://fasb.org/us-gaap/2024#LongTermInves men s h p...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_fb8d7ff3046c": {
+    "evidence_id": "ev_fb8d7ff3046c",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "商业银行业务",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 11,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_011"
+    },
+    "original_text": "--- PAGE 11 --- 第一章公司简介 10平安银行股份有限公司 2025年年度报告 公司聘请的报告期内履行持续督导职责的保荐机构 □适用√不适用 公司聘请的报告期内履行持续督导职责的财务顾问 □适用√不适用 1.2报告期内公司从事的主要业务 1.2.1从事的主要业务 本行是中国内地首家公开上市的全国性股份制商业银行。经过多年发展，本行已逐渐成长为一 家公司治理规范、网点覆盖广泛、产品服务齐全、风险管控有效的全国性股份制商业银行。同时， 本行着力打造独特竞争力，在科技赋能、零售业务、综合金融等领域形成了较为鲜明的经营特色。 本行经有关监管机构批准，经营下列各项商业银行业务：（一）吸收公众存款；（二）发放短 期、中期和长期贷款；（三）办理国内外结算；（四）办理票据承兑与贴现；（五）发行金融债券； （六）代理发行、代理兑付、承销政府债券；（七）买卖政府债券、金融债券；（八）从事同业拆 借；（九）买卖、代理买卖外汇；（十）从事银行卡业务；（十一）提供信用证服务及担保；（十 二）代理收付款项及代理保险业务；（十三）提供保管箱服务；（十四）结汇、售汇业务；（十五） 离岸银行业务；（十六）资产托管业务；（十七）办理黄金业务；（十...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_cd9f2d9c70e5": {
+    "evidence_id": "ev_cd9f2d9c70e5",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "中国平安保险（集团）股份有限公司",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 99,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_099"
+    },
+    "original_text": "--- PAGE 99 --- 第六章股份变动及股东情况 98平安银行股份有限公司 2025年年度报告 6.3股东和实际控制人情况 6.3.1公司股东数量及持股情况 （单位：股） 报告期末普通股股 东总数441,142户年度报告披露日前上一 月末的普通股股东总数462,824户报告期末表决权恢复的优先 股股东总数（如有）-年度报告披 露日前上一 月末表决权 恢复的 优先股股东 总数（如有）- 持股5%以上的股东或前10名股东持股情况（不含通过转融通出借股份） 股东名称 股东性质报告期末 持股数量持股 比例 （%）报告期内 增减变动情况持有有限售 条件的股份 数量持有无限售条 件的股份数量质押、标记或冻结 情况 股份状态数量 中国平安保险（集团）股 份有限公司－集团本级－ 自有资金境内法人9,618,540,23649.56 - -9,618,540,236 -- 中国平安人寿保险股份有 限公司－自有资金境内法人1,186,100,4886.11 - -1,186,100,488 -- 香港中央结算有限公司境外法人628,291,1493.24(118,590,574) -628,291,149 -- 中国平安人寿保险股份有...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_fc04245c85b0": {
+    "evidence_id": "ev_fc04245c85b0",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 65,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_065"
+    },
+    "original_text": "--- PAGE 65 --- 第四章公司治理、环境和社会 64平安银行股份有限公司 2025年年度报告 4.4董事、监事和高级管理人员情况 4.4.1基本情况 姓名 职务任职 状态性别年龄任期起止日期期初持 股数 （股）本期增 持股份 数量 （股）本期减 持股份 数量 （股）其他增 减变动 （股）期末持 股数 （股）股份增减 变动的原 因 谢永林 董事长现任男572016.12-换届26,700---26,700 - 冀光恒董事、行长现任男57董事任期： 2023.11-换届 行长任期： 2023.11------ - 郭晓涛 董事现任男542024.9-换届 ----- - 付欣 董事现任女462024.3-换届 ----- - 蔡方方 董事现任女512014.1-换届 ----- - 项有志董事、副行长 首席财务官现任男61董事任期： 2020.1-换届 副行长任期： 2020.6- 首席财务官任 期：2018.1-26,000---26,000 - 杨志群董事、副行长现任男55董事任期： 2020.1-换届 副行长任期： 2019.4-50,000---50,000 - 吴志攀独立董事现任男692023.5-换届 -...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_fbe69bc2a897": {
+    "evidence_id": "ev_fbe69bc2a897",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 47,
+      "section_title": "业务模式",
+      "text_block_id": "doc1_txt_047"
+    },
+    "original_text": "--- PAGE 47 --- 第三章管理层讨论与分析 46平安银行股份有限公司 2025年年度报告 科技企业客户方面，本行积极构建“客群+政策+产品+渠道+组织+资源”经营体系，加大对科技 型企业的培育支持力度。2025年末，本行科技企业客户数431,917户，同口径较上年末增长21.1%； 科技贷款余额3,065.82亿元，同口径较上年末增长9.8%。 （3）做精产品 本行围绕核心客群，深入行业场景，运用“金融+科技”能力，做强行业化、差异化、综合化的 产品组合，优化金融服务体验，提升客户综合服务能力。 支付结算及现金管理 本行围绕企业客户经营管理需求，聚焦支付结算、财富管理、数字经营三大方向，全面升级经 营策略，提升金融服务实体经济质效。支付结算方面，本行聚焦品牌连锁、供应链核心企业等重点 客群，提供全场景支付结算解决方案，满足企业多元化结算需求，并推广轻量化、普适化产品服务， 如收款及对账组合工具“慧收款”、企业移动支付工具“移企付”等，扩大基础客群覆盖面；财富 管理方面，打造企业财富管理品牌，创新产品组合，持续丰富产品货架，助力企业提升资金精细化 管理能力，满足其多元化财富配置需求；数字经营方面，围绕企业“业财一体...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_2817774f8d49": {
+    "evidence_id": "ev_2817774f8d49",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年进行现金分红，并发行了300亿元无固定期限资本债券进行资本补充。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_cc8383106393": {
+    "evidence_id": "ev_cc8383106393",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_0f917dd71ec0": {
+    "evidence_id": "ev_0f917dd71ec0",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "平安银行经营中面临的风险主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、战略风险、合规风险、洗钱风险、法律风险和信息科技风险。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_94e1c898b25b": {
+    "evidence_id": "ev_94e1c898b25b",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "平安银行持续加强房地产贷款管控，坚持“以项目为中心”，优化房地产业务结构，通过强化项目封闭管理，实施贷管并重机制。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 54,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_054"
+    },
+    "original_text": "--- PAGE 54 --- 第三章管理层讨论与分析 53平安银行股份有限公司 2025年年度报告 良贷款170.21亿元）；不良资产收回额中97.2%为现金收回，其余为以物抵债等方式收回。 未来，本行将密切跟踪宏观形势变化，持续优化资产结构，强化重点领域风险管控及体系化监 控，加大催清收力度，保持良好的风险抵补水平，牢牢守住资产质量底线。 3.4.3关于房地产风险管理 本行高度重视房地产行业授信的风险防范和质量管控，持续加强房地产贷款管控措施，坚持“以 项目为中心”，优化房地产业务结构，通过强化项目封闭管理，实施贷管并重机制，持续提升风险 管控水平。 2025年末，本集团房地产相关的实有及或有信贷、自营债券投资、自营非标投资等承担信用风 险的业务余额合计2,513.57亿元，较上年末减少219.80亿元；本集团理财资金出资、委托贷款、合 作机构管理代销信托及基金、主承销债务融资工具等不承担信用风险的业务余额合计703.61亿元， 较上年末减少55.18亿元。其中： （1）承担信用风险的涉房业务主要是对公房地产贷款余额2,101.81亿元，较上年末减少350.38 亿元。其中房地产开发贷653.03亿元，占发放贷款和垫款本...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6f3c90c0216f": {
+    "evidence_id": "ev_6f3c90c0216f",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "平安银行经营商业银行业务，包括吸收公众存款、发放贷款、办理国内外结算等。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 12,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_012"
+    },
+    "original_text": "--- PAGE 12 --- 第一章公司简介 11平安银行股份有限公司 2025年年度报告 1.3发展战略及核心竞争力 1.3.1本行发展战略 本行紧跟国家政策导向和监管要求，坚持党建引领，坚持金融工作的政治性、人民性，坚持以 “中国最卓越、全球领先的智能化零售银行”为战略目标，坚持“零售做强、对公做精、同业做专” 战略方针，持续深化战略转型，不断升级零售、对公、资金同业业务经营策略，做好金融“五篇大 文章”，服务新质生产力，持续深化数字化转型，强化风险管理，助推高质量发展。 （1）零售做强 本行坚持零售战略定位不动摇，深化推进零售战略转型，以客户为中心，打造特色零售银行， 围绕“效益优先、兼顾规模”的经营目标，持续强化核心业务能力，推动零售业务高质量、可持续 发展。 两大业务板块—— 贷款业务：促进“量、价、险”平衡。一是优化贷款业务结构，持续提升优质客群占比，并加 大重点产品投放力度，带动客群结构和资产结构持续优化；二是完善产品体系，围绕客户需求匹配 产品策略，提升精细化风险定价能力，提供差异化服务体验，全面提升产品的市场竞争力和品牌影 响力。 大财富管理业务：推进结构持续优化、业务高质量发展。一是提升场景化经营能力，...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_219c221afc7e": {
+    "evidence_id": "ev_219c221afc7e",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "中国平安保险（集团）股份有限公司",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 99,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_099"
+    },
+    "original_text": "--- PAGE 99 --- 第六章股份变动及股东情况 98平安银行股份有限公司 2025年年度报告 6.3股东和实际控制人情况 6.3.1公司股东数量及持股情况 （单位：股） 报告期末普通股股 东总数441,142户年度报告披露日前上一 月末的普通股股东总数462,824户报告期末表决权恢复的优先 股股东总数（如有）-年度报告披 露日前上一 月末表决权 恢复的 优先股股东 总数（如有）- 持股5%以上的股东或前10名股东持股情况（不含通过转融通出借股份） 股东名称 股东性质报告期末 持股数量持股 比例 （%）报告期内 增减变动情况持有有限售 条件的股份 数量持有无限售条 件的股份数量质押、标记或冻结 情况 股份状态数量 中国平安保险（集团）股 份有限公司－集团本级－ 自有资金境内法人9,618,540,23649.56 - -9,618,540,236 -- 中国平安人寿保险股份有 限公司－自有资金境内法人1,186,100,4886.11 - -1,186,100,488 -- 香港中央结算有限公司境外法人628,291,1493.24(118,590,574) -628,291,149 -- 中国平安人寿保险股份有...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_196667e3c33c": {
+    "evidence_id": "ev_196667e3c33c",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 65,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_065"
+    },
+    "original_text": "--- PAGE 65 --- 第四章公司治理、环境和社会 64平安银行股份有限公司 2025年年度报告 4.4董事、监事和高级管理人员情况 4.4.1基本情况 姓名 职务任职 状态性别年龄任期起止日期期初持 股数 （股）本期增 持股份 数量 （股）本期减 持股份 数量 （股）其他增 减变动 （股）期末持 股数 （股）股份增减 变动的原 因 谢永林 董事长现任男572016.12-换届26,700---26,700 - 冀光恒董事、行长现任男57董事任期： 2023.11-换届 行长任期： 2023.11------ - 郭晓涛 董事现任男542024.9-换届 ----- - 付欣 董事现任女462024.3-换届 ----- - 蔡方方 董事现任女512014.1-换届 ----- - 项有志董事、副行长 首席财务官现任男61董事任期： 2020.1-换届 副行长任期： 2020.6- 首席财务官任 期：2018.1-26,000---26,000 - 杨志群董事、副行长现任男55董事任期： 2020.1-换届 副行长任期： 2019.4-50,000---50,000 - 吴志攀独立董事现任男692023.5-换届 -...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_79fc7dd8e369": {
+    "evidence_id": "ev_79fc7dd8e369",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年平安银行多次发行债券，包括资本债券、专项金融债券、绿色债券和科技创新债券，合计规模超千亿元。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 95,
+      "section_title": "控股股东",
+      "text_block_id": "doc1_txt_095"
+    },
+    "original_text": "--- PAGE 95 --- 第五章重要事项 94平安银行股份有限公司 2025年年度报告 5.12公司及其控股股东的诚信状况 报告期内本行及其控股股东不存在未履行法院生效法律文书确定的义务、所负数额较大的债务 到期未清偿等情况。 5.13重大关联交易事项 1、本行与中国平安及其关联方的交易情况、本行与其他主要股东及其关联方的交易情况、本行 与关联自然人的主要交易情况和本行与关键管理人员或与其关系密切的家庭成员控制、共同控制或 施加重大影响的企业的主要交易情况详见“第八章财务报告”中的“九、关联方关系及交易”。 2、重大关联交易临时报告披露网站相关查询 报告期内，本行董事会审议通过了9项重大关联交易议案，包括与中国平安、平安国际融资租 赁有限公司、陆金所控股有限公司、深圳市创帆企业管理有限公司、安科技术有限公司、新方正控 股发展有限责任公司等关联方的交易议案，以及与中国平安及其关联方日常关联交易预计的议案。 具体内容可查阅本行于2025年2月22日、4月4日、9月27日在《中国证券报》《证券时报》《上 海证券报》及巨潮资讯网（http://www.cninfo.com.cn）上发布的《平安银行股份有限公司关联交易公 告》等...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_47acf83d06e0": {
+    "evidence_id": "ev_47acf83d06e0",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f79bad1cf9ab": {
+    "evidence_id": "ev_f79bad1cf9ab",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "本行经营中面临的风险主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、战略风险、合规风险、洗钱风险、法律风险和信息科技风险等",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_04c6019f9d9e": {
+    "evidence_id": "ev_04c6019f9d9e",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行持续强化风险政策前瞻研判及敏捷调整，资产质量整体平稳；不良贷款率1.05%，较上年末下降0.01个百分点",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 53,
+      "section_title": "服务",
+      "text_block_id": "doc1_txt_053"
+    },
+    "original_text": "--- PAGE 53 --- 第三章管理层讨论与分析 52平安银行股份有限公司 2025年年度报告 3.4经营中关注的重点 3.4.1关于净息差 2025年，本集团净息差1.78%，同比2024年下降9个基点，主要受贷款利率下行和业务结构调 整等因素影响。 负债端，本行坚持量价平衡发展，聚焦调结构、降成本，付息率显著优化。一是积极落实市场 定价自律要求，加强高成本存款管控，顺应降息周期，降低付息成本；二是提升客户服务能力，拓 展业务合作的广度和深度，增强客户粘性，推动结算类等低成本存款稳步增长；三是根据市场变化， 敏捷调控存款和同业负债的吸收节奏，优化整体负债成本。2025年，吸收存款平均付息率1.65%， 同比2024年下降42个基点；计息负债平均付息率1.67%，同比2024年下降47个基点。 资产端，受市场利率下行及资产结构调整影响，资产收益率进一步下行，且下行幅度大于计息 负债优化幅度。一是本行紧跟国家重大战略规划，积极支持实体经济发展，加大对重点行业、重点 区域和重点客户的信贷支持力度，提升优质客群占比，带动客群结构和资产结构持续优化；二是受 市场利率持续下行、有效信贷需求不足及资产重定价效应影响，贷款、债券投资...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_2ea35633d85b": {
+    "evidence_id": "ev_2ea35633d85b",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行核销贷款482.33亿元；收回不良资产总额367.98亿元，其中收回已核销不良资产本金191.17亿元",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 53,
+      "section_title": "服务",
+      "text_block_id": "doc1_txt_053"
+    },
+    "original_text": "--- PAGE 53 --- 第三章管理层讨论与分析 52平安银行股份有限公司 2025年年度报告 3.4经营中关注的重点 3.4.1关于净息差 2025年，本集团净息差1.78%，同比2024年下降9个基点，主要受贷款利率下行和业务结构调 整等因素影响。 负债端，本行坚持量价平衡发展，聚焦调结构、降成本，付息率显著优化。一是积极落实市场 定价自律要求，加强高成本存款管控，顺应降息周期，降低付息成本；二是提升客户服务能力，拓 展业务合作的广度和深度，增强客户粘性，推动结算类等低成本存款稳步增长；三是根据市场变化， 敏捷调控存款和同业负债的吸收节奏，优化整体负债成本。2025年，吸收存款平均付息率1.65%， 同比2024年下降42个基点；计息负债平均付息率1.67%，同比2024年下降47个基点。 资产端，受市场利率下行及资产结构调整影响，资产收益率进一步下行，且下行幅度大于计息 负债优化幅度。一是本行紧跟国家重大战略规划，积极支持实体经济发展，加大对重点行业、重点 区域和重点客户的信贷支持力度，提升优质客群占比，带动客群结构和资产结构持续优化；二是受 市场利率持续下行、有效信贷需求不足及资产重定价效应影响，贷款、债券投资...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_8621b0690759": {
+    "evidence_id": "ev_8621b0690759",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年末本集团房地产相关的承担信用风险的业务余额合计2,513.57亿元，较上年末减少219.80亿元",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 54,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_054"
+    },
+    "original_text": "--- PAGE 54 --- 第三章管理层讨论与分析 53平安银行股份有限公司 2025年年度报告 良贷款170.21亿元）；不良资产收回额中97.2%为现金收回，其余为以物抵债等方式收回。 未来，本行将密切跟踪宏观形势变化，持续优化资产结构，强化重点领域风险管控及体系化监 控，加大催清收力度，保持良好的风险抵补水平，牢牢守住资产质量底线。 3.4.3关于房地产风险管理 本行高度重视房地产行业授信的风险防范和质量管控，持续加强房地产贷款管控措施，坚持“以 项目为中心”，优化房地产业务结构，通过强化项目封闭管理，实施贷管并重机制，持续提升风险 管控水平。 2025年末，本集团房地产相关的实有及或有信贷、自营债券投资、自营非标投资等承担信用风 险的业务余额合计2,513.57亿元，较上年末减少219.80亿元；本集团理财资金出资、委托贷款、合 作机构管理代销信托及基金、主承销债务融资工具等不承担信用风险的业务余额合计703.61亿元， 较上年末减少55.18亿元。其中： （1）承担信用风险的涉房业务主要是对公房地产贷款余额2,101.81亿元，较上年末减少350.38 亿元。其中房地产开发贷653.03亿元，占发放贷款和垫款本...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f5a6db47c4e4": {
+    "evidence_id": "ev_f5a6db47c4e4",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年末对公房地产贷款不良率2.22%，较上年末上升0.43个百分点",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 54,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_054"
+    },
+    "original_text": "--- PAGE 54 --- 第三章管理层讨论与分析 53平安银行股份有限公司 2025年年度报告 良贷款170.21亿元）；不良资产收回额中97.2%为现金收回，其余为以物抵债等方式收回。 未来，本行将密切跟踪宏观形势变化，持续优化资产结构，强化重点领域风险管控及体系化监 控，加大催清收力度，保持良好的风险抵补水平，牢牢守住资产质量底线。 3.4.3关于房地产风险管理 本行高度重视房地产行业授信的风险防范和质量管控，持续加强房地产贷款管控措施，坚持“以 项目为中心”，优化房地产业务结构，通过强化项目封闭管理，实施贷管并重机制，持续提升风险 管控水平。 2025年末，本集团房地产相关的实有及或有信贷、自营债券投资、自营非标投资等承担信用风 险的业务余额合计2,513.57亿元，较上年末减少219.80亿元；本集团理财资金出资、委托贷款、合 作机构管理代销信托及基金、主承销债务融资工具等不承担信用风险的业务余额合计703.61亿元， 较上年末减少55.18亿元。其中： （1）承担信用风险的涉房业务主要是对公房地产贷款余额2,101.81亿元，较上年末减少350.38 亿元。其中房地产开发贷653.03亿元，占发放贷款和垫款本...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_dd9fd6f5ed86": {
+    "evidence_id": "ev_dd9fd6f5ed86",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行持续加强市场风险管理，完善市场风险管理制度体系，加强主动风险管理",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 57,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_057"
+    },
+    "original_text": "--- PAGE 57 --- 第三章管理层讨论与分析 56平安银行股份有限公司 2025年年度报告 户授信管理要求、系统建设与数据治理，实现客户大额风险暴露的自动化统计、监测、预警和控制， 通过科技手段动态管控客户集中度风险。 报告期内，除监管豁免客户外，本行同业单一客户、同业集团客户、非同业单一客户、非同业 集团客户风险暴露占一级资本净额的比例，均满足监管达标要求。 3.5.3市场风险 市场风险是指因市场价格（利率、汇率、股票价格和商品价格）的不利变动而使商业银行表内 和表外业务发生损失的风险。本行面临的市场风险主要为利率风险和汇率风险。 本行建立了有效的市场风险治理架构和管理职责分工。董事会是市场风险管理最高决策机构， 承担市场风险管理的最终责任；高级管理层及其下设委员会负责在董事会授权范围内，审批市场风 险管理的重大事项，定期听取市场风险管理执行的汇报；风险管理部是市场风险的牵头管理和具体 执行部门，与前台业务部门保持独立。本行已搭建完善的市场风险管理制度体系，覆盖了市场风险 识别、计量、监测、控制和报告的全流程，定期审视评估市场风险的各项制度和管理办法，并根据 业务和发展现状不断完善、改进、优化流程。本行已建立较为...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_c4f77ef305c2": {
+    "evidence_id": "ev_c4f77ef305c2",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行流动性风险监管指标均符合监管要求，流动性覆盖率132.87%",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 22,
+      "section_title": "披露文件正文",
+      "text_block_id": "doc1_txt_022"
+    },
+    "original_text": "--- PAGE 22 --- 第二章会计数据和财务指标 21平安银行股份有限公司 2025年年度报告 2.4.4流动性覆盖率 （货币单位：人民币百万元） 项目 2025年12月31日 2025年9月30日 2024年12月31日 流动性覆盖率 132.87% 115.64% 136.15% 合格优质流动性资产 597,379 663,135 661,716 净现金流出 449,593 573,452 486,021 注：以上数据为本集团口径，根据《商业银行流动性覆盖率信息披露办法》披露流动性覆盖率信息。 2.4.5净稳定资金比例 （货币单位：人民币百万元） 注：以上数据为本集团口径，根据《商业银行净稳定资金比例信息披露办法》披露净稳定资金比例信息。 2.5分部经营数据 2.5.1盈利与规模 （货币单位：人民币百万元） 项目零售金融业务 批发金融业务 其他业务 合计 2025年2024年2025年2024年2025年2024年2025年2024年 营业 收入金额61,62671,25557,95963,84111,85711,599131,442146,695 占比%46.948.644.143.5 9.0 7.9100.0...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b020bf3a300a": {
+    "evidence_id": "ev_b020bf3a300a",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行持续完善操作风险管理体系，优化操作风险自评估、关键风险指标等工具",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 58,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_058"
+    },
+    "original_text": "--- PAGE 58 --- 第三章管理层讨论与分析 57平安银行股份有限公司 2025年年度报告 稳步增长，持续优化资产负债结构，合理控制错配流动性风险；二是优化流动性应急管理体系，审 慎评估未来流动性需求，维持充足的优质流动性资产，持续完善流动性风险预警机制，开展流动性 风险应急演练，有效防范应急流动性风险；三是加强对宏观经济形势和市场流动性的分析，提高流 动性管理的前瞻性和主动性，及时应对市场流动性风险。同时，本行依据监管指标监管标准、流动 性风险偏好、流动性风险管理策略、资产负债结构状况及融资能力等因素制定流动性风险指标限额； 根据本行资产负债结构和产品种类，合理审慎设定压力情景，定期开展流动性风险压力测试，评估 压力情景下的流动性风险抵御能力。 报告期内，本行各项业务稳步发展，优质流动性资产储备充裕，流动性状况保持安全稳健，流 动性风险监管指标均符合监管要求。 3.5.5操作风险 操作风险是指由于内部程序、员工、信息科技系统存在问题以及外部事件造成损失的风险，包 括法律风险，但不包括战略风险和声誉风险。本行建立了完整、独立的操作风险管理架构，董事会 承担操作风险管理的最终责任，监事会承担监督责任，高级管理层承担实...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f03245de4f56": {
+    "evidence_id": "ev_f03245de4f56",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行持续完善洗钱风险管理体系，优化反洗钱工作机制",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 60,
+      "section_title": "高级管理人员",
+      "text_block_id": "doc1_txt_060"
+    },
+    "original_text": "--- PAGE 60 --- 第三章管理层讨论与分析 59平安银行股份有限公司 2025年年度报告 相辅相成的媒介形式，全方位提升本行良好的品牌形象；五是不定期开展危机响应处置的模拟演练， 强化各职能部门、分支机构声誉风险管控及舆情处置能力建设；六是强化考核问责，通过完善风险 考核机制，将声誉风险事件的防范处置纳入各单位考核范围，加强源头治理；七是围绕本行支持实 体经济、做好金融“五篇大文章”、消费者权益保护、履行企业社会责任等主题开展多层次、立体 化宣传，提升品牌形象。 3.5.9战略风险 本行坚持党建引领，积极贯彻落实党的二十大和二十届历次全会、中央经济工作会议精神，高 质量参与实施好国家“十五五”规划。本行紧跟政策导向和监管要求，坚持“零售做强、对公做精、 同业做专”战略不动摇，坚持降本增效、从严治行要求不放松。面对新形势，本行一方面紧跟国家 战略部署，发掘银行发展新动能；另一方面把握科技革命时代机遇，将科技战略作为银行发展核心 驱动力。本行持续完善战略制定和执行检视机制，在坚持既定战略方针的前提下，将年度经营计划 与战略目标有机衔接，以敏锐的市场洞察力，紧密结合内外部形势发展变化，不断丰富和深化战略 内涵，确保经营...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6d480b5f7336": {
+    "evidence_id": "ev_6d480b5f7336",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年本行信息科技风险整体可控，关键业务系统可用率保持在99.999%以上",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 61,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_061"
+    },
+    "original_text": "--- PAGE 61 --- 第三章管理层讨论与分析 60平安银行股份有限公司 2025年年度报告 防范和控制洗钱风险。 报告期内，本行持续完善反洗钱及制裁合规管理体系，进一步强化洗钱及制裁风险管控，贯彻 落实反洗钱新规和监管要求：一是持续优化洗钱风险管理政策和程序，完善反洗钱工作机制，提升 反洗钱管理能力；二是逐渐形成契合国际标准、具有本行特色的反洗钱集中作业管理模式，打造专 业化反洗钱人才队伍，提升监测分析工作质效；三是加强重点领域的洗钱风险管理，强化核心义务 履行，提升风险防控能力；四是积极开展反洗钱宣导培训，提升全员反洗钱意识和能力，切实防范 洗钱风险；五是探索新技术在反洗钱领域的实践应用，完善反洗钱模型监测预警体系，升级反洗钱 系统及分析工具，持续提高反洗钱监测预警能力。 3.5.12法律风险 法律风险是指签订的合同因违反法律或者行政法规可能被依法确认无效；因违约、侵权或者其 他事由被提起诉讼或者申请仲裁，依法可能承担赔偿责任；因业务、管理活动违反法律、法规或者 监管规定，依法可能承担刑事责任或者行政责任的风险。本行建立了有效的法律风险治理架构，并 确定了管理职责分工。董事会是法律风险管理的最高决策机构，承担法律...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6879ffe107e1": {
+    "evidence_id": "ev_6879ffe107e1",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "吸收公众存款；发放短期、中期和长期贷款；办理国内外结算；办理票据承兑与贴现；发行金融债券；代理发行、代理兑付、承销政府债券；买卖政府债券、金融债券；从事同业拆借；买卖、代理买卖外汇；从事银行卡业务；提供信用证服务及担保；代理收付款项及代理保险业务；提供保管箱服务；结汇、售汇业务；离岸银行业务；资产托管业务；办理黄金业务；财务顾问、资信调查、咨询、见证业务；经有关监管机构批准的其他业务",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 11,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_011"
+    },
+    "original_text": "--- PAGE 11 --- 第一章公司简介 10平安银行股份有限公司 2025年年度报告 公司聘请的报告期内履行持续督导职责的保荐机构 □适用√不适用 公司聘请的报告期内履行持续督导职责的财务顾问 □适用√不适用 1.2报告期内公司从事的主要业务 1.2.1从事的主要业务 本行是中国内地首家公开上市的全国性股份制商业银行。经过多年发展，本行已逐渐成长为一 家公司治理规范、网点覆盖广泛、产品服务齐全、风险管控有效的全国性股份制商业银行。同时， 本行着力打造独特竞争力，在科技赋能、零售业务、综合金融等领域形成了较为鲜明的经营特色。 本行经有关监管机构批准，经营下列各项商业银行业务：（一）吸收公众存款；（二）发放短 期、中期和长期贷款；（三）办理国内外结算；（四）办理票据承兑与贴现；（五）发行金融债券； （六）代理发行、代理兑付、承销政府债券；（七）买卖政府债券、金融债券；（八）从事同业拆 借；（九）买卖、代理买卖外汇；（十）从事银行卡业务；（十一）提供信用证服务及担保；（十 二）代理收付款项及代理保险业务；（十三）提供保管箱服务；（十四）结汇、售汇业务；（十五） 离岸银行业务；（十六）资产托管业务；（十七）办理黄金业务；（十...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_4457164e2bb5": {
+    "evidence_id": "ev_4457164e2bb5",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "中国平安保险（集团）股份有限公司及其控股子公司平安寿险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "公司简介",
+      "text_block_id": "doc1_txt_010"
+    },
+    "original_text": "--- PAGE 10 --- 第一章公司简介 9平安银行股份有限公司 2025年年度报告 1.1.3信息披露及备置地点 公司披露年度报告的证券交易所网站 深圳证券交易所http://www.szse.cn 公司披露年度报告的媒体名称及网址《中国证券报》《证券时报》 《上海证券报》《证券日报》 巨潮资讯网http://www.cninfo.com.cn 公司年度报告备置地点 深圳证券交易所、平安银行董事会办公室 1.1.4注册变更情况 统一社会信用代码91440300192185379H 公司上市以来主营业 务的变化情况（如有）无变更 历次控股股东的变更 情况中国平安为本行的控股股东。 2010年5月，本行原第一大股东NewbridgeAsiaAIVIII,L.P.（“新桥投资”） 将其所持有的本行520,414,439股股份全部过户至中国平安名下。2010年6月， 本行向中国平安控股子公司平安寿险非公开发行379,580,000股股份。本次发 行后，中国平安及其控股子公司平安寿险合计持有1,045,322,687股本行股份， 约占本行发行后总股本的29.99%。 2011年7月，本行完成向中国平安发行1,638,336,6...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6cea3b964842": {
+    "evidence_id": "ev_6cea3b964842",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 65,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_065"
+    },
+    "original_text": "--- PAGE 65 --- 第四章公司治理、环境和社会 64平安银行股份有限公司 2025年年度报告 4.4董事、监事和高级管理人员情况 4.4.1基本情况 姓名 职务任职 状态性别年龄任期起止日期期初持 股数 （股）本期增 持股份 数量 （股）本期减 持股份 数量 （股）其他增 减变动 （股）期末持 股数 （股）股份增减 变动的原 因 谢永林 董事长现任男572016.12-换届26,700---26,700 - 冀光恒董事、行长现任男57董事任期： 2023.11-换届 行长任期： 2023.11------ - 郭晓涛 董事现任男542024.9-换届 ----- - 付欣 董事现任女462024.3-换届 ----- - 蔡方方 董事现任女512014.1-换届 ----- - 项有志董事、副行长 首席财务官现任男61董事任期： 2020.1-换届 副行长任期： 2020.6- 首席财务官任 期：2018.1-26,000---26,000 - 杨志群董事、副行长现任男55董事任期： 2020.1-换届 副行长任期： 2019.4-50,000---50,000 - 吴志攀独立董事现任男692023.5-换届 -...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_0e140205d877": {
+    "evidence_id": "ev_0e140205d877",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 6,
+      "section_title": "产品",
+      "text_block_id": "doc1_txt_006"
+    },
+    "original_text": "--- PAGE 6 --- 行长致辞 5平安银行股份有限公司 2025年年度报告 行长致辞 2025年是我国“十四五”规划收官之年，也是为“十五五”规划谋篇布局之年。我国经济运行 总体平稳、稳中有进，改革开放迈出新步伐，新质生产力稳步发展，高质量发展扎实推进。银行业 经营持续保持稳健，支持实体经济能力持续增强。 平安银行坚守金融工作的政治性、人民性，全面贯彻党的二十大和二十届历次全会精神，牢记 金融服务实体经济的根本宗旨，深耕金融“五篇大文章”，坚定不移推进数字化转型，以稳健经营 笃定前行，以实干担当践行使命，经营发展保持稳中有进、质效提升的良好态势。2025年末，资产 总额59,257.77亿元，较上年末增长2.7%。2025年，受市场利率变化和业务结构调整等因素影响，实 现营业收入1,314.42亿元，同比下降10.4%。同时，持续推进降本增效，提升投产效率，强化风险管 控，实现净利润426.33亿元，同比下降4.2%。随着战略改革的持续深化，部分经营指标已呈现向好趋 势，为未来持续健康发展打下了坚实基础。 这一年，我们坚定把稳发展之舵，持续深化党建引领。我们持续坚持并不断加强党的全面领导， 深入推进党的领导融入公司治...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_54f918565f34": {
+    "evidence_id": "ev_54f918565f34",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年进行了分红和债券融资，未进行股票回购或股权激励。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_26dd60c24583": {
+    "evidence_id": "ev_26dd60c24583",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "董事",
+      "text_block_id": "doc1_txt_002"
+    },
+    "original_text": "--- PAGE 2 --- 重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_79fbfa919290": {
+    "evidence_id": "ev_79fbfa919290",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "本行经营中面临的风险主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、战略风险、合规风险、洗钱风险、法律风险和信息科技风险等",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "重要提示",
+      "text_block_id": "CN-000001-2025-FY-p002-b001"
+    },
+    "original_text": "重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取各种措施，有效管理 和控制各类...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_25c0494590d1": {
+    "evidence_id": "ev_25c0494590d1",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年末，不良贷款率1.05%，较上年末下降0.01个百分点；关注贷款占比1.75%，较上年末下降0.18个百分点",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 37,
+      "section_title": "第三章管理层讨论与分析",
+      "text_block_id": "CN-000001-2025-FY-p037-b001"
+    },
+    "original_text": "第三章管理层讨论与分析 36平安银行股份有限公司 2025年年度报告 3.2.7贷款资产质量分析 （1）发放贷款和垫款五级分类情况 （货币单位：人民币百万元） 项目2025年12月31日 2024年12月31日本年末比上年末 增减余额 占比 余额 占比 正常贷款 3,295,809 97.20%3,273,405 97.01% 0.7% 关注贷款 59,328 1.75% 64,960 1.93% (8.7%) 不良贷款 35,703 1.05% 35,738 1.06% (0.1%) 其中：次级 17,561 0.52% 15,707 0.47% 11.8% 可疑 10,924 0.32% 13,531 0.40% (19.3%) 损失 7,218 0.21% 6,500 0.19% 11.0% 发放贷款和垫款本金总额 3,390,840 100.00% 3,374,103 100.00% 0.5% 发放贷款和垫款减值准备 (78,861) (89,600) (12.0%) 其中：以摊余成本计量的发放贷 款和垫款减值准备(78,445) (88,643) (11.5%) 以公允价值计量且其变动 计入其他综合收益的发 放贷款...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_47414efe7f2c": {
+    "evidence_id": "ev_47414efe7f2c",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "本行面临的市场风险主要为利率风险和汇率风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 57,
+      "section_title": "第三章管理层讨论与分析",
+      "text_block_id": "CN-000001-2025-FY-p057-b001"
+    },
+    "original_text": "第三章管理层讨论与分析 56平安银行股份有限公司 2025年年度报告 户授信管理要求、系统建设与数据治理，实现客户大额风险暴露的自动化统计、监测、预警和控制， 通过科技手段动态管控客户集中度风险。 报告期内，除监管豁免客户外，本行同业单一客户、同业集团客户、非同业单一客户、非同业 集团客户风险暴露占一级资本净额的比例，均满足监管达标要求。 3.5.3市场风险 市场风险是指因市场价格（利率、汇率、股票价格和商品价格）的不利变动而使商业银行表内 和表外业务发生损失的风险。本行面临的市场风险主要为利率风险和汇率风险。 本行建立了有效的市场风险治理架构和管理职责分工。董事会是市场风险管理最高决策机构， 承担市场风险管理的最终责任；高级管理层及其下设委员会负责在董事会授权范围内，审批市场风 险管理的重大事项，定期听取市场风险管理执行的汇报；风险管理部是市场风险的牵头管理和具体 执行部门，与前台业务部门保持独立。本行已搭建完善的市场风险管理制度体系，覆盖了市场风险 识别、计量、监测、控制和报告的全流程，定期审视评估市场风险的各项制度和管理办法，并根据 业务和发展现状不断完善、改进、优化流程。本行已建立较为完善的市场风险管理流程，从事前的...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_3e2ceb2b8532": {
+    "evidence_id": "ev_3e2ceb2b8532",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2025年末，本集团流动性覆盖率132.87%，净稳定资金比例106.95%",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 22,
+      "section_title": "第二章会计数据和财务指标",
+      "text_block_id": "CN-000001-2025-FY-p022-b001"
+    },
+    "original_text": "第二章会计数据和财务指标 21平安银行股份有限公司 2025年年度报告 2.4.4流动性覆盖率 （货币单位：人民币百万元） 项目 2025年12月31日 2025年9月30日 2024年12月31日 流动性覆盖率 132.87% 115.64% 136.15% 合格优质流动性资产 597,379 663,135 661,716 净现金流出 449,593 573,452 486,021 注：以上数据为本集团口径，根据《商业银行流动性覆盖率信息披露办法》披露流动性覆盖率信息。 2.4.5净稳定资金比例 （货币单位：人民币百万元） 注：以上数据为本集团口径，根据《商业银行净稳定资金比例信息披露办法》披露净稳定资金比例信息。 2.5分部经营数据 2.5.1盈利与规模 （货币单位：人民币百万元） 项目零售金融业务 批发金融业务 其他业务 合计 2025年2024年2025年2024年2025年2024年2025年2024年 营业 收入金额61,62671,25557,95963,84111,85711,599131,442146,695 占比%46.948.644.143.5 9.0 7.9100.0100.0 营业 支出金额20,...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b2d193f69387": {
+    "evidence_id": "ev_b2d193f69387",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "本行持续完善操作风险管理体系，提升操作风险管理的精细化和智能化水平",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 58,
+      "section_title": "第三章管理层讨论与分析",
+      "text_block_id": "CN-000001-2025-FY-p058-b001"
+    },
+    "original_text": "第三章管理层讨论与分析 57平安银行股份有限公司 2025年年度报告 稳步增长，持续优化资产负债结构，合理控制错配流动性风险；二是优化流动性应急管理体系，审 慎评估未来流动性需求，维持充足的优质流动性资产，持续完善流动性风险预警机制，开展流动性 风险应急演练，有效防范应急流动性风险；三是加强对宏观经济形势和市场流动性的分析，提高流 动性管理的前瞻性和主动性，及时应对市场流动性风险。同时，本行依据监管指标监管标准、流动 性风险偏好、流动性风险管理策略、资产负债结构状况及融资能力等因素制定流动性风险指标限额； 根据本行资产负债结构和产品种类，合理审慎设定压力情景，定期开展流动性风险压力测试，评估 压力情景下的流动性风险抵御能力。 报告期内，本行各项业务稳步发展，优质流动性资产储备充裕，流动性状况保持安全稳健，流 动性风险监管指标均符合监管要求。 3.5.5操作风险 操作风险是指由于内部程序、员工、信息科技系统存在问题以及外部事件造成损失的风险，包 括法律风险，但不包括战略风险和声誉风险。本行建立了完整、独立的操作风险管理架构，董事会 承担操作风险管理的最终责任，监事会承担监督责任，高级管理层承担实施责任，法律合规部负责 操作风险...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_c4fd1fc8eec1": {
+    "evidence_id": "ev_c4fd1fc8eec1",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "本行开展“合规风险治理深化年”活动，专注业务赋能、风险管控、风险处置三种能力的提升",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 60,
+      "section_title": "第三章管理层讨论与分析",
+      "text_block_id": "CN-000001-2025-FY-p060-b001"
+    },
+    "original_text": "第三章管理层讨论与分析 59平安银行股份有限公司 2025年年度报告 相辅相成的媒介形式，全方位提升本行良好的品牌形象；五是不定期开展危机响应处置的模拟演练， 强化各职能部门、分支机构声誉风险管控及舆情处置能力建设；六是强化考核问责，通过完善风险 考核机制，将声誉风险事件的防范处置纳入各单位考核范围，加强源头治理；七是围绕本行支持实 体经济、做好金融“五篇大文章”、消费者权益保护、履行企业社会责任等主题开展多层次、立体 化宣传，提升品牌形象。 3.5.9战略风险 本行坚持党建引领，积极贯彻落实党的二十大和二十届历次全会、中央经济工作会议精神，高 质量参与实施好国家“十五五”规划。本行紧跟政策导向和监管要求，坚持“零售做强、对公做精、 同业做专”战略不动摇，坚持降本增效、从严治行要求不放松。面对新形势，本行一方面紧跟国家 战略部署，发掘银行发展新动能；另一方面把握科技革命时代机遇，将科技战略作为银行发展核心 驱动力。本行持续完善战略制定和执行检视机制，在坚持既定战略方针的前提下，将年度经营计划 与战略目标有机衔接，以敏锐的市场洞察力，紧密结合内外部形势发展变化，不断丰富和深化战略 内涵，确保经营管理和业务发展始终聚焦于战略目标...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_59aeb26e1918": {
+    "evidence_id": "ev_59aeb26e1918",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2023年末，本行绿色贷款余额1,396.47亿元，较上年末增长27.2%。",
+    "source": {
+      "document_id": "CN-000001-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023年年度报告",
+      "report_period": "2023-FY",
+      "disclosure_date": "2024-03-15",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2024-03-15/1219306493.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 91,
+      "section_title": "第五章 环境和社会责任",
+      "text_block_id": "CN-000001-2023-FY-p091-b001"
+    },
+    "original_text": "第五章 环境和社会责任 90 平安银行股份有限公司 2023年年度报告 第五章 环境和社会责任 本行将可持续发展理念融入公司经营管理，为股东、客户、员工、合作伙伴、社区和环境创造 价值，打造绿色银行、价值银行、人文银行、爱心银行、品牌银行，以责任金融推动经济发展、社 会进步和环境改善，助力人民群众实现美好生活。董事会是本行环境、社会与管治（ ESG）事务最高 决策及负责机构，本行董事会高度关注 ESG工作，持续完善 ESG管治架构。 有关具体内容请见本行于 2024年3月15日发布在巨潮资讯网 （http://www .cninfo.com.cn ）上的 《平安银行股份有限公司 2023年可持续发展报告》。 5.1 环境责任 5.1.1 重大环保问题 公司及其子公司是否属于环境保护部门公布的重点排污单位 □是 √否 报告期内因环境问题受到行政处罚的情况 公司或子公司名称 处罚原因 违规情形 处罚结果 对上市公司生产经营的影响 公司的整改措施 不适用 不适用 无 不适用 不适用 不适用 本行不存在需要披露的其他环境信息。 5.1.2 积极践行绿色金融 本行坚定贯彻党的二十大提出的绿色发展要求，认真践行国家碳中和战略，深 入布局...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f7c49da0e5dc": {
+    "evidence_id": "ev_f7c49da0e5dc",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2023年，本行投放乡村振兴支持资金371.09亿元，累计投放1,063.63亿元。",
+    "source": {
+      "document_id": "CN-000001-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023年年度报告",
+      "report_period": "2023-FY",
+      "disclosure_date": "2024-03-15",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2024-03-15/1219306493.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 93,
+      "section_title": "第五章 环境和社会责任",
+      "text_block_id": "CN-000001-2023-FY-p093-b001"
+    },
+    "original_text": "第五章 环境和社会责任 92 平安银行股份有限公司 2023年年度报告 发挥金融科技优势，将“真普惠、真小微”落到实处。 本行通过不断深化线上化、数字化布局， 以多元业务模式协同发展， 持续加大普惠金融支持力度 。在服务上， 通过人机结合、线上线下相结 合的服务方式，服务更多优质普惠客户群体 ，拓宽小微客户覆盖面 。在产品上， 通过对供应链 及产 业链、科创成果等多维经营数据的不断丰富 ，全方位识别和认定客户的经营 情况，同时针对分支行 当地特色行业、市场、商圈，结合地域及行业、产 业特点进行产品定制，为小微客户提供更加贴合 其经营特点的金融产品 。同时， 本行积极响应监管机构为小微客户减费让利的号召 ，通过发送利息 券、减免企业及个人结算 、开户等费用， 降低普惠小微客户金融服务获得成本 ，助力小微企业减负。 2023年末，本行单户授信 1,000万元及以下不含票据融资的小微企业贷款（以下简称“普惠型 小微企业贷款” ）累计户数 103.22万户，其中贷款金额在 100万元以下的户数占比 83.9%，小微企业 主和个体工商户占绝对主体；贷款余额 5,720.80亿元，较上年末增长 8.3%，其中信用类普惠型小微 企业贷款余...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_4ff9238e6f44": {
+    "evidence_id": "ev_4ff9238e6f44",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2023年末，本行普惠型小微企业贷款余额5,720.80亿元，较上年末增长8.3%。",
+    "source": {
+      "document_id": "CN-000001-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023年年度报告",
+      "report_period": "2023-FY",
+      "disclosure_date": "2024-03-15",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2024-03-15/1219306493.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 92,
+      "section_title": "第五章 环境和社会责任",
+      "text_block_id": "CN-000001-2023-FY-p092-b001"
+    },
+    "original_text": "第五章 环境和社会责任 91 平安银行股份有限公司 2023年年度报告 的商业银行。 专业赋能实体经济绿色高质量发展。 本行积极参与国家绿色金融相关评价标准、考核指标、行 业教材的撰写、制定和修订工作，为各级绿色金融政策的制定建言献策。本行持续开展转型金融、 碳金融、 碳账户等 10余项监管前沿课题研究， 通过不断提升行业专业能力， 支持实体经济绿色发展。 2023年3月，本行参与人民银行深圳中心支行牵头的转型金融研究课题，获深圳经济特区金融学会 一等奖； 2023年4月，本行发布了新形势下我国银行业首部绿色金融白皮书，为绿色金融支持经济 高质量发展注入专业创新 动能。 本行持续深耕绿色金融领域，积极参与国内外应对气候变化行动。 2023年11月，本行获得“可 持续市场倡议” （ SMI）颁发的《大地宪章》徽章，成为全球获得该荣誉的三家银行之一； 2023年以 来，本行先后荣获广东金融学会 2023年“广东绿色金融改革创新推广案例奖” 、深圳绿色金融协会 2023年“绿色金融产品创新奖”及网易财经 2023年度“绿色金融先锋奖” 。 5.1.3 推进绿色低碳运营 本行坚持“低碳环保从我做起” ，将绿色运营贯穿于全行各业务条线...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_98c3b7832922": {
+    "evidence_id": "ev_98c3b7832922",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "business_model",
+    "claim": "吸收存款、发放贷款、办理结算、资金同业等商业银行业务，坚持'零售做强、对公做精、同业做专'战略方针",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 11,
+      "section_title": "第一章公司简介",
+      "text_block_id": "CN-000001-2025-FY-p011-b001"
+    },
+    "original_text": "第一章公司简介 10平安银行股份有限公司 2025年年度报告 公司聘请的报告期内履行持续督导职责的保荐机构 □适用√不适用 公司聘请的报告期内履行持续督导职责的财务顾问 □适用√不适用 1.2报告期内公司从事的主要业务 1.2.1从事的主要业务 本行是中国内地首家公开上市的全国性股份制商业银行。经过多年发展，本行已逐渐成长为一 家公司治理规范、网点覆盖广泛、产品服务齐全、风险管控有效的全国性股份制商业银行。同时， 本行着力打造独特竞争力，在科技赋能、零售业务、综合金融等领域形成了较为鲜明的经营特色。 本行经有关监管机构批准，经营下列各项商业银行业务：（一）吸收公众存款；（二）发放短 期、中期和长期贷款；（三）办理国内外结算；（四）办理票据承兑与贴现；（五）发行金融债券； （六）代理发行、代理兑付、承销政府债券；（七）买卖政府债券、金融债券；（八）从事同业拆 借；（九）买卖、代理买卖外汇；（十）从事银行卡业务；（十一）提供信用证服务及担保；（十 二）代理收付款项及代理保险业务；（十三）提供保管箱服务；（十四）结汇、售汇业务；（十五） 离岸银行业务；（十六）资产托管业务；（十七）办理黄金业务；（十八）财务顾问、资信调查、 咨询、...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_2b0a84212b9c": {
+    "evidence_id": "ev_2b0a84212b9c",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "ownership",
+    "claim": "无实际控制人",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "第一章公司简介",
+      "text_block_id": "CN-000001-2025-FY-p010-b001"
+    },
+    "original_text": "第一章公司简介 9平安银行股份有限公司 2025年年度报告 1.1.3信息披露及备置地点 公司披露年度报告的证券交易所网站 深圳证券交易所http://www.szse.cn 公司披露年度报告的媒体名称及网址《中国证券报》《证券时报》 《上海证券报》《证券日报》 巨潮资讯网http://www.cninfo.com.cn 公司年度报告备置地点 深圳证券交易所、平安银行董事会办公室 1.1.4注册变更情况 统一社会信用代码91440300192185379H 公司上市以来主营业 务的变化情况（如有）无变更 历次控股股东的变更 情况中国平安为本行的控股股东。 2010年5月，本行原第一大股东NewbridgeAsiaAIVIII,L.P.（“新桥投资”） 将其所持有的本行520,414,439股股份全部过户至中国平安名下。2010年6月， 本行向中国平安控股子公司平安寿险非公开发行379,580,000股股份。本次发 行后，中国平安及其控股子公司平安寿险合计持有1,045,322,687股本行股份， 约占本行发行后总股本的29.99%。 2011年7月，本行完成向中国平安发行1,638,336,654股股份购买其持有 的原平安银...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_12e2fd19f5c8": {
+    "evidence_id": "ev_12e2fd19f5c8",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 9,
+      "section_title": "第一章公司简介",
+      "text_block_id": "CN-000001-2025-FY-p009-b001"
+    },
+    "original_text": "第一章公司简介 8平安银行股份有限公司 2025年年度报告 第一章公司简介 1.1公司基本情况 1.1.1公司信息 股票简称 平安银行 股票代码 000001 股票上市证券交易所 深圳证券交易所 公司的中文名称 平安银行股份有限公司 公司的中文简称 平安银行 公司的外文名称 PingAnBankCo.,Ltd. 公司的外文名称缩写 PAB 公司的法定代表人 谢永林 注册地址 中华人民共和国广东省深圳市罗湖区深南东路5047号 公司注册地址历史变更情况本行于1987年12月22日正式设立，注册地址为中华人民共和国广 东省深圳市罗湖区蔡屋围新十坊1号 1990年11月6日，因总行办公迁址，本行注册地址变更为中华人 民共和国广东省深圳市宝安南路45号湖北宝丰大厦1-6楼 1998年4月24日，因总行办公迁址，本行注册地址变更为中华人 民共和国广东省深圳市罗湖区深南中路178号 2002年4月27日，因总行办公大楼门牌变更，本行注册地址变更 为中华人民共和国广东省深圳市罗湖区深南东路5047号 注册地址的邮政编码 518001 办公地址中国广东省深圳市罗湖区深南东路5047号 中国广东省深圳市福田区益田路5023号平安金融中心B座...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f4580d0dcb7f": {
+    "evidence_id": "ev_f4580d0dcb7f",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年，本行进行了现金分红（每10股5.96元），并发行了多只债券，合计发行规模超过1265亿元。",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "重要提示",
+      "text_block_id": "CN-000001-2025-FY-p002-b001"
+    },
+    "original_text": "重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取各种措施，有效管理 和控制各类...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_95c49a36e389": {
+    "evidence_id": "ev_95c49a36e389",
+    "company_id": "CN-SZSE-000001",
+    "document_id": "CN-000001-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000001-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-21",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-21/1225022887.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "重要提示",
+      "text_block_id": "CN-000001-2025-FY-p002-b001"
+    },
+    "original_text": "重要提示 1平安银行股份有限公司 2025年年度报告 重要提示 1、本行董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在虚假记载、 误导性陈述或重大遗漏，并承担个别和连带的法律责任。 2、本行董事长谢永林、行长冀光恒、副行长兼首席财务官项有志、会计机构负责人郁辰声明： 保证本年度报告中财务报告的真实、准确、完整。 3、本行第十三届董事会第三次会议审议了2025年年度报告正文及摘要。本次董事会会议应出 席董事12人，实到董事12人。会议一致同意本报告。 4、安永华明会计师事务所（特殊普通合伙）根据国内审计准则对本行编制的2025年度财务报 告进行了审计，并出具了标准无保留意见的审计报告。 5、本报告涉及未来计划等前瞻性陈述不构成本行对投资者的实质承诺，投资者及相关人士均应 当对此保持足够的风险认识，并且应当理解计划、预测与承诺之间的差异。 6、本行请投资者认真阅读本年度报告全文，并特别注意下列风险因素：本行经营中面临的风险 主要有信用风险、市场风险、流动性风险、操作风险、国别风险、银行账簿利率风险、声誉风险、 战略风险、合规风险、洗钱风险、法律风险和信息科技风险等，本行已经采取各种措施，有效管理 和控制各类...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b3dad3b225d8": {
+    "evidence_id": "ev_b3dad3b225d8",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "可能面临的风险包括：宏观经济与市场波动风险、市场竞争加剧风险、新产品和新技术开发风险、原材料价格波动及供应风险",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 39,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p039-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 39 面向未来，公司将以 “零碳科技 ”为核心引擎 ，以数智化、全球化、低碳化经营导向，全面挖掘 “全域增量 ” 战略机遇，驱动公司实现高质量、可持续的跨越式发展。 在数智化领域，公司将数字与智能技术全面融入研发、采购、制造、销售及管理各环节，持续推进 材料科学与智能平台的融合创新，加快制造工艺与电芯设计的智能化进程，通过构建虚实互联的数字孪 生体系，确保从基础科学突破到技术应用，再到产品商品化的高效价值转化，实现大规模、高质量、敏 捷交付的极限制造能力。 在全球化方面，公司将以 “零碳新能源科技 ”推动全球业务发展 ，系统性构建支撑全球业务增长的 “全 域增量 ”价值链，同时加速推进海外产能的规模化建设与运营，完善全球供应链网络及关键资源与回收产 业布局，广泛汇聚国际化顶尖人才，打造高效 协同、合规稳健的跨国运营管控体系。 低碳化维度，公司全面推进零碳工厂与零碳生态建设，在实现自身核心运营碳中和的基础上，协同 上下游产业链，系统性降低产品全生命周期的碳足迹。此外，公司积极协同 产业链伙伴 ，探索并构建区 域性的零碳生态圈，将低碳竞争力转化为开辟新增长曲线、定义未来能源...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6e1d573fec51": {
+    "evidence_id": "ev_6e1d573fec51",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "ESG评级MSCI AA级行业领先，首次入选标普全球《可持续发展年鉴》",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 4,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p004-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 4 而尊重也来源于对可持续发展和社会责任的高度重视，正如我们的 ESG管理成效获得广泛国际认 可， MSCI评级 AA级行业领先，并首次入选标普全球《可持续发展年鉴》 。此外，我们积极回馈社会， 携旗下成员企业峰飞航空 向香港大埔火灾救援工作捐赠 1,500万港元，履行企业社会责任。 纵观人类文明的发展历程，科技革命始终伴随着能源革命，而能源利用效率，是文明跃迁的关键变 量。 在下一代以可再生能源为主体的新型能源系统中，电 池不再只是交通工具或储能设备的组成部分， 而将成为支撑能源系统缓冲、稳定与调度的基础单元。新能源也不再是周期性的投资品，而是长期、系 统性的基础设施。 依托高度复杂的系统工程能力、长生命周期的可靠性，以及大规模交付的一致性，宁德时代不断降 低系统成本、提升整体效率，并参与定义未来能量流动和使用的方式，以零碳科技创新的先锋，推动全 球能源结构的根本变革。 而这无限机遇，我们也将始终与股东共同见证、共同分享。 公司延续 高比例分红的政策 ，连续三年 以净利润的 50%实施现金分红，今年分红完成后累计分红将接近千亿元。在以高强度科 技创新驱动业务 拓展的同...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_e585a01f03d3": {
+    "evidence_id": "ev_e585a01f03d3",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "business_model",
+    "claim": "主要从事动力电池、储能电池的研发、生产、销售，产品包括电芯、模组/电箱、电池包，涵盖磷酸铁锂电池、三元电池、钠离子电池等",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 14,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p014-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 14 第三节 管理层讨论与分析 一、报告期内公司从事的主要业务 公司需遵守《深圳证券交易所上市公司自律监管指引第 4号——创业板行业信息披露》中的 “锂离子 电池产业链相关业务 ”的披露要求。 1、主要业务 公司是全球领先的零碳新能源科技公司，主要从事动力电池、储能电池的研发、生产、销售，以推 动移动式化石能源替代、固定式化石能源替代，并通过电动化和智能化实现市场应用的集成创新。截至 报告期末，公司已在全球设立六大研发中心、 24家电池工厂，覆盖全球广泛的新能源应用客户群体。 公司在锂电池领域深耕多年，具备了全链条自主、高效的研发能力，在电池材料、电池系统、电池 回收等产业链领域拥有核 心技术优势及前瞻性研发布局，通过材料及材料体系创新、系统结构创新、绿 色极限制造创新及商业模式创新为全球新能源应用提供一流的解决方案和服务。公司将锂电池领域的深 厚沉淀延展至钠电池等其他化学体系，形成全面、先进的产品矩阵，可应用于乘用车、商用车、表前储 能、表后储能等领域，以及船舶、航空器、数据中心等新兴应用场景，推出复杂应用场景下的创新解决 方案，包括助推全面电动化的换电业务、 完善产...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_111e13e3ed2b": {
+    "evidence_id": "ev_111e13e3ed2b",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "ownership",
+    "claim": "曾毓群",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 97,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p097-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 97 3、现存的内部职工股情况 □适用 不适用 三、股东和实际控制人情况 1、公司股东数量及持股情况 （1）前 10名股东持股基本情况 单位：股 报告期末 普通股股 东总数 249,777 年度报告披 露日前上一 月末普通股 股东总数 257,489 报告期 末表决 权恢复 的优先 股股东 总数 0 年度报告 披露日前 上一月末 表决权恢 复的优先 股股东总 数 0 持有特别 表决权股 份的股东 总数 0 持股 5%以上的股东或前 10名股东持股情况（不含通过转融通出借股份） 股东名称 股东性质 持股 比例 报告期末持股 数量 报告期内增 减变动情况 持有有限售 条件的股份 数量 持有无限售条 件的股份数量 质押、标记或冻 结情况 股份 状态 数量 厦门瑞庭投资 有限公司 境内一般法人 22.45% 1,024,704,949 1,024,704,949 香港中央结算 有限公司 境外法人 15.17% 692,541,784 151,000,312 692,541,784 黄世霖 境内自然人 9.21% 420,388,947 -45,632,363 420,388,...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f50383fb2fc5": {
+    "evidence_id": "ev_f50383fb2fc5",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p010-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 10 第二节 公司简介和主要财务指标 一、公司信息 A股股票简称 宁德时代 A股股票代码 300750 H股股票简称 寧德時代 H股股票代码 03750 A股股票上市证券交易所 深圳证券交易所 H股股票上市证券交易所 香港联合交易所有限公司 公司的中文名称 宁德时代新能源科技股份有限公司 公司的中文简称 宁德时代 公司的外文名称 Contemporary Amperex Technology Co.,Ltd. 公司的外文名称缩写 CATL 公司的法定代表人 曾毓群 注册地址 福建省宁德市蕉城区漳湾镇新港路 2号 注册地址的邮政编码 352100 公司注册地址历史变更情况 无 办公地址 福建省宁德市蕉城区漳湾镇新港路 2号 办公地址的邮政编码 352100 公司网址 www.catl.com 电子信箱 CATL -IR@catl.com 二、联系人和联系方式 董事会秘书 兼联席公司秘书 证券事务代表 姓名 蒋理 陈津 联系地址 福建省宁德市蕉城区漳湾镇新港路 2号 福建省宁德市蕉城区漳湾镇新港路 2号 电话 0593 -8901666 0593 -8901666 传真 0...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_62948d144c0f": {
+    "evidence_id": "ev_62948d144c0f",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 17,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p017-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 17 （1）动力电池行业 受益于新能源在售车型数量增加、智能化加速、充换电基础设施持续完善等因素，全球新能源车市 场需求持续增长。根据 SNE Research 数据， 2025年全球新能源车销量为 2,147.0万辆，同比 增长 21.5%。 国内市场，根据中国汽车工业协会数据， 2025年中国新能源车销量为 1,387.5万辆，其中新能源乘用车销 量为 1,300.5万辆，同比增长 17.7%，渗透率提升至 54.0%；新能源商用车销量为 87.1万辆，同比增长 63.7%，渗透率提升至 26.9%；海外市场，根据欧洲汽车制造商协会数据， 2025年欧洲新能源乘用车销量 为385.8万辆，同比增长 30.9%，渗透率达 29.1%。新能源车销量增长、单车带电量提升带动动力电池需 求持续增长，根据 SNE Research 数据， 2025年全球动力电池使用量为 1,187GWh ，同比增长 31.7%。 （2）储能行业 在全球电力需求增长、低碳转型趋势下，全球储能市场需求快速增长。 根据 IEA，全球电力需求持续 增长，其推动力来自于工业、交通及建筑领域日益 提升的...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_b2ab0926f6e2": {
+    "evidence_id": "ev_b2ab0926f6e2",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年H股上市募集410亿港元；2025年度利润分配预案每10股派69.57元；连续三年50%净利润分红。",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 20,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p020-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 20 户市场的拓展，并形成正向反馈循环，以 “飞轮效应 ”推动公司整体价值持续增长，不断加固 “全球领先的 零碳新能源科技公司 ”的竞争壁垒。 具体而言，公司核心竞争力体现在以下方面： 一是研发为核，产品矩阵持续迭代。 依托行业顶尖的 研发团队与持续高强度的研发投入，公司构建起覆盖材料、电芯、系统及回收的全链条自主研发能力， 是行业唯一入选 “全球百强创新机构 ”的企业，助力宁德市跻身全球创新强度第四名。报告期内，公司拥有 及申请的国内外专利总数达 54,538项，创新成果密集落地。基于此，公司相继推出 “二代神行超充 ”、“骁 遥双核 ”及“钠新电池 ”等前沿产品，以全面领先的产品力为市场拓展提供坚实支撑。 二是市场领跑，全球 化根基稳固。 公司动力与储能电池市占率已连续多年领跑全球。在乘用车领域，中高端市场主导地位稳 固，经济型市场持续突破；在储能 领域，系统集成能力不断增强，并与多家全球领先的科技企业建立合 作。同时，公司稳步推进海外工厂建设，持续完善全球服务网络，以坚实的全球化布局，巩固长期竞争 优势。三是极限制造，铸就品质与效率标杆。 公司拥有全球规模最大的现...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_882059605a51": {
+    "evidence_id": "ev_882059605a51",
+    "company_id": "CN-SZSE-300750",
+    "document_id": "CN-300750-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-300750-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025年年度报告",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-10",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 39,
+      "section_title": "宁德时代新能源科技股份有限公司 2025年年度报告全文",
+      "text_block_id": "CN-300750-2025-FY-p039-b001"
+    },
+    "original_text": "宁德时代新能源科技股份有限公司 2025年年度报告全文 39 面向未来，公司将以 “零碳科技 ”为核心引擎 ，以数智化、全球化、低碳化经营导向，全面挖掘 “全域增量 ” 战略机遇，驱动公司实现高质量、可持续的跨越式发展。 在数智化领域，公司将数字与智能技术全面融入研发、采购、制造、销售及管理各环节，持续推进 材料科学与智能平台的融合创新，加快制造工艺与电芯设计的智能化进程，通过构建虚实互联的数字孪 生体系，确保从基础科学突破到技术应用，再到产品商品化的高效价值转化，实现大规模、高质量、敏 捷交付的极限制造能力。 在全球化方面，公司将以 “零碳新能源科技 ”推动全球业务发展 ，系统性构建支撑全球业务增长的 “全 域增量 ”价值链，同时加速推进海外产能的规模化建设与运营，完善全球供应链网络及关键资源与回收产 业布局，广泛汇聚国际化顶尖人才，打造高效 协同、合规稳健的跨国运营管控体系。 低碳化维度，公司全面推进零碳工厂与零碳生态建设，在实现自身核心运营碳中和的基础上，协同 上下游产业链，系统性降低产品全生命周期的碳足迹。此外，公司积极协同 产业链伙伴 ，探索并构建区 域性的零碳生态圈，将低碳竞争力转化为开辟新增长曲线、定义未来能源...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_a8e9c4657f5c": {
+    "evidence_id": "ev_a8e9c4657f5c",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "公司未来发展面临的主要风险包括宏观经济波动风险、生产要素价格波动风险、市场竞争加剧风险、海外市场风险和汇率波动风险。",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 38,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p038-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 37拓展国际市场新蓝图。立足全球不同区域市场特点与产品类型差异，构建适配区域需求的价格审核与利润管控机制， 持续提升国际市场竞争优势。深化国际市场本土化运营，优化区域供应链布局，有效降低贸易摩擦带来的不利影响，提高 对海外市场的响应速度与服务效率，进一步扩大产品海外覆盖范围，打造国际市场发展新蓝图。 激活工业产品新潜能。聚焦工业领域重点行业与核心客户，推进新领域产品对标研发与市场开发，推动工业板块提质 增效，强化工业板块整体竞争力。 （2）强化质量风险预防，提升质量管控水平 健全预防机制。强化全员全生命周期质量责任意识，聚焦高故障率关键部件，深入开展失效分析与专项整改工作，从 根本上解决质量痛点。加强核心零部件选型准入管理与质量验证力度，严格把控零部件质量关，实现从源头减少质量潜在 隐患。加严新品评审标准与质量风险管控流程，全面防范批量性质量问题发生，确保产品质量稳定可靠。 升级管控方法。加大检验技术攻关力度，系统开展零部件可靠性、寿命试验标准的研究与优化工作，完善全流程质量 检验标准体系。搭建统一、集成、可扩展的数字化质量管理平台，打通研发、生产、采购、检验等全链条质量数据壁...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_a9eca6e9c81f": {
+    "evidence_id": "ev_a9eca6e9c81f",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "原材料价格波动风险，主要原材料为铜、钢材、铝材和塑料。",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 39,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p039-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 38当前国内外经济环境复杂多变，宏观经济增速放缓、外部不确定性加剧，将影响消费者可支配收入、消费信心等，进 而影响客户对公司产品的需求和购买力。公司将持续密切跟踪宏观政策与经济走势，坚持自主创新与高质量发展，持续提 升智能制造能力，灵活调整经营策略，积极应对宏观经济波动对公司经营的影响。 （2）生产要素价格波动风险 公司产品的主要原材料为各种等级的铜材、钢材、铝材和塑料等。近年来，铜、铝等原材料价格持续上涨，影响公司 盈利空间。公司凭借规模化采购、产业链协同与精细化管理等优势，通过套期保值、战略备货、物料标准化通用化、工艺 降本、技术替代等多措并举，平抑原材料波动对经营的影响。 （3）市场竞争加剧风险 家用电器领域市场竞争充分，市场参与者涵盖国内头部企业、跨界新势力及国际品牌，行业竞争持续升温。若公司不 能持续巩固和扩大竞争优势，将面临市场份额损失的风险。公司将继续加大研发投入，通过持续的技术创新和品质引领巩 固品牌影响力和市场地位。 （4）海外市场风险 近年来全球局势复杂多变，风险可能持续上升，对公司海外市场业务开展带来不利影响。公司将继续加大海外市场拓 展力度，优化海外市场...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_566b8c909005": {
+    "evidence_id": "ev_566b8c909005",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "家用电器领域市场竞争加剧风险。",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 39,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p039-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 38当前国内外经济环境复杂多变，宏观经济增速放缓、外部不确定性加剧，将影响消费者可支配收入、消费信心等，进 而影响客户对公司产品的需求和购买力。公司将持续密切跟踪宏观政策与经济走势，坚持自主创新与高质量发展，持续提 升智能制造能力，灵活调整经营策略，积极应对宏观经济波动对公司经营的影响。 （2）生产要素价格波动风险 公司产品的主要原材料为各种等级的铜材、钢材、铝材和塑料等。近年来，铜、铝等原材料价格持续上涨，影响公司 盈利空间。公司凭借规模化采购、产业链协同与精细化管理等优势，通过套期保值、战略备货、物料标准化通用化、工艺 降本、技术替代等多措并举，平抑原材料波动对经营的影响。 （3）市场竞争加剧风险 家用电器领域市场竞争充分，市场参与者涵盖国内头部企业、跨界新势力及国际品牌，行业竞争持续升温。若公司不 能持续巩固和扩大竞争优势，将面临市场份额损失的风险。公司将继续加大研发投入，通过持续的技术创新和品质引领巩 固品牌影响力和市场地位。 （4）海外市场风险 近年来全球局势复杂多变，风险可能持续上升，对公司海外市场业务开展带来不利影响。公司将继续加大海外市场拓 展力度，优化海外市场...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_04ce91aa68e3": {
+    "evidence_id": "ev_04ce91aa68e3",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "海外市场风险，受当地政治经济局势、法律体系、监管制度影响。",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 39,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p039-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 38当前国内外经济环境复杂多变，宏观经济增速放缓、外部不确定性加剧，将影响消费者可支配收入、消费信心等，进 而影响客户对公司产品的需求和购买力。公司将持续密切跟踪宏观政策与经济走势，坚持自主创新与高质量发展，持续提 升智能制造能力，灵活调整经营策略，积极应对宏观经济波动对公司经营的影响。 （2）生产要素价格波动风险 公司产品的主要原材料为各种等级的铜材、钢材、铝材和塑料等。近年来，铜、铝等原材料价格持续上涨，影响公司 盈利空间。公司凭借规模化采购、产业链协同与精细化管理等优势，通过套期保值、战略备货、物料标准化通用化、工艺 降本、技术替代等多措并举，平抑原材料波动对经营的影响。 （3）市场竞争加剧风险 家用电器领域市场竞争充分，市场参与者涵盖国内头部企业、跨界新势力及国际品牌，行业竞争持续升温。若公司不 能持续巩固和扩大竞争优势，将面临市场份额损失的风险。公司将继续加大研发投入，通过持续的技术创新和品质引领巩 固品牌影响力和市场地位。 （4）海外市场风险 近年来全球局势复杂多变，风险可能持续上升，对公司海外市场业务开展带来不利影响。公司将继续加大海外市场拓 展力度，优化海外市场...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_9e8170f747b8": {
+    "evidence_id": "ev_9e8170f747b8",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "汇率波动风险，人民币汇率波动可能产生汇兑损益。",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 39,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p039-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 38当前国内外经济环境复杂多变，宏观经济增速放缓、外部不确定性加剧，将影响消费者可支配收入、消费信心等，进 而影响客户对公司产品的需求和购买力。公司将持续密切跟踪宏观政策与经济走势，坚持自主创新与高质量发展，持续提 升智能制造能力，灵活调整经营策略，积极应对宏观经济波动对公司经营的影响。 （2）生产要素价格波动风险 公司产品的主要原材料为各种等级的铜材、钢材、铝材和塑料等。近年来，铜、铝等原材料价格持续上涨，影响公司 盈利空间。公司凭借规模化采购、产业链协同与精细化管理等优势，通过套期保值、战略备货、物料标准化通用化、工艺 降本、技术替代等多措并举，平抑原材料波动对经营的影响。 （3）市场竞争加剧风险 家用电器领域市场竞争充分，市场参与者涵盖国内头部企业、跨界新势力及国际品牌，行业竞争持续升温。若公司不 能持续巩固和扩大竞争优势，将面临市场份额损失的风险。公司将继续加大研发投入，通过持续的技术创新和品质引领巩 固品牌影响力和市场地位。 （4）海外市场风险 近年来全球局势复杂多变，风险可能持续上升，对公司海外市场业务开展带来不利影响。公司将继续加大海外市场拓 展力度，优化海外市场...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_087adf085b4b": {
+    "evidence_id": "ev_087adf085b4b",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "截至2023年12月31日，格力电器按行业惯例为购房客户的按揭贷款提供阶段性担保，尚未结清的担保金额为205,829.20万元。",
+    "source": {
+      "document_id": "CN-000651-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023-FY",
+      "report_period": "2023-FY",
+      "disclosure_date": "2024-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2024-04-30/1219928418.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 236,
+      "section_title": "资产负债表",
+      "text_block_id": "CN-000651-2023-FY-p236-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司 2023年年度报告全文 第 236 页 共 249 页 债务，以及由于基准日之前浙江节能的过错而导致在基准日之后产生的债务或责任的，由浙江节能 承担，如上述债务由天津节能先行承担或天津节能因此遭受处罚的，天津节能有权向浙江节能追偿， 如水发能源有应支付给浙江节能款项的，浙江节能同意水发能源直接扣除补偿给天津节能，不足部 分天津节能有权继续向公司追偿。前述浙江节能应承担的责任可以从水发能源应支付的股权交易价 款或者浙江 节能在天津节能中的分红中直接扣除，不足部分由浙江节能赔偿。 （2）本公司按行业惯例为购房客户的按揭贷款提供担保，主要为阶段性担保，担保期限自保 证合同生效之日起，至客户所购产品的房地产证办出及抵押登记手续办妥并交付银行执管之日止， 截至 2023年12月31日，尚未结清的担保金额为 205,829.20 万元。 3、 其他 无。 十四、资产负债表日后事项 1、 重要的非调整事项 无。 2、 利润分配情况 根据董事会第十二届第十八次会议决议，公司 2023年年度利润分配预案为：拟暂以 2024年4 月29日享有利润分配权的股份总额 5,521,943 ,646股（股本 5,631,405...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_a51ebde48713": {
+    "evidence_id": "ev_a51ebde48713",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "截至2023年12月31日，格力钛担保总金额为2,994,536,614.53元，其中对合并报表外的公司提供的担保总金额为1,983,701,900.57元。",
+    "source": {
+      "document_id": "CN-000651-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023-FY",
+      "report_period": "2023-FY",
+      "disclosure_date": "2024-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2024-04-30/1219928418.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 237,
+      "section_title": "珠海格力电器股份有限公司 2023年年度报告全文",
+      "text_block_id": "CN-000651-2023-FY-p237-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司 2023年年度报告全文 第 237 页 共 249 页 3、 资产置换 （1）非货币性资产交换 无。 （2）其他资产置换 无。 4、 年金计划 无。 5、 终止经营 项目 收入 费用 利润总额 所得税费用 净利润 归属于母公司 所有者的终止 经营利润 格力美国销售有限责 任公司 189,082.78 -189,082.78 5,638.96 -194,721.74 -194,721.74 （续表） 项目 经营活动现金流量净额 投资活动现金流量净额 筹资活动现金流量净额 格力美国销售有限责任公司 -3,635,051.24 6、 其他对投资者决策有影响的重要事项 （1） 公司担保 截至 2023年12月31日，格力钛担保总金额为 2,994,536,614.53 元，其中格力钛子公司内部为 短期借款、长期借款、应付账款（ E信通）、长期应付款等款项提供担保总金额为 1,010,834,713.96 元；对合并报表外的公司提供的担保总金额为 1,983,701,900.57 元（系格力钛为其公交公司等客户 融资租赁购车业务提供的存量担保）。 （2） 财务资助 1）格力钛为原股东及其关联方魏银仓、孙国华、...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f287667d74de": {
+    "evidence_id": "ev_f287667d74de",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "2023年度，格力电器对合并格力钛形成的商誉计提减值准备206,861,546.92元。",
+    "source": {
+      "document_id": "CN-000651-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023-FY",
+      "report_period": "2023-FY",
+      "disclosure_date": "2024-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2024-04-30/1219928418.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 189,
+      "section_title": "珠海格力电器股份有限公司 2023年年度报告全文",
+      "text_block_id": "CN-000651-2023-FY-p189-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司 2023年年度报告全文 第 189 页 共 249 页 被投资单位名称或形成商誉的事 项 期初余额 本期增加 本期减少 期末余额 计提 其他 处置 格力钛新能源股份有限公司 151,720,775.11 206,861,546.92 358,582,322.03 南京华新有色金属有限公司 274,115,040.11 274,115,040.11 合肥晶弘电器有限公司 51,804,350.47 51,804,350.47 沈阳水务热源发展有限公司 372,585.32 372,585.32 合计 478,012,751.01 206,861,546.92 684,874,297.93 （3）商誉所在资产组或资产组组合的相关信息 名称 所属资产组或组合的构成及依据 所属经营分部及依据 是否与以前年 度保持一致 格力钛资产组 资产组的经营性资产（不包括非经营性资产、 溢余资产），可以带来独立的现金流的资产组 根据公司管理要求和业 务模块划分 是 盾安环境制冷配件 资产组 包括固定资产、在建工程、使用权资产、无形 资产、长期待摊费用、其他长期资产，依据为 可以带来独立的现金流的资产组 盾安禾田、珠海华宇...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f588b569837f": {
+    "evidence_id": "ev_f588b569837f",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "business_model",
+    "claim": "空调、暖通设备、生活电器、工业装备等产品的研发、生产和销售",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p010-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 9第三节管理层讨论与分析 一、报告期内公司从事的主要业务 公司是一家多元化、科技型的全球工业集团，旗下拥有格力、TOSOT、晶弘、凌达、凯邦、新元等品牌，产业布局覆盖 消费和工业两大领域。消费领域覆盖家用空调、暖通设备、冰箱、洗衣机、热水器、厨房电器、环境电器等产品，为家庭 及商用场景提供全品类智能家电及智能楼宇系统解决方案；工业领域聚焦数控机床、工业机器人、精密模具、电机、压缩 机、电容、半导体、精密铸造、基础材料、工业储能等板块，构建自主可控的产业链体系，助力中国制造转型升级。目前， 格力产品已服务全球190多个国家和地区，坚持以核心科技与高品质服务用户，持续满足人们对美好生活的追求。 面对复杂多变的市场环境，公司坚守实体经济，发展自主品牌，坚持自主创新，不断深化渠道建设，纵向深挖技术和 质量护城河，横向拓展高协同赛道，实现可持续发展。2025年，公司实现营业总收入1,711.18亿元，同比下降9.96%；实 现归属于上市公司股东的净利润290.03亿元，同比下降9.89%；经营活动产生的现金流量净额463.83亿元，同比增长 57.93%。 报告期内，面对复杂多变的市场环...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_0abfc551750f": {
+    "evidence_id": "ev_0abfc551750f",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "ownership",
+    "claim": "ownership",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 75,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p075-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 74三、股东和实际控制人情况 1.公司股东数量及持股情况 单位：股 报告期末普通股股东总数 568,403年度报告披露日 前上一月末普通 股股东总数602,850报告期末表决 权恢复的优先 股股东总数 （如有）（参 见注8）0年度报告披露日前上一月末表决 权恢复的优先股股东总数（如 有）（参见注8）0 持股5%以上的股东或前10名股东持股情况（不含通过转融通出借股份） 股东名称 股东性质 持股比例报告期末持股 数量报告期内增减 变动情况持有有限售条 件的股份数量持有无限售条件 的股份数量质押、标记或冻结情况 股份状态 数量 珠海明骏投资合伙企业（有限 合伙）境内非国有法人 16.11%902,359,632 0 0902,359,632 质押902,359,632 京海互联网科技发展有限公司境内非国有法人 7.83%438,825,66246,382,708 0438,825,662 质押75,000,000 珠海格力集团有限公司 国有法人 3.46%193,895,992 0 0193,895,992 0 香港中央结算有限公司 境外法人 3.42%191,339,796-24...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_6212b3a16152": {
+    "evidence_id": "ev_6212b3a16152",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 42,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p042-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 41四、董事和高级管理人员情况 1.基本情况 姓名性别年龄 职务任职 状态任期起始日期 任期终止日期期初持股数 （股）本期增持 股份数量 （股）本期减持 股份数量 （股）其他增 减变动 （股）期末持股数 （股）股份增 减变动 的原因 董明珠女71董事长 现任2012年05月25日2028年04月21日100,798,492 100,798,492总裁 离任2001年04月24日2025年04月22日 张伟 男49董事 现任2019年01月16日2028年04月21日483,328 483,328总裁 现任2025年04月22日2028年04月21日 张军督男65董事 现任2012年05月25日2028年04月21日 舒立志男56董事 现任2025年04月22日2028年04月21日 214,719 214,719 党委书记 现任2025年05月28日 副总裁 离任2020年12月26日2025年04月22日 钟成堡男40董事 现任2025年04月22日2028年04月21日 171,167 171,167 张秋生男58独立董事 现任2022年02月28日2028年04月21日...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f5fb89d6b6ca": {
+    "evidence_id": "ev_f5fb89d6b6ca",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "industry_chain",
+    "claim": "产业链",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 10,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p010-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 9第三节管理层讨论与分析 一、报告期内公司从事的主要业务 公司是一家多元化、科技型的全球工业集团，旗下拥有格力、TOSOT、晶弘、凌达、凯邦、新元等品牌，产业布局覆盖 消费和工业两大领域。消费领域覆盖家用空调、暖通设备、冰箱、洗衣机、热水器、厨房电器、环境电器等产品，为家庭 及商用场景提供全品类智能家电及智能楼宇系统解决方案；工业领域聚焦数控机床、工业机器人、精密模具、电机、压缩 机、电容、半导体、精密铸造、基础材料、工业储能等板块，构建自主可控的产业链体系，助力中国制造转型升级。目前， 格力产品已服务全球190多个国家和地区，坚持以核心科技与高品质服务用户，持续满足人们对美好生活的追求。 面对复杂多变的市场环境，公司坚守实体经济，发展自主品牌，坚持自主创新，不断深化渠道建设，纵向深挖技术和 质量护城河，横向拓展高协同赛道，实现可持续发展。2025年，公司实现营业总收入1,711.18亿元，同比下降9.96%；实 现归属于上市公司股东的净利润290.03亿元，同比下降9.89%；经营活动产生的现金流量净额463.83亿元，同比增长 57.93%。 报告期内，面对复杂多变的市场环...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_f5b66e4258d3": {
+    "evidence_id": "ev_f5b66e4258d3",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "公司持续高分红，2025年度拟派发现金股利超111.7亿元；历史上累计现金分红超1476亿元。同时大规模回购股份并注销，提升股东价值。",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p002-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 1第一节重要提示、目录和释义 公司董事会及董事、高级管理人员保证年度报告内容的真实、准确、完 整，不存在虚假记载、误导性陈述或重大遗漏，并承担个别和连带的法律责 任。 公司负责人董明珠、主管会计工作负责人廖建雄及会计机构负责人（会计 主管人员）刘炎姿声明：保证本年度报告中财务报告的真实、准确、完整。 所有董事均已出席了审议本报告的董事会会议。 本报告中所涉及的未来计划、发展战略等前瞻性陈述，不构成公司对投资 者的实质承诺，投资者及相关人士均应当对此保持足够的风险认识，并且应当 理解计划、预测与承诺之间的差异，敬请注意投资风险，理性投资。 公司经本次董事会审议通过的利润分配预案为：以本利润分配预案披露时 享有利润分配权的股本总额5,585,138,741股（总股本5,601,405,741股扣除 公司回购账户持有的股份16,267,000股）为基数，向全体股东每10股派发现 金红利20元（含税），送红股0股（含税），不以公积金转增股本。如在本 次利润分配预案披露之日起至实施权益分派的股权登记日期间，公司享有利润 分配权的股本总额发生变化，公司将按每股分配比例不变的原则，相应调整分...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_7e4da5e44619": {
+    "evidence_id": "ev_7e4da5e44619",
+    "company_id": "CN-SZSE-000651",
+    "document_id": "CN-000651-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000651-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-29",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 38,
+      "section_title": "珠海格力电器股份有限公司2025年年度报告全文",
+      "text_block_id": "CN-000651-2025-FY-p038-b001"
+    },
+    "original_text": "珠海格力电器股份有限公司2025年年度报告全文 37拓展国际市场新蓝图。立足全球不同区域市场特点与产品类型差异，构建适配区域需求的价格审核与利润管控机制， 持续提升国际市场竞争优势。深化国际市场本土化运营，优化区域供应链布局，有效降低贸易摩擦带来的不利影响，提高 对海外市场的响应速度与服务效率，进一步扩大产品海外覆盖范围，打造国际市场发展新蓝图。 激活工业产品新潜能。聚焦工业领域重点行业与核心客户，推进新领域产品对标研发与市场开发，推动工业板块提质 增效，强化工业板块整体竞争力。 （2）强化质量风险预防，提升质量管控水平 健全预防机制。强化全员全生命周期质量责任意识，聚焦高故障率关键部件，深入开展失效分析与专项整改工作，从 根本上解决质量痛点。加强核心零部件选型准入管理与质量验证力度，严格把控零部件质量关，实现从源头减少质量潜在 隐患。加严新品评审标准与质量风险管控流程，全面防范批量性质量问题发生，确保产品质量稳定可靠。 升级管控方法。加大检验技术攻关力度，系统开展零部件可靠性、寿命试验标准的研究与优化工作，完善全流程质量 检验标准体系。搭建统一、集成、可扩展的数字化质量管理平台，打通研发、生产、采购、检验等全链条质量数据壁...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_12f7ca93d843": {
+    "evidence_id": "ev_12f7ca93d843",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "公司面临内外部环境不确定性风险、有效需求恢复不及预期风险、行业存量竞争加剧风险。",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 21,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p021-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 21 实际完成： 2025年，白酒行业进入深度调整周期，公司主动应市调整，主动帮助渠道纾压解困。公 司实现营业总收入 405.29亿元，同比下降 54.55%。 （四）2026年发展目标 2026年主要发展目标：公司将以消费者为中心，拥抱变革、顺应趋势，坚守品质、传承文化、守正 创新、务实进取，顺势调整、积蓄力量，全力实现高质量的市场动销和市场份额的有效提升。 2026年是中国共产党成立 105周年，也是 “十五五”开局起步之年，做好开局工作至关重要。公司 将坚定以习近平新时代中国特色社会主义思想为指导，深入贯彻党的二十大和二十届历次全会精神，认 真落实中央、省委、市委经济工作会议部署要求和市委、市政府的各项决策部署，完整准确全面贯彻新 发展理念，牢牢把握高质量发展主题，坚持品质为基、文化铸魂、守正创新，加快拓展新供给、新场景、 新渠道、新市场、新机制，以新需求引领新供给、以新供给创造新需求，持续巩固和强化龙头企业地位。 （五）可能面对的风险 一是内外部环境不确定性风险；二是有效需求恢复不及预期；三是行业存量竞争尤其是头部企业竞 争加剧。 十二、报告期内接待调研、沟通、采访等活动...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_344a0affa197": {
+    "evidence_id": "ev_344a0affa197",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "ESG评级在国际榜单MSCI中由B升至BBB。",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 13,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p013-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 13 四是管理水平进一步精进。 全面贯彻落实中省市关于新一轮国企改革深化提升行动工作部署，持续 构建高效专业的现代治理体系 ，ESG评级在国际榜单 MSCI中由B升至BBB。 五是公司综合成效进一步显现。 入选工信部首批中国消费品名品名单、纳入历史经典产业进行培育； 入选工信部 2025年度“卓越级智能工厂 ”。 2、收入与成本 （1）营业收入构成 单位：元 2025年 2024年 同比增减 金额 占营业收入比重 金额 占营业收入比重 营业收入合计 40,528,509,770.23 100.00% 89,175,178,322.70 100.00% -54.55% 分行业 制造业 40,528,509,770.23 100.00% 89,175,178,322.70 100.00% -54.55% 分产品 酒类产品 37,103,992,232.59 91.55% 83,126,834,116.05 93.22% -55.36% 非酒类产品 3,424,517,537.64 8.45% 6,048,344,206.65 6.78% -43.38% 分地区 酒类产品 37,103...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_8338f13ca60a": {
+    "evidence_id": "ev_8338f13ca60a",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "business_model",
+    "claim": "白酒生产和销售",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 9,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p009-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 9 第三节 管理层讨论与分析 一、报告期内公司从事的主要业务 公司需遵守《深圳证券交易所上市公司自律监管指引第 3号——行业信息披露》中食品及酒制造相关 业的披露要求 。 （一）概述 本公司主要从事白酒生产和销售。根据中国证监会颁布的《上市公司行业分类指引》 ，白酒行业属于 “酒、饮料和精制茶制造业” （ C15） 。报告期内，公司主要业务未发生变化，主要产品“五粮液酒”是我 国浓香型白酒的典型代表，并根据生产工艺特点和市场需求开发了五粮春、五粮醇、五粮特头曲、绵柔 尖庄等品类齐全、层次清晰的五粮浓香酒产品，致力于满足不同层次消费者的多样化需求和人民对美好 生活的向往。 （二）品牌运营情况 1、五粮液产品 2025年，公司围绕 “营销执行提升年 ”工作定位，锚定年度目标，积极应对市场变化，在品牌建设、 产品运营和渠道拓展等方面持续发力，营销工作整体稳步推进。 一是品牌宣传持续深化，品牌影响力进一步提升。 公司系统梳理“五粮六脉文化谱系”，大力提升 品牌文化价值。持续占位以央视总台、新华社、人民日报社等为代表的主流媒体平台，深入绑定以博鳌 亚洲论坛、 APEC、金熊猫奖等为代表的高...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_096f04e09fde": {
+    "evidence_id": "ev_096f04e09fde",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "ownership",
+    "claim": "宜宾市政府国有资产监督管理委员会",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 43,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p043-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 43 单位：股 股东名称 期初限售股数 本期增加限售股数 本期解除限售股数 期末限售股数 限售原因 解除限售日期 赵东 9,096 0 9,096 0 离任锁定股 执行限售规定 刘明 4,549 0 4,549 0 离任锁定股 执行限售规定 张庆 9,547 0 9,547 0 离任锁定股 执行限售规定 吴国平 30,741 0 30,741 0 离任锁定股 执行限售规定 合计 53,933 0 53,933 0 -- -- 二、证券发行与上市情况 1、报告期内证券发行（不含优先股）情况 □适用 不适用 2、公司股份总数及股东结构的变动、公司资产和负债结构的变动情况说明 □适用 不适用 3、现存的内部职工股情况 □适用 不适用 三、股东和实际控制人情况 1、公司股东数量及持股情况 单位：股 报告期末普通股股 东总数 681,426 年度报 告披露 日前上 一月末 普通股 股东总 数 676,701 报告期末表 决权恢复的 优先股股东 总数（如 有） （参见注 8） 0 年度报告披露日前上一 月末表决权恢复的优先 股股东总数（如有） （参见注 8） 0 持股5%以上的股东或前...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_fb85849adccd": {
+    "evidence_id": "ev_fb85849adccd",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "key_people",
+    "claim": "关键人物",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 25,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p025-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 25 四、董事和高级管理人员情况 1、基本情况 姓名 性 别 年 龄 职务 任职 状态 任期起始日期 任期终止日期 期初持股 数（股） 本 期 增 持 股 份 数 量 （ 股 ） 本 期 减 持 股 份 数 量 （ 股 ） 其 他 增 减 变 动 （ 股 ） 期末持 股数 （股） 股份增 减变动 的原因 曾从钦 男 57 党委书记 2022年01月28日 董事长 2025年06月20日 华涛 男 52 党委副书记 现任 2024年09月25日 至今 总经理 2025年06月20日 副董事长 2025年06月20日 张宇 男 51 党委委员 现任 2020年12月30日 至今 副董事长 2025年06月20日 肖浩 男 49 党委副书记 现任 2021年12月15日 至今 董事 2025年06月20日 韩成珂 男 44 董事 现任 2025年06月20日 至今 章欣 男 56 党委委员 现任 2023年09月25日 至今 董事 2025年06月20日 副总经理 2025年06月20日 财务总监 2025年06月20日 董事会秘书 2025年06月20日 侯水平 男 70 独立董事...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_7c467c270fd7": {
+    "evidence_id": "ev_7c467c270fd7",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "2025年公司实施了现金分红和股东增持，无股票回购或股权激励。",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 2,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p002-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 2 第一节 重要提示、目录和释义 一、公司董事会及董事、高级管理人员保证年度报告内容的真实、准确、完整，不存在 虚假记载、误导性陈述或重大遗漏，并承担个别和连带的法律责任。 二、公司负责人华涛（代） 、主管会计工作负责人章欣及会计机构负责人 (会计主管人员 ) 刘敏声明：保证本年度报告中财务报告的真实、准确、完整。 三、审议本报告的董事会会议应到董事 10人，实际参与审议表决董事 9人，未参与审 议议案1人（董事长因不能正常履职，缺席本次会议） 。 四、本年度报告中所涉及的未来计划、发展战略等前瞻性陈述因存在不确定性，不构成 本公司对投资者的实质承诺，敬请投资者注意投资风险。公司已在本报告中披露可能存在的 风险因素，敬请投资者注意投资风险。 五、公司经本次董事会审议通过的利润分配预案为：以 3,881,608,005 为基数，向全体 股东每10股派发现金红利 25.78元（含税） ，送红股 0股（含税） ，不以公积金转增股本。 在实施权益分派的股权登记日前公司总股本如发生变动，将维持分配总额不变，相应调整每 股分配比例，并在相关公告中披露。",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_745fa11dd314": {
+    "evidence_id": "ev_745fa11dd314",
+    "company_id": "CN-SZSE-000858",
+    "document_id": "CN-000858-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "CN-000858-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-04-30",
+      "source_platform": "CNINFO",
+      "source_url": "http://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 21,
+      "section_title": "宜宾五粮液股份有限公司 2025年度报告全文",
+      "text_block_id": "CN-000858-2025-FY-p021-b001"
+    },
+    "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 21 实际完成： 2025年，白酒行业进入深度调整周期，公司主动应市调整，主动帮助渠道纾压解困。公 司实现营业总收入 405.29亿元，同比下降 54.55%。 （四）2026年发展目标 2026年主要发展目标：公司将以消费者为中心，拥抱变革、顺应趋势，坚守品质、传承文化、守正 创新、务实进取，顺势调整、积蓄力量，全力实现高质量的市场动销和市场份额的有效提升。 2026年是中国共产党成立 105周年，也是 “十五五”开局起步之年，做好开局工作至关重要。公司 将坚定以习近平新时代中国特色社会主义思想为指导，深入贯彻党的二十大和二十届历次全会精神，认 真落实中央、省委、市委经济工作会议部署要求和市委、市政府的各项决策部署，完整准确全面贯彻新 发展理念，牢牢把握高质量发展主题，坚持品质为基、文化铸魂、守正创新，加快拓展新供给、新场景、 新渠道、新市场、新机制，以新需求引领新供给、以新供给创造新需求，持续巩固和强化龙头企业地位。 （五）可能面对的风险 一是内外部环境不确定性风险；二是有效需求恢复不及预期；三是行业存量竞争尤其是头部企业竞 争加剧。 十二、报告期内接待调研、沟通、采访等活动...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  }
+}

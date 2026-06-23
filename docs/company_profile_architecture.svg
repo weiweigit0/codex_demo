@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+  <defs>
+    <style>
+      .bg { fill: #f7f8fb; }
+      .band { fill: #ffffff; stroke: #d8e0ec; stroke-width: 2; }
+      .card { fill: #ffffff; stroke: #b8c4d4; stroke-width: 1.5; rx: 12; }
+      .home { fill: #e8f3ff; stroke: #79aee6; }
+      .ui { fill: #eef7ff; stroke: #70a9df; }
+      .api { fill: #ecfdf5; stroke: #72bf99; }
+      .core { fill: #f2edff; stroke: #9478dd; }
+      .extract { fill: #fff7e8; stroke: #d5a03c; }
+      .data { fill: #fff0f0; stroke: #d98686; }
+      .store { fill: #eef1f6; stroke: #98a4b3; }
+      .external { fill: #fbfcfe; stroke: #8793a4; stroke-dasharray: 8 6; }
+      .title { font: 700 30px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #10213d; }
+      .subtitle { font: 500 15px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #667085; }
+      .h { font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #14213d; }
+      .t { font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1f2a44; }
+      .s { font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #536079; }
+      .tiny { font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #667085; }
+      .line { fill: none; stroke: #6b7a90; stroke-width: 2; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #8a94a6; stroke-width: 2; stroke-dasharray: 7 6; marker-end: url(#arrow); }
+      .gold { fill: none; stroke: #d49a2e; stroke-width: 2.4; marker-end: url(#arrow-gold); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7a90"/>
+    </marker>
+    <marker id="arrow-gold" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d49a2e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="980"/>
+  <text class="title" x="56" y="58">公司画像模块架构图</text>
+  <text class="subtitle" x="56" y="86">一页看懂公司：主页仅负责跳转，画像模块独立完成公司识别、披露文件检索、PDF 解析、画像抽取、证据追溯和财务分流</text>
+
+  <rect class="band" x="40" y="120" width="1420" height="150" rx="18"/>
+  <text class="h" x="70" y="156">入口与页面层</text>
+
+  <rect class="card home" x="90" y="185" width="245" height="58" rx="12"/>
+  <text class="t" x="118" y="209">主页入口</text>
+  <text class="s" x="118" y="229">home.html / home.js</text>
+
+  <rect class="card ui" x="440" y="175" width="280" height="78" rx="12"/>
+  <text class="t" x="468" y="200">公司画像页面</text>
+  <text class="s" x="468" y="222">profile.html / profile.js</text>
+  <text class="tiny" x="468" y="240">读取 query / market / document_type</text>
+
+  <rect class="card ui" x="825" y="175" width="260" height="78" rx="12"/>
+  <text class="t" x="853" y="200">页面能力</text>
+  <text class="s" x="853" y="222">进度条 / 画像模块渲染</text>
+  <text class="tiny" x="853" y="240">证据抽屉 / 继续追问 / 财务入口</text>
+
+  <rect class="card home" x="1180" y="185" width="205" height="58" rx="12"/>
+  <text class="t" x="1208" y="209">财报掘金跳转</text>
+  <text class="s" x="1208" y="229">index.html?ticker=...</text>
+
+  <path class="gold" d="M335 214 C370 214 400 214 440 214"/>
+  <path class="line" d="M720 214 C760 214 785 214 825 214"/>
+  <path class="gold" d="M1085 214 C1120 214 1145 214 1180 214"/>
+
+  <rect class="band" x="40" y="300" width="1420" height="265" rx="18"/>
+  <text class="h" x="70" y="336">公司画像 API 与编排层</text>
+
+  <rect class="card api" x="90" y="380" width="255" height="115" rx="12"/>
+  <text class="t" x="118" y="407">CompanyProfile Router</text>
+  <text class="s" x="118" y="430">backend/company_profile/router.py</text>
+  <text class="tiny" x="118" y="454">POST /api/company-profile/reports</text>
+  <text class="tiny" x="118" y="474">GET report / evidence / task</text>
+
+  <rect class="card core" x="430" y="355" width="305" height="165" rx="12"/>
+  <text class="t" x="458" y="382">CompanyProfileOrchestrator</text>
+  <text class="s" x="458" y="405">create_report()</text>
+  <text class="tiny" x="458" y="428">1. 识别公司与资料类型</text>
+  <text class="tiny" x="458" y="448">2. 选择年报或招股说明书</text>
+  <text class="tiny" x="458" y="468">3. 抽取 PDF 文本并切块</text>
+  <text class="tiny" x="458" y="488">4. 构建画像 sections</text>
+
+  <rect class="card store" x="810" y="355" width="240" height="165" rx="12"/>
+  <text class="t" x="838" y="382">内存任务与报告仓库</text>
+  <text class="s" x="838" y="405">tasks: Dict</text>
+  <text class="s" x="838" y="427">reports: Dict</text>
+  <text class="s" x="838" y="449">evidences: Dict</text>
+  <text class="tiny" x="838" y="475">当前为进程内临时存储</text>
+
+  <rect class="card extract" x="1130" y="355" width="265" height="165" rx="12"/>
+  <text class="t" x="1158" y="382">输出结构</text>
+  <text class="s" x="1158" y="405">公司基本信息 / 业务模式</text>
+  <text class="s" x="1158" y="427">股东控制权 / 关键人物</text>
+  <text class="s" x="1158" y="449">产业链 / 资本动作 / 风险</text>
+  <text class="tiny" x="1158" y="475">source_document / evidence_refs</text>
+
+  <path class="line" d="M580 253 C505 300 330 338 242 380"/>
+  <path class="line" d="M345 438 L430 438"/>
+  <path class="line" d="M735 438 L810 438"/>
+  <path class="line" d="M1050 438 L1130 438"/>
+  <path class="line" d="M955 355 C900 318 740 292 615 355"/>
+
+  <rect class="band" x="40" y="595" width="1420" height="220" rx="18"/>
+  <text class="h" x="70" y="631">数据源、解析与抽取层</text>
+
+  <rect class="card data" x="90" y="675" width="235" height="85" rx="12"/>
+  <text class="t" x="118" y="702">A 股公司索引</text>
+  <text class="s" x="118" y="724">AShareSource / AShareIndex</text>
+  <text class="tiny" x="118" y="744">resolve_company / search</text>
+
+  <rect class="card data" x="390" y="675" width="255" height="85" rx="12"/>
+  <text class="t" x="418" y="702">巨潮资讯</text>
+  <text class="s" x="418" y="724">CninfoClient</text>
+  <text class="tiny" x="418" y="744">年报 / 招股书 / PDF 文本</text>
+
+  <rect class="card extract" x="710" y="660" width="265" height="115" rx="12"/>
+  <text class="t" x="738" y="687">PDF 文本解析</text>
+  <text class="s" x="738" y="709">extract_pdf_text()</text>
+  <text class="s" x="738" y="731">_parse_document_text()</text>
+  <text class="tiny" x="738" y="753">生成 blocks / section_title / page</text>
+
+  <rect class="card extract" x="1035" y="645" width="300" height="145" rx="12"/>
+  <text class="t" x="1063" y="672">画像抽取引擎</text>
+  <text class="s" x="1063" y="695">LLMProfileExtractor 可选</text>
+  <text class="s" x="1063" y="717">OPENAI_API_KEY 存在时启用</text>
+  <text class="s" x="1063" y="739">规则抽取兜底</text>
+  <text class="tiny" x="1063" y="765">人物履历、业务、股权、风险等</text>
+
+  <path class="line" d="M520 520 C420 575 275 620 210 675"/>
+  <path class="line" d="M560 520 C540 575 525 625 515 675"/>
+  <path class="line" d="M645 718 L710 718"/>
+  <path class="line" d="M975 718 L1035 718"/>
+  <path class="line" d="M1160 645 C1060 555 855 515 735 470"/>
+
+  <rect class="band" x="40" y="845" width="1420" height="95" rx="18"/>
+  <text class="h" x="70" y="882">外部依赖与边界</text>
+
+  <rect class="card external" x="260" y="888" width="230" height="35" rx="10"/>
+  <text class="s" x="310" y="911">巨潮资讯 CNINFO</text>
+  <rect class="card external" x="640" y="888" width="270" height="35" rx="10"/>
+  <text class="s" x="690" y="911">OpenAI / 兼容 Chat API</text>
+  <rect class="card external" x="1060" y="888" width="260" height="35" rx="10"/>
+  <text class="s" x="1110" y="911">财报掘金服务页</text>
+
+  <path class="dash" d="M375 888 C410 835 455 790 500 760"/>
+  <path class="dash" d="M775 888 C870 815 980 765 1085 725"/>
+  <path class="dash" d="M1190 888 C1225 760 1265 625 1285 520"/>
+
+  <text class="tiny" x="56" y="962">Generated for /Users/weizichao/Documents/hackathon · company_profile module · 2026-06-19</text>
+</svg>

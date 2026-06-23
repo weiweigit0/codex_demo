@@ -1,0 +1,1190 @@
+{
+  "financial_task_a6c8853af4e048e3": {
+    "task_id": "financial_task_a6c8853af4e048e3",
+    "ticker": "600519",
+    "market": "CN",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SSE-600519",
+      "cik": null,
+      "ticker": "600519",
+      "name": "贵州茅台",
+      "short_name": "贵州茅台",
+      "market": "CN",
+      "exchange": "SSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssh0600519"
+    },
+    "analysis_id": "financial_analysis_e8cbce8f20e9446d",
+    "error": null,
+    "created_at": "2026-06-22T08:46:50.057366+00:00",
+    "updated_at": "2026-06-22T08:47:22.643750+00:00"
+  },
+  "financial_task_64cdb5faac784c07": {
+    "task_id": "financial_task_64cdb5faac784c07",
+    "ticker": "600519",
+    "market": "CN",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SSE-600519",
+      "cik": null,
+      "ticker": "600519",
+      "name": "贵州茅台",
+      "short_name": "贵州茅台",
+      "market": "CN",
+      "exchange": "SSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssh0600519"
+    },
+    "analysis_id": "financial_analysis_7a8d9fe0821846ee",
+    "error": null,
+    "created_at": "2026-06-22T08:48:02.230754+00:00",
+    "updated_at": "2026-06-22T08:48:02.252858+00:00"
+  },
+  "financial_task_b23f1a4c70e74105": {
+    "task_id": "financial_task_b23f1a4c70e74105",
+    "ticker": "600519",
+    "market": "CN",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SSE-600519",
+      "cik": null,
+      "ticker": "600519",
+      "name": "贵州茅台",
+      "short_name": "贵州茅台",
+      "market": "CN",
+      "exchange": "SSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssh0600519"
+    },
+    "analysis_id": "financial_analysis_7cf104ae17584d07",
+    "error": null,
+    "created_at": "2026-06-22T08:49:58.938755+00:00",
+    "updated_at": "2026-06-22T08:49:58.962600+00:00"
+  },
+  "financial_task_381240b2493c43cf": {
+    "task_id": "financial_task_381240b2493c43cf",
+    "ticker": "000001",
+    "market": "CN",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "FAILED",
+    "progress": 15,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "CN-SZSE-000001",
+      "cik": null,
+      "ticker": "000001",
+      "name": "平安银行",
+      "short_name": "平安银行",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000001"
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "A 股 PDF 数据质量校验未通过，已阻止生成不可靠分析。2025-FY：资产、负债与权益不满足合理的会计恒等式、核心指标数量级差异异常，可能存在 PDF 列错位或单位识别错误、资产与收入数量级异常，可能存在单位识别错误；2024-FY：核心指标数量级差异异常，可能存在 PDF 列错位或单位识别错误、资产与收入数量级异常，可能存在单位识别错误"
+    },
+    "created_at": "2026-06-22T08:51:26.072817+00:00",
+    "updated_at": "2026-06-22T08:51:26.080508+00:00"
+  },
+  "financial_task_60053bb3177a4cba": {
+    "task_id": "financial_task_60053bb3177a4cba",
+    "ticker": "600519",
+    "market": "CN",
+    "periods": [
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SSE-600519",
+      "cik": null,
+      "ticker": "600519",
+      "name": "贵州茅台",
+      "short_name": "贵州茅台",
+      "market": "CN",
+      "exchange": "SSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssh0600519"
+    },
+    "analysis_id": "financial_analysis_ae1268589af24997",
+    "error": null,
+    "created_at": "2026-06-22T08:53:52.928287+00:00",
+    "updated_at": "2026-06-22T08:54:27.479482+00:00"
+  },
+  "financial_task_9604a6966a834fd3": {
+    "task_id": "financial_task_9604a6966a834fd3",
+    "ticker": "600519",
+    "market": "CN",
+    "periods": [
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SSE-600519",
+      "cik": null,
+      "ticker": "600519",
+      "name": "贵州茅台",
+      "short_name": "贵州茅台",
+      "market": "CN",
+      "exchange": "SSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssh0600519"
+    },
+    "analysis_id": "financial_analysis_210d4017044948b6",
+    "error": null,
+    "created_at": "2026-06-22T08:57:56.107442+00:00",
+    "updated_at": "2026-06-22T08:58:39.660390+00:00"
+  },
+  "financial_task_35ad26ccce3b4818": {
+    "task_id": "financial_task_35ad26ccce3b4818",
+    "ticker": "600519",
+    "market": "CN",
+    "periods": [
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SSE-600519",
+      "cik": null,
+      "ticker": "600519",
+      "name": "贵州茅台",
+      "short_name": "贵州茅台",
+      "market": "CN",
+      "exchange": "SSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssh0600519"
+    },
+    "analysis_id": "financial_analysis_567f89f84ad44c2a",
+    "error": null,
+    "created_at": "2026-06-22T08:59:56.749291+00:00",
+    "updated_at": "2026-06-22T09:01:00.706749+00:00"
+  },
+  "financial_task_dd1606d77e594bab": {
+    "task_id": "financial_task_dd1606d77e594bab",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q2",
+      "2026-Q1",
+      "2025-Q3",
+      "2025-Q2"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_a9f6d4e63d2a4efc",
+    "error": null,
+    "created_at": "2026-06-22T09:02:51.412685+00:00",
+    "updated_at": "2026-06-22T09:03:50.788557+00:00"
+  },
+  "financial_task_fa46ebb32b204b00": {
+    "task_id": "financial_task_fa46ebb32b204b00",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q2"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_7ce6f83e304d46db",
+    "error": null,
+    "created_at": "2026-06-22T09:02:52.311372+00:00",
+    "updated_at": "2026-06-22T09:03:43.415377+00:00"
+  },
+  "financial_task_70f8f33e8d95461d": {
+    "task_id": "financial_task_70f8f33e8d95461d",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q1"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_1f1def282bec4214",
+    "error": null,
+    "created_at": "2026-06-22T09:02:53.837494+00:00",
+    "updated_at": "2026-06-22T09:03:16.598086+00:00"
+  },
+  "financial_task_66f80334299d410f": {
+    "task_id": "financial_task_66f80334299d410f",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q1"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_d12a2ce2ebb44dee",
+    "error": null,
+    "created_at": "2026-06-22T09:02:53.916326+00:00",
+    "updated_at": "2026-06-22T09:03:22.957712+00:00"
+  },
+  "financial_task_b8471ba732894e74": {
+    "task_id": "financial_task_b8471ba732894e74",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q2"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_d0e217a4013848d7",
+    "error": null,
+    "created_at": "2026-06-22T09:02:54.706228+00:00",
+    "updated_at": "2026-06-22T09:03:38.461935+00:00"
+  },
+  "financial_task_8780a15fffce4782": {
+    "task_id": "financial_task_8780a15fffce4782",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q1"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_b226bf3ed3a44db7",
+    "error": null,
+    "created_at": "2026-06-22T09:02:55.410534+00:00",
+    "updated_at": "2026-06-22T09:03:19.165963+00:00"
+  },
+  "financial_task_ae6d59a03461407a": {
+    "task_id": "financial_task_ae6d59a03461407a",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2026-Q2"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": "SEC EDGAR",
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_d7a79e6f36e242ed",
+    "error": null,
+    "created_at": "2026-06-22T09:02:56.424921+00:00",
+    "updated_at": "2026-06-22T09:03:37.274242+00:00"
+  },
+  "financial_task_0299d9eb7be8449c": {
+    "task_id": "financial_task_0299d9eb7be8449c",
+    "ticker": "300750",
+    "market": "CN",
+    "periods": [
+      "2025-FY",
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-300750",
+      "cik": null,
+      "ticker": "300750",
+      "name": "宁德时代",
+      "short_name": "宁德时代",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "GD165627"
+    },
+    "analysis_id": "financial_analysis_6b6e830c8878443d",
+    "error": null,
+    "created_at": "2026-06-22T09:08:00.659929+00:00",
+    "updated_at": "2026-06-22T09:09:34.044845+00:00"
+  },
+  "financial_task_b10d69f73e064b8c": {
+    "task_id": "financial_task_b10d69f73e064b8c",
+    "ticker": "300750",
+    "market": "CN",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-300750",
+      "cik": null,
+      "ticker": "300750",
+      "name": "宁德时代",
+      "short_name": "宁德时代",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "GD165627"
+    },
+    "analysis_id": "financial_analysis_a15229a7ec6c4ae8",
+    "error": null,
+    "created_at": "2026-06-22T09:08:04.650274+00:00",
+    "updated_at": "2026-06-22T09:09:17.775177+00:00"
+  },
+  "financial_task_32ab2fbec26848c8": {
+    "task_id": "financial_task_32ab2fbec26848c8",
+    "ticker": "000333",
+    "market": "CN",
+    "periods": [],
+    "period_type": "quarterly",
+    "status": "FAILED",
+    "progress": 15,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "CN-SZSE-000333",
+      "cik": null,
+      "ticker": "000333",
+      "name": "美的集团",
+      "short_name": "美的集团",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gshk0000419"
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+    },
+    "created_at": "2026-06-22T14:21:37.138596+00:00",
+    "updated_at": "2026-06-22T14:21:46.274304+00:00"
+  },
+  "financial_task_822f1b90793849e1": {
+    "task_id": "financial_task_822f1b90793849e1",
+    "ticker": "000333",
+    "market": "CN",
+    "periods": [],
+    "period_type": "annual",
+    "status": "FAILED",
+    "progress": 15,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "CN-SZSE-000333",
+      "cik": null,
+      "ticker": "000333",
+      "name": "美的集团",
+      "short_name": "美的集团",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gshk0000419"
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+    },
+    "created_at": "2026-06-22T14:21:38.824428+00:00",
+    "updated_at": "2026-06-22T14:21:47.840196+00:00"
+  },
+  "financial_task_536df02b23544ed8": {
+    "task_id": "financial_task_536df02b23544ed8",
+    "ticker": "000333",
+    "market": "CN",
+    "periods": [],
+    "period_type": "annual",
+    "status": "FAILED",
+    "progress": 15,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "CN-SZSE-000333",
+      "cik": null,
+      "ticker": "000333",
+      "name": "美的集团",
+      "short_name": "美的集团",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gshk0000419"
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+    },
+    "created_at": "2026-06-22T14:21:39.460603+00:00",
+    "updated_at": "2026-06-22T14:21:39.462976+00:00"
+  },
+  "financial_task_ac949fa1ab5b4716": {
+    "task_id": "financial_task_ac949fa1ab5b4716",
+    "ticker": "000333",
+    "market": "CN",
+    "periods": [],
+    "period_type": "annual",
+    "status": "FAILED",
+    "progress": 15,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "CN-SZSE-000333",
+      "cik": null,
+      "ticker": "000333",
+      "name": "美的集团",
+      "short_name": "美的集团",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gshk0000419"
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+    },
+    "created_at": "2026-06-22T14:22:26.569626+00:00",
+    "updated_at": "2026-06-22T14:22:26.576230+00:00"
+  },
+  "financial_task_1b4b7e4d02ea4d91": {
+    "task_id": "financial_task_1b4b7e4d02ea4d91",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2025-FY",
+      "2024-FY",
+      "2023-FY",
+      "2022-FY"
+    ],
+    "period_type": "annual",
+    "status": "FAILED",
+    "progress": 35,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "US-AAPL",
+      "cik": null,
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": null,
+      "org_id": null
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+    },
+    "created_at": "2026-06-22T14:22:47.985676+00:00",
+    "updated_at": "2026-06-22T14:23:18.084299+00:00"
+  },
+  "financial_task_8258956f4f404af5": {
+    "task_id": "financial_task_8258956f4f404af5",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": null,
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": null,
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_48c92d826dcd47f4",
+    "error": null,
+    "created_at": "2026-06-22T14:22:58.849174+00:00",
+    "updated_at": "2026-06-22T14:23:33.353422+00:00"
+  },
+  "financial_task_ece3b8f3bb6048f4": {
+    "task_id": "financial_task_ece3b8f3bb6048f4",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": null,
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": null,
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_91584b6ff1ce495a",
+    "error": null,
+    "created_at": "2026-06-22T14:22:59.373321+00:00",
+    "updated_at": "2026-06-22T14:23:35.087063+00:00"
+  },
+  "financial_task_f64ddb07f556491b": {
+    "task_id": "financial_task_f64ddb07f556491b",
+    "ticker": "AAPL",
+    "market": "US",
+    "periods": [
+      "2025-FY",
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "US-AAPL",
+      "cik": null,
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": null,
+      "org_id": null
+    },
+    "analysis_id": "financial_analysis_da88d78a8cb5450f",
+    "error": null,
+    "created_at": "2026-06-22T14:23:01.147349+00:00",
+    "updated_at": "2026-06-22T14:24:03.048988+00:00"
+  },
+  "financial_task_bb883eed066b47cb": {
+    "task_id": "financial_task_bb883eed066b47cb",
+    "ticker": "NVDA",
+    "market": "US",
+    "periods": [],
+    "period_type": "annual",
+    "status": "FAILED",
+    "progress": 15,
+    "current_step": "财报 Agent 分析失败",
+    "company": {
+      "id": "US-NVDA",
+      "cik": null,
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "short_name": null,
+      "market": "US",
+      "exchange": null,
+      "industry": "科技",
+      "source": null,
+      "org_id": null
+    },
+    "analysis_id": null,
+    "error": {
+      "code": "FINANCIAL_AGENT_FAILED",
+      "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+    },
+    "created_at": "2026-06-22T14:27:08.547715+00:00",
+    "updated_at": "2026-06-22T14:27:08.555150+00:00"
+  },
+  "financial_task_05f9fcd91e4a4cd9": {
+    "task_id": "financial_task_05f9fcd91e4a4cd9",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY",
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_be48fab990d44ed9",
+    "error": null,
+    "created_at": "2026-06-22T14:52:17.494088+00:00",
+    "updated_at": "2026-06-22T14:55:17.283118+00:00"
+  },
+  "financial_task_f5a3dfbe0d5346e0": {
+    "task_id": "financial_task_f5a3dfbe0d5346e0",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_1d232842b2354a00",
+    "error": null,
+    "created_at": "2026-06-22T14:52:19.350814+00:00",
+    "updated_at": "2026-06-22T14:54:14.094317+00:00"
+  },
+  "financial_task_c0189e9b639e4539": {
+    "task_id": "financial_task_c0189e9b639e4539",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_cb316c7bf56d466b",
+    "error": null,
+    "created_at": "2026-06-22T14:52:20.595837+00:00",
+    "updated_at": "2026-06-22T14:54:24.437622+00:00"
+  },
+  "financial_task_ecb1ec3e9a254d3a": {
+    "task_id": "financial_task_ecb1ec3e9a254d3a",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY",
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_387ad77d9f3a4083",
+    "error": null,
+    "created_at": "2026-06-22T14:52:22.183339+00:00",
+    "updated_at": "2026-06-22T14:54:33.084847+00:00"
+  },
+  "financial_task_4262c57c57f44af4": {
+    "task_id": "financial_task_4262c57c57f44af4",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY",
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_2b629ae3faee4a83",
+    "error": null,
+    "created_at": "2026-06-22T14:59:46.487774+00:00",
+    "updated_at": "2026-06-22T14:59:46.556919+00:00"
+  },
+  "financial_task_e12fd7595ef24507": {
+    "task_id": "financial_task_e12fd7595ef24507",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_bfb37fe2f57741fe",
+    "error": null,
+    "created_at": "2026-06-22T14:59:48.255509+00:00",
+    "updated_at": "2026-06-22T14:59:48.303255+00:00"
+  },
+  "financial_task_3816c24ade7c4168": {
+    "task_id": "financial_task_3816c24ade7c4168",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_1ea24e450f9847ff",
+    "error": null,
+    "created_at": "2026-06-22T14:59:49.120243+00:00",
+    "updated_at": "2026-06-22T14:59:49.170893+00:00"
+  },
+  "financial_task_76b1d791d67a411b": {
+    "task_id": "financial_task_76b1d791d67a411b",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_a763108a15e3495c",
+    "error": null,
+    "created_at": "2026-06-22T14:59:50.873883+00:00",
+    "updated_at": "2026-06-22T14:59:50.932480+00:00"
+  },
+  "financial_task_5cd6dc6b52c64d2b": {
+    "task_id": "financial_task_5cd6dc6b52c64d2b",
+    "ticker": "000651",
+    "market": "CN",
+    "periods": [
+      "2025-FY",
+      "2024-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000651",
+      "cik": null,
+      "ticker": "000651",
+      "name": "格力电器",
+      "short_name": "格力电器",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000651"
+    },
+    "analysis_id": "financial_analysis_b5bbad57b7bb4511",
+    "error": null,
+    "created_at": "2026-06-22T14:59:52.577441+00:00",
+    "updated_at": "2026-06-22T14:59:52.645906+00:00"
+  },
+  "financial_task_1376910489b34c94": {
+    "task_id": "financial_task_1376910489b34c94",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2025-FY",
+      "2024-FY",
+      "2023-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_8fbdf3ec529e49f2",
+    "error": null,
+    "created_at": "2026-06-22T15:00:22.277651+00:00",
+    "updated_at": "2026-06-22T15:03:08.250406+00:00"
+  },
+  "financial_task_c40dbb8d68884c5e": {
+    "task_id": "financial_task_c40dbb8d68884c5e",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2025-FY"
+    ],
+    "period_type": "annual",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_c3ae0da513f04421",
+    "error": null,
+    "created_at": "2026-06-22T15:00:23.924665+00:00",
+    "updated_at": "2026-06-22T15:01:50.617052+00:00"
+  },
+  "financial_task_9c03a61d736a4307": {
+    "task_id": "financial_task_9c03a61d736a4307",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2026-Q1",
+      "2025-Q3",
+      "2025-Q2",
+      "2025-Q1"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_7dc6933d8691432c",
+    "error": null,
+    "created_at": "2026-06-22T15:00:24.820452+00:00",
+    "updated_at": "2026-06-22T15:01:46.643548+00:00"
+  },
+  "financial_task_7ce7d71d6cfa4586": {
+    "task_id": "financial_task_7ce7d71d6cfa4586",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2026-Q1"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_0402b55d37da4d58",
+    "error": null,
+    "created_at": "2026-06-22T15:00:26.092773+00:00",
+    "updated_at": "2026-06-22T15:01:01.308903+00:00"
+  },
+  "financial_task_636fb1bb76814865": {
+    "task_id": "financial_task_636fb1bb76814865",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2026-Q1",
+      "2025-Q3"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_bc560a5842ff4a97",
+    "error": null,
+    "created_at": "2026-06-22T15:00:29.017463+00:00",
+    "updated_at": "2026-06-22T15:01:16.828535+00:00"
+  },
+  "financial_task_eb138cfaad5d4eec": {
+    "task_id": "financial_task_eb138cfaad5d4eec",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2026-Q1",
+      "2025-Q3",
+      "2025-Q2"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_b840f3ad5dc841a4",
+    "error": null,
+    "created_at": "2026-06-22T15:00:30.665654+00:00",
+    "updated_at": "2026-06-22T15:01:28.808373+00:00"
+  },
+  "financial_task_9964c111e86845ff": {
+    "task_id": "financial_task_9964c111e86845ff",
+    "ticker": "000858",
+    "market": "CN",
+    "periods": [
+      "2026-Q1",
+      "2025-Q3",
+      "2025-Q2",
+      "2025-Q1"
+    ],
+    "period_type": "quarterly",
+    "status": "COMPLETED",
+    "progress": 100,
+    "current_step": "财报 Agent 分析已生成",
+    "company": {
+      "id": "CN-SZSE-000858",
+      "cik": null,
+      "ticker": "000858",
+      "name": "五粮液",
+      "short_name": "五粮液",
+      "market": "CN",
+      "exchange": "SZSE",
+      "industry": "待识别行业",
+      "source": "巨潮资讯",
+      "org_id": "gssz0000858"
+    },
+    "analysis_id": "financial_analysis_fc935a4b49484a2b",
+    "error": null,
+    "created_at": "2026-06-22T15:00:31.951110+00:00",
+    "updated_at": "2026-06-22T15:01:31.484875+00:00"
+  }
+}

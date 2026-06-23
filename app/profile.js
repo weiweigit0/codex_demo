@@ -57,14 +57,28 @@ async function boot() {
     });
     state.task = task;
     setTask(task);
-    if (task.status === "COMPLETED") {
-      await loadReport(task.report_id);
-    } else if (task.error) {
-      showError(task.error.message);
-    }
+    await waitForTask(task.task_id);
   } catch (error) {
     showError(error.message);
   }
+}
+
+async function waitForTask(taskId) {
+  for (let attempt = 0; attempt < 180; attempt += 1) {
+    const task = await api(`/api/company-profile/tasks/${taskId}`);
+    state.task = task;
+    setTask(task);
+    if (task.status === "COMPLETED") {
+      await loadReport(task.report_id);
+      return;
+    }
+    if (task.error || task.status === "FAILED_REPORT_GENERATION") {
+      showError(task.error?.message || "公司画像生成失败");
+      return;
+    }
+    await new Promise((resolve) => window.setTimeout(resolve, 1000));
+  }
+  showError("生成时间较长，请稍后刷新页面查看任务结果。");
 }
 
 function bindEvents() {
@@ -100,11 +114,11 @@ function renderReport(report) {
   nodes.profileTitle.textContent = report.title;
   nodes.profileSubtitle.textContent = report.disclaimer;
   nodes.sourceCard.innerHTML = `
-    <div><span>资料类型</span><strong>${documentTypeLabel(documentMeta.document_type)}</strong></div>
-    <div><span>使用资料</span><strong>${documentMeta.document_title}</strong></div>
-    <div><span>报告期</span><strong>${documentMeta.report_period}</strong></div>
-    <div><span>披露日期</span><strong>${documentMeta.disclosure_date || "待识别"}</strong></div>
-    <div><span>来源</span><a href="${documentMeta.source_url}" target="_blank" rel="noreferrer">${documentMeta.source_platform}</a></div>
+    <div><span>资料类型</span><strong>${escapeHtml(documentTypeLabel(documentMeta.document_type))}</strong></div>
+    <div><span>使用资料</span><strong>${escapeHtml(documentMeta.document_title)}</strong></div>
+    <div><span>报告期</span><strong>${escapeHtml(documentMeta.report_period)}</strong></div>
+    <div><span>披露日期</span><strong>${escapeHtml(documentMeta.disclosure_date || "待识别")}</strong></div>
+    <div><span>来源</span><a href="${safeUrl(documentMeta.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(documentMeta.source_platform)}</a></div>
   `;
   nodes.reportLayout.classList.remove("hidden");
   nodes.reportSections.innerHTML = report.sections.map(renderSection).join("");
@@ -134,12 +148,12 @@ function renderSection(section) {
 
 function renderBlock(block) {
   if (block.type === "paragraph" || block.type === "notice") {
-    return `<p>${block.text}</p>`;
+    return `<p>${escapeHtml(block.text)}</p>`;
   }
   if (block.type === "kv") {
     return `<div class="kv-grid">${Object.entries(block.items || {})
       .filter(([, value]) => typeof value !== "object")
-      .map(([key, value]) => `<div class="kv-item"><span>${label(key)}</span><strong>${value || "文件未披露"}</strong></div>`)
+      .map(([key, value]) => `<div class="kv-item"><span>${escapeHtml(label(key))}</span><strong>${escapeHtml(value || "文件未披露")}</strong></div>`)
       .join("")}</div>`;
   }
   if (block.type === "table") {
@@ -147,45 +161,53 @@ function renderBlock(block) {
     return rows.length ? `
       <table class="plain-table">
         <thead><tr><th>业务板块</th><th>核心产品 / 服务</th><th>普通人解释</th></tr></thead>
-        <tbody>${rows.map((row) => `<tr><td>${row.name || "主营业务"}</td><td>${(row.core_products_or_services || []).join("、") || "待识别"}</td><td>${row.plain_explanation || ""}</td></tr>`).join("")}</tbody>
+        <tbody>${rows.map((row) => `<tr><td>${escapeHtml(row.name || "主营业务")}</td><td>${escapeHtml((row.core_products_or_services || []).join("、") || "待识别")}</td><td>${escapeHtml(row.plain_explanation || "")}</td></tr>`).join("")}</tbody>
       </table>
     ` : "";
   }
   if (block.type === "cards") {
     return `<div class="people-grid">${(block.items || []).map((item) => `
-      <div class="person-card"><strong>${item.name}</strong><p>${item.role || ""}</p><p>${item.importance_reason || item.background || ""}</p></div>
+      <div class="person-card"><strong>${escapeHtml(item.name)}</strong><p>${escapeHtml(item.role || "")}</p><p>${escapeHtml(item.importance_reason || item.background || "")}</p></div>
     `).join("")}</div>`;
   }
   if (block.type === "risk_cards") {
     return `<div class="risk-grid">${(block.items || []).map((item) => `
-      <div class="risk-card"><strong>${item.risk_name}</strong><p>严重程度：${severityText(item.severity)}</p><p>${item.plain_explanation}</p></div>
+      <div class="risk-card"><strong>${escapeHtml(item.risk_name)}</strong><p>严重程度：${escapeHtml(severityText(item.severity))}</p><p>${escapeHtml(item.plain_explanation)}</p></div>
     `).join("")}</div>`;
   }
+  if (block.type === "risk_facts") {
+    if (!block.items?.length) return `<p>未从披露文件中提取到可核验的风险事实。</p>`;
+    return `<div class="risk-grid">${block.items.map((item) => `<div class="risk-card"><strong>${escapeHtml(item.risk_name)}</strong><p>${escapeHtml(item.description)}</p><p>趋势：${escapeHtml(item.trend)}</p></div>`).join("")}</div>`;
+  }
+  if (block.type === "risk_assessments") {
+    if (!block.items?.length) return `<p>暂无可评估的需关注程度。</p>`;
+    return `<div class="risk-grid">${block.items.map((item) => `<div class="risk-card"><strong>${escapeHtml(item.risk_category)} · 需关注程度：${escapeHtml(severityText(item.attention_level))}</strong><p>${escapeHtml(item.assessment_reason)}</p><p>${escapeHtml((item.uncertainties || []).join("；"))}</p></div>`).join("")}</div>`;
+  }
   if (block.type === "questions") {
-    return `<ul>${(block.items || []).map((item) => `<li>${item}</li>`).join("")}</ul>`;
+    return `<ul>${(block.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
   }
   return "";
 }
 
 function renderEvidenceButtons(refs) {
   if (!refs.length) return "";
-  return `<div class="evidence-buttons">${refs.slice(0, 4).map((id) => `<button type="button" data-evidence="${id}">查看依据</button>`).join("")}</div>`;
+  return `<div class="evidence-buttons">${refs.slice(0, 4).map((id) => `<button type="button" data-evidence="${escapeAttr(id)}">查看依据</button>`).join("")}</div>`;
 }
 
 async function openEvidence(evidenceId) {
   try {
     const evidence = await api(`/api/company-profile/evidence/${evidenceId}`);
     nodes.evidenceBody.innerHTML = `
-      <div><strong>结论</strong><p>${evidence.claim}</p></div>
-      <div><strong>来源文件</strong><p>${evidence.source.document_title}</p></div>
-      <div><strong>位置</strong><p>第 ${evidence.location.page} 页 · ${evidence.location.section_title || "相关章节"}</p></div>
-      <div><strong>原文片段</strong><p>${evidence.original_text}</p></div>
-      <div><strong>置信度</strong><p>${evidence.confidence}</p></div>
+      <div><strong>结论</strong><p>${escapeHtml(evidence.claim)}</p></div>
+      <div><strong>来源文件</strong><p>${escapeHtml(evidence.source.document_title)}</p></div>
+      <div><strong>位置</strong><p>第 ${escapeHtml(evidence.location.page)} 页 · ${escapeHtml(evidence.location.section_title || "相关章节")}</p></div>
+      <div><strong>原文片段</strong><p>${escapeHtml(evidence.original_text)}</p></div>
+      <div><strong>置信度</strong><p>${escapeHtml(evidence.confidence)}</p></div>
     `;
     nodes.evidenceDrawer.classList.add("open");
     nodes.evidenceDrawer.setAttribute("aria-hidden", "false");
   } catch (error) {
-    nodes.evidenceBody.innerHTML = `<p>${error.message}</p>`;
+    nodes.evidenceBody.textContent = error.message;
     nodes.evidenceDrawer.classList.add("open");
   }
 }
@@ -205,7 +227,7 @@ async function askQuestion() {
       body: JSON.stringify({ question })
     });
     nodes.answerBox.innerHTML = `
-      <p>${data.answer}</p>
+      <p>${escapeHtml(data.answer)}</p>
       ${data.answer_type === "finance_handoff" ? '<button type="button" id="inlineFinanceButton">进入财报掘金</button>' : ""}
     `;
     const inline = document.querySelector("#inlineFinanceButton");
@@ -278,7 +300,20 @@ function label(key) {
 }
 
 function escapeAttr(value) {
-  return String(value).replace(/"/g, "&quot;");
+  return escapeHtml(value).replace(/`/g, "&#96;");
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character]));
+}
+
+function safeUrl(value) {
+  try {
+    const url = new URL(value, window.location.origin);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "#";
+  } catch (_) {
+    return "#";
+  }
 }
 
 boot();

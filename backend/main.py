@@ -6,6 +6,14 @@ from fastapi.staticfiles import StaticFiles
 
 from backend.api import analysis, auth, companies, metrics, qa, reports, watchlists
 from backend.company_profile.router import router as company_profile_router
+from backend.company_profile.orchestrator import CompanyProfileOrchestrator
+from backend.financial_agent.orchestrator import FinancialAnalysisOrchestrator
+from backend.financial_agent.router import router as financial_agent_router
+from backend.three_minute_summary.orchestrator import ThreeMinuteSummaryOrchestrator
+from backend.three_minute_summary.router import router as three_minute_summary_router
+from backend.three_minute_summary.video_orchestrator import VideoScriptOrchestrator
+from backend.data_platform.router import router as data_platform_router
+from backend.data_platform.scheduler import MaintenanceScheduler
 from backend.schemas.models import AnalyzeRequest, QaRequest
 from backend.services.analysis_engine import analyze_periods
 from backend.services.container import ServiceContainer
@@ -26,6 +34,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.state.services = ServiceContainer(STORAGE_DIR)
+app.state.profile_orchestrator = CompanyProfileOrchestrator(app.state.services.data_service)
+app.state.financial_agent_orchestrator = FinancialAnalysisOrchestrator(app.state.services.data_service)
+app.state.three_minute_summary_orchestrator = ThreeMinuteSummaryOrchestrator(app.state.services.data_service, app.state.services.sqlite_store)
+app.state.three_minute_video_orchestrator = VideoScriptOrchestrator(app.state.three_minute_summary_orchestrator)
+app.state.maintenance_scheduler = MaintenanceScheduler(app.state.services.data_service)
+app.state.maintenance_scheduler.start_if_enabled()
 
 app.include_router(companies.router)
 app.include_router(auth.router)
@@ -36,6 +50,9 @@ app.include_router(metrics.router)
 app.include_router(watchlists.router)
 app.include_router(support_router)
 app.include_router(company_profile_router)
+app.include_router(financial_agent_router)
+app.include_router(three_minute_summary_router)
+app.include_router(data_platform_router)
 
 
 @app.get("/api/health")

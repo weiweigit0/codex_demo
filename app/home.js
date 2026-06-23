@@ -9,6 +9,7 @@ const marketButtons = document.querySelectorAll("[data-market]");
 const tickerInput = document.querySelector("#homeTickerInput");
 const analyzeButton = document.querySelector("#homeAnalyzeButton");
 const profileAnalyzeButton = document.querySelector("#profileAnalyzeButton");
+const summaryAnalyzeButton = document.querySelector("#summaryAnalyzeButton");
 const documentTypeSelect = document.querySelector("#documentTypeSelect");
 const searchMessage = document.querySelector("#homeSearchMessage");
 const quickCompanies = document.querySelector("#homeQuickCompanies");
@@ -73,6 +74,14 @@ function startProfileService() {
   window.location.href = `${PAGE_BASE}/profile.html?${params.toString()}`;
 }
 
+function startSummaryService() {
+  const raw = tickerInput.value.trim();
+  if (!ensureTicker(raw)) return;
+  const market = inferMarket(raw, selectedMarket);
+  const params = new URLSearchParams({ ticker: raw, market });
+  window.location.href = `${PAGE_BASE}/summary.html?${params.toString()}`;
+}
+
 function ensureTicker(raw) {
   if (raw) return true;
   searchMessage.textContent = "请先输入股票代码或公司名。";
@@ -84,6 +93,7 @@ function ensureTicker(raw) {
 logoutButton.addEventListener("click", logout);
 analyzeButton.addEventListener("click", startFinancialService);
 profileAnalyzeButton.addEventListener("click", startProfileService);
+summaryAnalyzeButton.addEventListener("click", startSummaryService);
 tickerInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") startService();
 });

@@ -2,30 +2,17 @@ from __future__ import annotations
 
 from typing import List, Optional
 
-from backend.data_sources.ashare_source import AShareSource
-from backend.data_sources.sec_source import SecClient
-from backend.repositories.json_store import JsonStore
+from backend.data_platform.service import DataService
 
 
 class ReportService:
-    def __init__(self, store: JsonStore, sec_client: SecClient, ashare_source: AShareSource):
-        self.store = store
-        self.sec_client = sec_client
-        self.ashare_source = ashare_source
+    """Financial-report facade. External source calls are owned by DataService."""
+
+    def __init__(self, data_service: DataService):
+        self.data_service = data_service
 
     def list_options(self, company: dict) -> dict:
-        if company["market"] == "CN":
-            reports = self.ashare_source.list_reports(company)
-            annual = [item["period"] for item in reports if item["report_type"] == "annual"]
-            quarterly = [item["period"] for item in reports if item["report_type"] == "quarterly"]
-            return {"annual": annual, "quarterly": quarterly, "reports": reports}
-
-        dataset = self.sec_client.fetch_financial_dataset(company["cik"])
-        records = dataset["records"]
-        annual = sorted([key for key in records.keys() if key.endswith("-FY")], reverse=True)[:12]
-        quarterly = sorted([key for key in records.keys() if not key.endswith("-FY")], reverse=True)[:24]
-        periods = {"annual": annual, "quarterly": quarterly}
-        return {**periods, "reports": self._sec_report_metas(company, periods, dataset)}
+        return self.data_service.list_report_options(company)
 
     def fetch_financial_dataset(
         self,
@@ -33,9 +20,7 @@ class ReportService:
         periods: Optional[List[str]] = None,
         period_type: str = "annual",
     ) -> dict:
-        if company["market"] == "CN":
-            return self.ashare_source.fetch_financial_dataset(company, periods=periods, period_type=period_type)
-        return self.sec_client.fetch_financial_dataset(company["cik"])
+        return self.data_service.get_financial_dataset(company, periods=periods, period_type=period_type)
 
     def _sec_report_metas(self, company: dict, periods: dict, dataset: dict) -> List[dict]:
         reports = []

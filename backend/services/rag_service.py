@@ -36,6 +36,56 @@ def answer_question(question: str, analysis: dict) -> dict:
     }
 
 
+def answer_with_knowledge(question: str, analysis: dict, knowledge_blocks: List[dict]) -> dict:
+    """Use canonical evidence blocks as the primary citation surface for QA."""
+    knowledge_chunks = [
+        {"title": "%s · 第%s页" % (item.get("section_title") or "披露文件", item.get("page_number") or "?"),
+         "content": item.get("text", ""), "block_id": item.get("block_id"), "page": item.get("page_number"),
+         "quality_status": item.get("quality_status"), "source_quote": item.get("source_quote")}
+        for item in knowledge_blocks
+    ]
+    if knowledge_chunks:
+        snippets = [_relevant_sentence(item["content"], question) for item in knowledge_chunks]
+        snippets = [item for item in snippets if item]
+        answer = "先说结论：" + ("；".join(snippets[:2]) if snippets else "已找到相关披露原文，请查看引用依据。")
+        compliance = ComplianceService().review_text(answer)
+        return {
+            "answer": compliance["text"], "citations": knowledge_chunks[:3], "compliance": compliance,
+            "disclaimer": analysis.get("disclaimer", compliance["disclaimer"]), "knowledge_backed": True,
+        }
+    result = answer_question(question, analysis)
+    result["knowledge_backed"] = False
+    return result
+
+
+def _relevant_sentence(text: str, question: str) -> str:
+    normalized_question = question or ""
+    terms = re.findall(r"[\u4e00-\u9fff]{2,}|[A-Za-z]{3,}", normalized_question)
+    aliases = {
+        "主营业务": ["主营业务", "主要业务", "业务是"],
+        "业务": ["主营业务", "主要业务", "业务是"],
+        "收入": ["营业收入", "收入"],
+        "风险": ["风险", "不确定"],
+    }
+    candidates = []
+    if "主营" in normalized_question or "业务" in normalized_question:
+        candidates.extend(aliases["主营业务"])
+    if "收入" in normalized_question or "营收" in normalized_question:
+        candidates.extend(aliases["收入"])
+    if "利润" in normalized_question:
+        candidates.extend(aliases["利润"])
+    if "风险" in normalized_question:
+        candidates.extend(aliases["风险"])
+    for term in terms:
+        candidates.extend(aliases.get(term, [term]))
+    sentences = re.split(r"(?<=[。；])|\n", text or "")
+    for sentence in sentences:
+        clean = re.sub(r"\s+", " ", sentence).strip()
+        if clean and any(term in clean for term in candidates):
+            return clean[:360]
+    return ""
+
+
 def _retrieve(question: str, chunks: List[dict]) -> List[dict]:
     question_tokens = _tokens(question)
     scored = []

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import time
+import re
 from datetime import datetime
 from typing import Dict, Iterable, List, Optional
 
@@ -31,6 +32,7 @@ CONCEPTS = {
 }
 
 SUPPORTED_SEC_FORMS = {"10-K", "10-Q", "20-F", "6-K"}
+PROFILE_SEC_FORMS = SUPPORTED_SEC_FORMS | {"S-1", "F-1"}
 ANNUAL_SEC_FORMS = {"10-K", "20-F"}
 QUARTERLY_SEC_FORMS = {"10-Q", "6-K"}
 
@@ -45,6 +47,9 @@ class SecClient:
         self._facts_cache: Dict[str, dict] = {}
         self._submissions_cache: Dict[str, dict] = {}
         self._last_request = 0.0
+        # SEC filings must not inherit an enterprise proxy configured for the LLM.
+        self._http = requests.Session()
+        self._http.trust_env = False
 
     def search_companies(self, query: str) -> List[dict]:
         query = query.strip().lower()
@@ -94,6 +99,55 @@ class SecClient:
             "filings": self._collect_filings(submissions),
         }
 
+    def list_filing_documents(self, cik: str) -> List[dict]:
+        submissions = self.fetch_submissions(cik)
+        recent = submissions.get("filings", {}).get("recent", {})
+        documents = []
+        for idx, form in enumerate(recent.get("form", [])):
+            if form not in PROFILE_SEC_FORMS:
+                continue
+            accession = _safe_get(recent.get("accessionNumber", []), idx)
+            primary = _safe_get(recent.get("primaryDocument", []), idx)
+            if not accession or not primary:
+                continue
+            cik_number = int(str(submissions.get("cik", cik)))
+            documents.append({
+                "accession": accession,
+                "form": form,
+                "report_date": _safe_get(recent.get("reportDate", []), idx),
+                "filing_date": _safe_get(recent.get("filingDate", []), idx),
+                "url": "https://www.sec.gov/Archives/edgar/data/%s/%s/%s" % (cik_number, accession.replace("-", ""), primary),
+            })
+        return documents
+
+    def extract_filing_text(self, url: str) -> str:
+        """Fetch SEC filing HTML and retain readable text for the profile Agent."""
+        return self.extract_filing_text_from_html(self.download_filing_html(url))
+
+    def download_filing_html(self, url: str) -> bytes:
+        """Download and preserve the official filing source before text extraction."""
+        self._throttle()
+        try:
+            response = self._http.get(url, headers=SEC_HEADERS, timeout=30)
+        except requests.RequestException as exc:
+            raise SecClientError(f"联网获取 SEC 披露文件失败：{exc}")
+        if response.status_code >= 400:
+            raise SecClientError(f"SEC 披露文件返回 {response.status_code}：{url}")
+        return response.content
+
+    def extract_filing_text_from_html(self, content: bytes) -> str:
+        text = content.decode("utf-8", errors="ignore")
+        text = re.sub(r"(?is)<(script|style)[^>]*>.*?</\\1>", " ", text)
+        text = re.sub(r"(?i)</(?:p|div|h[1-6]|tr|li|section|table)\\s*>", "\\n\\n", text)
+        text = re.sub(r"(?s)<[^>]+>", " ", text)
+        text = re.sub(r"&nbsp;|&#160;", " ", text)
+        text = re.sub(r"&amp;", "&", text)
+        text = re.sub(r"[ \\t]+", " ", text)
+        text = re.sub(r"\\n{3,}", "\\n\\n", text).strip()
+        if len(text) < 300:
+            raise SecClientError("SEC 披露文件正文过少，无法生成公司画像。")
+        return text
+
     def fetch_companyfacts(self, cik: str) -> dict:
         normalized = cik.zfill(10)
         if normalized not in self._facts_cache:
@@ -126,7 +180,7 @@ class SecClient:
     def _get_json(self, url: str) -> dict:
         self._throttle()
         try:
-            response = requests.get(url, headers=SEC_HEADERS, timeout=20)
+            response = self._http.get(url, headers=SEC_HEADERS, timeout=20)
         except requests.RequestException as exc:
             raise SecClientError(f"联网获取 SEC 数据失败：{exc}")
         if response.status_code >= 400:
