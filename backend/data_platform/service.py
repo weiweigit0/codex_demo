@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import re
 import uuid
 from datetime import datetime, timedelta, timezone
@@ -10,6 +11,7 @@ from threading import Thread
 from typing import Optional
 
 from backend.company_profile.wikipedia_client import EncyclopediaClient
+from backend.data_platform.company_identity import CompanyIdentityError, missing_identity_fields, require_complete_identity
 from backend.data_platform.knowledge_repository import KnowledgeRepository
 from backend.data_platform.knowledge_schema import source_authority
 from backend.data_platform.document_processor import DocumentProcessor
@@ -23,6 +25,7 @@ from backend.services.sec_client import SecClient, SecClientError
 DOCUMENT_INDEX_TTL = timedelta(days=1)
 ENCYCLOPEDIA_TTL = timedelta(days=45)
 PROFILE_TTL = timedelta(days=30)
+logger = logging.getLogger(__name__)
 
 
 class DataService:
@@ -43,7 +46,7 @@ class DataService:
         normalized = _market(market)
         cached = self.repository.search_companies(query, normalized)
         if cached:
-            return cached
+            return self._complete_company_results(cached)
         results = []
         if normalized in {"ALL", "US"}:
             try:
@@ -52,19 +55,19 @@ class DataService:
                 pass
         if normalized in {"ALL", "CN"}:
             results.extend(self.ashare_source.search_companies(query))
-        return [self._remember_company(_normalize_company(item)) for item in results]
+        return self._complete_company_results(results)
 
-    def resolve_company(self, ticker_or_name: str, market: str = "US", force: bool = False) -> dict:
+    def resolve_company(self, ticker_or_name: str, market: str = "US", force: bool = False, repair_incomplete: bool = True) -> dict:
         normalized = _market(market)
         if normalized == "ALL":
             normalized = "CN" if _looks_cn_ticker(ticker_or_name) else "US"
         if not force:
             cached = self.repository.get_company(ticker_or_name, normalized)
             if cached:
-                return cached
+                return self.ensure_complete_company(cached, repair_incomplete=repair_incomplete)
         if normalized == "CN":
             return self._remember_company(_normalize_company(self.ashare_source.resolve_company(ticker_or_name)))
-        return self._remember_company(_normalize_company(self.sec_client.resolve_company(ticker_or_name)))
+        return self._remember_company(_verified_company(_normalize_company(self.sec_client.resolve_company(ticker_or_name))))
 
     def top_companies(self, market: str = "ALL") -> list[dict]:
         results = []
@@ -73,9 +76,10 @@ class DataService:
             results.extend(_local_top_us())
         if normalized in {"ALL", "CN"}:
             results.extend(self.ashare_source.top_companies(limit=80))
-        return [self._remember_company(_normalize_company(item)) for item in results]
+        return self._complete_company_results(results)
 
     def list_report_options(self, company: dict, force: bool = False) -> dict:
+        company = self.ensure_complete_company(company)
         # A-share report selection must not depend on PDF metric extraction. A
         # scanned or unusual PDF can be unavailable for analysis while still
         # remaining a valid, user-selectable disclosure document.
@@ -109,6 +113,7 @@ class DataService:
         period_type: str = "annual",
         force: bool = False,
     ) -> dict:
+        company = self.ensure_complete_company(company)
         key = company["id"]
         cached = None if force else self.repository.get_snapshot("financial_dataset", key, allow_stale=True)
         if cached:
@@ -130,6 +135,7 @@ class DataService:
         return self._validated_dataset(company, fresh)
 
     def list_profile_documents(self, company: dict, year: Optional[int] = None, force: bool = False) -> list[dict]:
+        company = self.ensure_complete_company(company)
         existing = [] if force else self.repository.list_documents(company["id"], {"annual", "prospectus", "quarterly"})
         fresh_enough = existing and all(not _expired(item.get("index_expires_at")) for item in existing[:1])
         if not fresh_enough:
@@ -367,6 +373,74 @@ class DataService:
     def _remember_company(self, company: dict) -> dict:
         return self.repository.upsert_company(company)
 
+    def ensure_complete_company(self, company: dict, repair_incomplete: bool = True) -> dict:
+        """Return a source-ready company record, repairing incomplete US cache rows once."""
+        normalized = _normalize_company(company)
+        missing = missing_identity_fields(normalized)
+        if not missing:
+            return self._remember_company(_verified_company(normalized))
+        if normalized.get("market") != "US" or not repair_incomplete:
+            raise CompanyIdentityError(
+                "公司身份信息不完整，无法读取公开披露数据。",
+                missing,
+            )
+        return self.repair_company_identity(normalized, persist=True)
+
+    def repair_company_identity(self, company: dict, persist: bool = True) -> dict:
+        """Resolve a stale US identity from SEC and optionally write the repair and audit record."""
+        normalized = _normalize_company(company)
+        missing = missing_identity_fields(normalized)
+        if not missing:
+            return self._remember_company(_verified_company(normalized)) if persist else _verified_company(normalized)
+        ticker = normalized.get("ticker") or company.get("ticker")
+        if not ticker:
+            return self._identity_repair_failed(normalized, missing, "美股公司缺少股票代码，无法补齐 SEC 标识。", persist)
+        try:
+            resolved = _normalize_company(self.sec_client.resolve_company(ticker))
+        except SecClientError as exc:
+            return self._identity_repair_failed(normalized, missing, "美股公司缺少可用的 SEC CIK，且自动补齐失败。", persist, exc)
+        if missing_identity_fields(resolved):
+            return self._identity_repair_failed(normalized, missing, "SEC 返回的公司标识不完整，无法继续分析。", persist)
+        repaired = dict(normalized)
+        for field in ("cik", "ticker", "name", "market", "source"):
+            if resolved.get(field) not in (None, ""):
+                repaired[field] = resolved[field]
+        repaired["id"] = normalized.get("id") or resolved["id"]
+        repaired = _verified_company(repaired, repaired_from="SEC_EDGAR")
+        if persist:
+            self.repository.upsert_company(repaired)
+            self.repository.record_company_identity_repair(normalized, "SUCCEEDED", "SEC_EDGAR", normalized, repaired)
+            logger.info("company_identity_repair_succeeded company_id=%s ticker=%s", repaired["id"], repaired["ticker"])
+        return repaired
+
+    def _identity_repair_failed(
+        self,
+        company: dict,
+        missing: list[str],
+        message: str,
+        persist: bool,
+        cause: Optional[Exception] = None,
+    ) -> dict:
+        failed = dict(company)
+        failed.update({"identity_status": "NEEDS_REVIEW", "identity_error": message})
+        if persist:
+            self.repository.upsert_company(failed)
+            self.repository.record_company_identity_repair(
+                company, "FAILED", "SEC_EDGAR", company, None, str(cause or message)
+            )
+            logger.warning("company_identity_repair_failed company_id=%s ticker=%s", company["id"], company.get("ticker"))
+        raise CompanyIdentityError(message, missing) from cause
+
+    def _complete_company_results(self, items: list[dict]) -> list[dict]:
+        """Never expose an incomplete US cache row in company search or top-company lists."""
+        completed = []
+        for item in items:
+            try:
+                completed.append(self.ensure_complete_company(item))
+            except CompanyIdentityError:
+                continue
+        return completed
+
     def _sync_canonical_document(self, document: dict) -> None:
         self.knowledge.upsert_document(document, source_authority(document.get("report_type", "unknown")))
 
@@ -493,7 +567,20 @@ def _knowledge_terms(query: str) -> list[str]:
 def _normalize_company(item: dict) -> dict:
     market = item.get("market", "US")
     ticker = item.get("ticker", "")
-    return {"id": item.get("id") or f"{market}-{ticker}", "cik": item.get("cik"), "ticker": ticker, "name": item.get("name", ""), "short_name": item.get("short_name"), "market": market, "exchange": item.get("exchange"), "industry": item.get("industry") or _infer_industry(item.get("name", ""), ticker), "source": item.get("source"), "org_id": item.get("org_id")}
+    return {"id": item.get("id") or f"{market}-{ticker}", "cik": item.get("cik"), "ticker": ticker, "name": item.get("name", ""), "short_name": item.get("short_name"), "market": market, "exchange": item.get("exchange"), "industry": item.get("industry") or _infer_industry(item.get("name", ""), ticker), "source": item.get("source"), "org_id": item.get("org_id"), "identity_status": item.get("identity_status"), "identity_source": item.get("identity_source"), "identity_verified_at": item.get("identity_verified_at"), "identity_error": item.get("identity_error")}
+
+
+def _verified_company(company: dict, repaired_from: str = "") -> dict:
+    """Attach identity metadata without changing the canonical company identifier."""
+    normalized = dict(company)
+    require_complete_identity(normalized)
+    normalized.update({
+        "identity_status": "VERIFIED",
+        "identity_source": repaired_from or normalized.get("identity_source") or normalized.get("source") or "source_adapter",
+        "identity_verified_at": utc_now(),
+        "identity_error": None,
+    })
+    return normalized
 
 
 def _infer_industry(name: str, ticker: str) -> str:

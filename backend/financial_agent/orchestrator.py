@@ -5,9 +5,11 @@ from pathlib import Path
 from threading import RLock, Thread
 
 from backend.data_platform.repository import json_hash, utc_now
+from backend.data_platform.company_identity import CompanyIdentityError
 from backend.financial_agent.agent import FinancialAnalysisAgent, PROMPT_VERSION
 from backend.repositories.json_store import JsonStore
 from backend.services.analysis_engine import analyze_periods
+from backend.services.sec_client import SecClientError
 
 
 class FinancialAnalysisOrchestrator:
@@ -76,7 +78,7 @@ class FinancialAnalysisOrchestrator:
                 self.data_service.knowledge.finish_model_run(run_id, "FAILED", error_message=str(exc))
             except Exception:
                 pass
-            task.update({"status": "FAILED", "progress": task.get("progress", 0), "current_step": "财报 Agent 分析失败", "error": {"code": "FINANCIAL_AGENT_FAILED", "message": _public_error(exc)}, "updated_at": utc_now()})
+            task.update({"status": "FAILED", "progress": task.get("progress", 0), "current_step": "财报 Agent 分析失败", "error": _error_payload(exc), "updated_at": utc_now()})
         finally:
             self.store.upsert("financial_agent_tasks", task["task_id"], task)
 
@@ -119,11 +121,37 @@ def _merge(base, agent_result, analysis_id, company, periods):
             "generation_meta": agent_result.get("generation_meta", {}), "disclaimer": base.get("disclaimer")}
 
 
-def _public_error(exc):
+def _error_payload(exc):
     message = str(exc)
+    if isinstance(exc, CompanyIdentityError):
+        return {
+            "code": exc.code,
+            "message": "该美股公司缺少可用的 SEC 标识，系统无法读取财务披露。",
+            "retryable": exc.retryable,
+            "source": exc.source,
+        }
+    if isinstance(exc, SecClientError):
+        if "缺少可用的 SEC CIK" in message:
+            return {
+                "code": "COMPANY_IDENTITY_INCOMPLETE",
+                "message": "该美股公司缺少可用的 SEC 标识，系统无法读取财务披露。",
+                "retryable": True,
+                "source": "SEC",
+            }
+        return {
+            "code": "SEC_SOURCE_UNAVAILABLE",
+            "message": "SEC 披露数据暂时不可访问，请稍后重试。",
+            "retryable": True,
+            "source": "SEC",
+        }
     if "数据质量校验未通过" in message:
-        return message
-    return "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。"
+        return {"code": "FINANCIAL_DATA_QUALITY_FAILED", "message": message, "retryable": False, "source": "financial_quality"}
+    return {
+        "code": "FINANCIAL_AGENT_FAILED",
+        "message": "已验证财务事实、披露资料或模型服务暂时不可用，请稍后重试。",
+        "retryable": True,
+        "source": "financial_agent",
+    }
 
 
 def _balanced_document_blocks(data_service, documents: list[dict], maximum: int) -> list[dict]:

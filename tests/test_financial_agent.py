@@ -1,7 +1,8 @@
 import unittest
 
 from backend.financial_agent.agent import FinancialAnalysisAgent
-from backend.financial_agent.orchestrator import _balanced_document_blocks
+from backend.financial_agent.orchestrator import _balanced_document_blocks, _error_payload
+from backend.data_platform.company_identity import CompanyIdentityError
 
 
 class FakeDeepSeek:
@@ -42,6 +43,12 @@ class FakeDeepSeek:
 
 
 class FinancialAnalysisAgentTest(unittest.TestCase):
+    def test_identity_failure_is_not_reported_as_model_failure(self):
+        payload = _error_payload(CompanyIdentityError("missing cik", ["cik"]))
+
+        self.assertEqual(payload["code"], "COMPANY_IDENTITY_INCOMPLETE")
+        self.assertEqual(payload["source"], "company_identity")
+
     def test_agent_only_retains_real_evidence_and_fact_ids(self):
         agent = FinancialAnalysisAgent(FakeDeepSeek())
         result = agent.analyze(

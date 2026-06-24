@@ -11,6 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY backend ./backend
 COPY app ./app
+COPY scripts ./scripts
 
 RUN mkdir -p /app/backend/storage
 

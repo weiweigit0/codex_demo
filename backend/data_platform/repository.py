@@ -73,6 +73,20 @@ class DataRepository:
                     updated_at TEXT NOT NULL
                 );
                 CREATE INDEX IF NOT EXISTS idx_refresh_jobs_company ON refresh_jobs(company_id, created_at DESC);
+                CREATE TABLE IF NOT EXISTS company_identity_repairs (
+                    repair_id TEXT PRIMARY KEY,
+                    company_id TEXT NOT NULL,
+                    market TEXT NOT NULL,
+                    ticker TEXT NOT NULL,
+                    status TEXT NOT NULL,
+                    source TEXT,
+                    original_payload_json TEXT NOT NULL,
+                    repaired_payload_json TEXT,
+                    error_message TEXT,
+                    created_at TEXT NOT NULL
+                );
+                CREATE INDEX IF NOT EXISTS idx_company_identity_repairs_company
+                    ON company_identity_repairs(company_id, created_at DESC);
                 """
             )
 
@@ -111,6 +125,66 @@ class DataRepository:
         with self.store.connect() as db:
             rows = db.execute(sql, tuple(params)).fetchall()
         return [json.loads(row["payload_json"]) for row in rows]
+
+    def list_incomplete_companies(self, market: str = "US", ticker: str = "") -> list[dict]:
+        """Return candidates that need identity repair without relying on SQLite JSON extensions."""
+        sql = "SELECT payload_json FROM data_companies WHERE market = ?"
+        params: list[Any] = [market]
+        if ticker:
+            sql += " AND upper(ticker) = upper(?)"
+            params.append(ticker)
+        with self.store.connect() as db:
+            rows = db.execute(sql, tuple(params)).fetchall()
+        items = [json.loads(row["payload_json"]) for row in rows]
+        if market == "US":
+            return [item for item in items if not str(item.get("cik") or "").strip().isdigit()]
+        return items
+
+    def record_company_identity_repair(
+        self,
+        company: dict,
+        status: str,
+        source: str,
+        original: dict,
+        repaired: Optional[dict] = None,
+        error_message: str = "",
+    ) -> None:
+        now = utc_now()
+        repair_id = "identity_repair_%s" % hashlib.sha1(
+            (company["id"] + status + now).encode("utf-8")
+        ).hexdigest()[:16]
+        with self.store.connect() as db:
+            db.execute(
+                """INSERT INTO company_identity_repairs(
+                    repair_id, company_id, market, ticker, status, source,
+                    original_payload_json, repaired_payload_json, error_message, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    repair_id, company["id"], company.get("market") or "", company.get("ticker") or "",
+                    status, source, json.dumps(original, ensure_ascii=False),
+                    json.dumps(repaired, ensure_ascii=False) if repaired else None,
+                    error_message[:500] or None, now,
+                ),
+            )
+
+    def list_company_identity_repairs(self, company_id: str = "", limit: int = 100) -> list[dict]:
+        sql = "SELECT * FROM company_identity_repairs"
+        params: list[Any] = []
+        if company_id:
+            sql += " WHERE company_id = ?"
+            params.append(company_id)
+        sql += " ORDER BY created_at DESC LIMIT ?"
+        params.append(limit)
+        with self.store.connect() as db:
+            rows = db.execute(sql, tuple(params)).fetchall()
+        result = []
+        for row in rows:
+            item = dict(row)
+            item["original"] = json.loads(item.pop("original_payload_json"))
+            payload = item.pop("repaired_payload_json")
+            item["repaired"] = json.loads(payload) if payload else None
+            result.append(item)
+        return result
 
     def upsert_document(self, document: dict, expires_at: Optional[str] = None) -> dict:
         now = utc_now()

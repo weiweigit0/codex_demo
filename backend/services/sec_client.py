@@ -149,14 +149,14 @@ class SecClient:
         return text
 
     def fetch_companyfacts(self, cik: str) -> dict:
-        normalized = cik.zfill(10)
+        normalized = _normalized_cik(cik)
         if normalized not in self._facts_cache:
             url = f"https://data.sec.gov/api/xbrl/companyfacts/CIK{normalized}.json"
             self._facts_cache[normalized] = self._get_json(url)
         return self._facts_cache[normalized]
 
     def fetch_submissions(self, cik: str) -> dict:
-        normalized = cik.zfill(10)
+        normalized = _normalized_cik(cik)
         if normalized not in self._submissions_cache:
             url = f"https://data.sec.gov/submissions/CIK{normalized}.json"
             self._submissions_cache[normalized] = self._get_json(url)
@@ -306,6 +306,14 @@ class SecClient:
                 "url": url,
             }
         return filings
+
+
+def _normalized_cik(cik: str) -> str:
+    """Reject incomplete company records before building a SEC request URL."""
+    value = str(cik or "").strip()
+    if not value or not value.isdigit():
+        raise SecClientError("美股公司缺少可用的 SEC CIK，无法读取 SEC 财务事实。")
+    return value.zfill(10)
 
 
 def _safe_get(items: Iterable, idx: int):

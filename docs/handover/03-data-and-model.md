@@ -34,6 +34,7 @@ LLM_TRANSPORT=requests
 - 不要把 API Key 写入日志、测试夹具、文档或 Git 提交。
 - 输出面向用户时必须为简体中文；英文 SEC 原文仅作为模型理解材料。
 - 模型 JSON 必须经过本地 schema、证据引用和语言校验，不接受未验证的自由文本作为事实。
+- 美股公司缓存必须具备数字格式的 SEC CIK。缓存缺失时，`DataService` 会回源 SEC 自动补齐；修复记录保存到 `company_identity_repairs`，可用 `scripts/repair_company_identities.py` 批量治理。
 
 ## 各 Agent 的职责
 
@@ -43,4 +44,3 @@ LLM_TRANSPORT=requests
 | 公司画像 | `company_profile/agent.py` | 三年年报、可得招股书、百科补充 | 分阶段抽取、综合、非财务风险事实与等级分离 |
 | 3 分钟总结 | `three_minute_summary/agent.py` | 财报产物、画像事实、证据块 | 面向普通人的通俗表述，评分不是投资评级 |
 | 视频脚本 | `three_minute_summary/video_agent.py` | 已完成总结 | 仅生成口播与分镜，不直接生产视频 |
-
