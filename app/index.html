@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>财报掘金</title>
-    <link rel="stylesheet" href="./styles.css?v=20260617-2" />
+    <link rel="stylesheet" href="./fm-ui.css?v=20260625-2" />
+    <link rel="stylesheet" href="./styles.css?v=20260625-5" />
   </head>
   <body>
     <main class="app-shell">
@@ -61,10 +62,10 @@
           <button class="tab" data-view="watchlist">自选跟踪</button>
         </nav>
 
-        <header class="topbar">
+        <header id="overviewView" class="topbar">
           <div>
-            <p id="reportPeriod" class="eyebrow">2025 年报</p>
-            <h2 id="companyTitle">贵州茅台</h2>
+            <p id="reportPeriod" class="eyebrow">报告期载入中</p>
+            <h2 id="companyTitle">正在载入公司</h2>
           </div>
           <div id="stanceBadge" class="stance-badge neutral">中性</div>
         </header>
@@ -72,10 +73,10 @@
         <section class="hero-summary">
           <div>
             <p class="eyebrow">一句话总结</p>
-            <h3 id="oneLineSummary">收入与利润保持增长，现金流质量较好，但仍需观察渠道库存和费用变化。</h3>
+            <h3 id="oneLineSummary">正在读取公开披露数据、校验财务事实，并生成通俗分析...</h3>
           </div>
           <div class="score-box">
-            <span id="healthScore">82</span>
+            <span id="healthScore">--</span>
             <small>财报健康度</small>
           </div>
         </section>
@@ -161,6 +162,7 @@
       </section>
     </main>
 
-    <script src="./app.js?v=20260617-4"></script>
+    <script src="./fm-ui.js?v=20260625-2"></script>
+    <script src="./app.js?v=20260625-5"></script>
   </body>
 </html>

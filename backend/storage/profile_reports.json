@@ -9588,5 +9588,940 @@
     ],
     "disclaimer": "本报告仅基于公开披露文件自动生成，用于帮助理解公司，不构成投资建议。",
     "created_at": "2026-06-22T23:05:20+0800"
+  },
+  "profile_report_53b5c3dde9cb": {
+    "report_id": "profile_report_53b5c3dde9cb",
+    "title": "一页看懂：Baidu, Inc.",
+    "company": {
+      "company_id": "US-BIDU",
+      "full_name": "Baidu, Inc.",
+      "short_name": "Baidu, Inc.",
+      "stock_code": "BIDU",
+      "market": "US",
+      "exchange": null
+    },
+    "source_document": {
+      "document_id": "US-BIDU-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "Baidu, Inc. 2025-FY 20-F",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-17",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "source_documents": [
+      {
+        "document_id": "US-BIDU-2025-FY",
+        "document_type": "annual_report",
+        "document_title": "Baidu, Inc. 2025-FY 20-F",
+        "report_period": "2025-FY",
+        "disclosure_date": "2026-03-17",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      },
+      {
+        "document_id": "US-BIDU-2024-FY",
+        "document_type": "annual_report",
+        "document_title": "Baidu, Inc. 2024-FY 20-F",
+        "report_period": "2024-FY",
+        "disclosure_date": "2025-03-28",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312525066199/d853848d20f.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      },
+      {
+        "document_id": "US-BIDU-2023-FY",
+        "document_type": "annual_report",
+        "document_title": "Baidu, Inc. 2023-FY 20-F",
+        "report_period": "2023-FY",
+        "disclosure_date": "2024-03-15",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312524068527/d584913d20f.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      },
+      {
+        "document_id": "SEC-BIDU-2005-PROSPECTUS-0001193125-05-140785",
+        "document_type": "prospectus",
+        "document_title": "Baidu, Inc. 2005-PROSPECTUS F-1",
+        "report_period": "2005-PROSPECTUS",
+        "disclosure_date": "2005-07-12",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312505140785/df1.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      }
+    ],
+    "report_type": "plain",
+    "extraction_mode": "agent_missing",
+    "generation_meta": {
+      "agent_version": "company_profile_agent_v1",
+      "extraction_mode": "agent_missing",
+      "llm_model": "deepseek-v4-flash",
+      "llm_provider": "deepseek",
+      "used_wikipedia": false,
+      "missing_information_count": 4,
+      "confidence": "low",
+      "field_source_summary": {
+        "filing_evidence_count": 1,
+        "key_people_count": 0,
+        "risk_count": 0,
+        "has_business_evidence": true,
+        "has_ownership_evidence": true
+      },
+      "cache_status": "HIT"
+    },
+    "risk_facts": [],
+    "risk_assessments": [],
+    "sections": [
+      {
+        "section_id": "profile_sec_70e52089ac62",
+        "section_type": "source_document",
+        "title": "本次使用的资料",
+        "content_blocks": [
+          {
+            "type": "notice",
+            "text": "以下内容仅基于公司公开披露的年度报告生成，未引入新闻、研报、社区评论或第三方观点。"
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_d13903efec98",
+        "section_type": "one_sentence_summary",
+        "title": "一句话看懂",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "Baidu, Inc.的主营业务在当前结构化结果中未能确认，建议查看缺失与待核验信息。"
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_d1572687d1c3",
+        "section_type": "basic_info",
+        "title": "基本信息",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "full_name": "Baidu, Inc.",
+              "short_name": "Baidu, Inc.",
+              "stock_code": "BIDU",
+              "market": "US",
+              "exchange": null,
+              "industry": "未披露",
+              "main_business": "未披露",
+              "controlling_shareholder": "未披露",
+              "actual_controller": "未披露",
+              "headquarters": "",
+              "evidence_refs": [
+                "ev_cb70e314b0ad"
+              ]
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_55a6d6f8fb75",
+        "section_type": "business_model",
+        "title": "业务与收入来源",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "公司画像 Agent 未完成结构化抽取。"
+          },
+          {
+            "type": "table",
+            "rows": [
+              {
+                "name": "待抽取",
+                "core_products_or_services": [],
+                "revenue_source_description": "未启用大模型时不再使用规则猜测业务内容。",
+                "plain_explanation": "请配置大模型 API Key 后重新生成，以获得基于披露文件的公司画像。",
+                "evidence_refs": [
+                  "ev_cb70e314b0ad"
+                ]
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_809e68ec9df4",
+        "section_type": "ownership",
+        "title": "股东与控制权",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "当前披露文件中未能确认控制权信息。"
+          },
+          {
+            "type": "kv",
+            "items": {
+              "controlling_shareholder": "未披露",
+              "actual_controller": "未披露",
+              "control_type": "unknown",
+              "shareholders": [],
+              "ownership_tags": [],
+              "plain_explanation": "当前披露文件中未能确认控制权信息。",
+              "evidence_refs": [
+                "ev_cb70e314b0ad"
+              ]
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_b0ed07b8c0f5",
+        "section_type": "key_people",
+        "title": "关键少数人",
+        "content_blocks": [
+          {
+            "type": "cards",
+            "items": []
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_94e1eef12fff",
+        "section_type": "industry_chain",
+        "title": "上下游产业链",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "upstream": [],
+              "company_position": "未披露",
+              "downstream": [],
+              "end_users": [],
+              "major_customers": [],
+              "major_suppliers": [],
+              "bargaining_power_note": "不进行竞争力或议价能力评级。",
+              "risk_note": "如披露客户或供应商集中，建议查看风险章节。",
+              "evidence_refs": [
+                "ev_cb70e314b0ad"
+              ]
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_ee32164f07e6",
+        "section_type": "capital_actions",
+        "title": "融资、分红与资本动作",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "dividends": [],
+              "buybacks": [],
+              "equity_incentives": [],
+              "financing_actions": [],
+              "summary": "未披露或无法确认。",
+              "evidence_refs": [
+                "ev_cb70e314b0ad"
+              ]
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_3fd63925a707",
+        "section_type": "non_financial_risks",
+        "title": "风险事实与需关注程度",
+        "content_blocks": [
+          {
+            "type": "risk_facts",
+            "items": []
+          },
+          {
+            "type": "risk_assessments",
+            "items": []
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_c4e1bfcef7c7",
+        "section_type": "plain_conclusion",
+        "title": "普通人版结论",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "Baidu, Inc.是一家披露文件显示主要围绕“未披露”开展经营的公司。从公司画像角度，建议重点看业务模式、控制权结构、关键人物、上下游关系和非财务风险。"
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_db89e23efa2e",
+        "section_type": "missing_information",
+        "title": "缺失与待核验信息",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "item_1": "company_profile：完整资料阅读阶段未返回结构化事实。（建议来源：配置大模型 API Key 后重新生成）",
+              "item_2": "business_model：未使用规则兜底，避免错误抽取。（建议来源：年报或招股说明书）",
+              "item_3": "key_people：未从披露文件中确认关键人物履历。（建议来源：年报董监高章节、招股书董事监事高级管理人员章节）",
+              "item_4": "non_financial_risks：未从披露文件中确认非财务风险摘要。（建议来源：年报或招股书风险因素章节）"
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_cb70e314b0ad"
+        ]
+      },
+      {
+        "section_id": "profile_sec_aca556b92857",
+        "section_type": "finance_agent_entry",
+        "title": "财务 Agent 入口",
+        "content_blocks": [
+          {
+            "type": "notice",
+            "text": "想进一步看收入增长、利润率、现金流、资产负债和财务风险，可进入财报掘金继续分析。"
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_50f5b0c384e4",
+        "section_type": "follow_up_questions",
+        "title": "继续追问",
+        "content_blocks": [
+          {
+            "type": "questions",
+            "items": [
+              "这家公司到底靠什么业务获得收入？",
+              "谁真正控制这家公司？",
+              "它的上游和下游分别是谁？",
+              "有哪些非财务风险？",
+              "有哪些资本动作？"
+            ]
+          }
+        ],
+        "evidence_refs": []
+      }
+    ],
+    "finance_agent_entry": {
+      "enabled": true,
+      "handoff_context_id": "profile_finance_handoff_0402f566d664",
+      "target_url": "/index.html?ticker=BIDU&market=US"
+    },
+    "suggested_questions": [
+      "这家公司到底靠什么业务获得收入？",
+      "谁真正控制这家公司？",
+      "它的上游和下游分别是谁？",
+      "有哪些非财务风险？",
+      "有哪些资本动作？"
+    ],
+    "disclaimer": "本报告仅基于公开披露文件自动生成，用于帮助理解公司，不构成投资建议。",
+    "created_at": "2026-06-25T11:58:09+0800"
+  },
+  "profile_report_f3fd01d58a59": {
+    "report_id": "profile_report_f3fd01d58a59",
+    "title": "一页看懂：Apple Inc.",
+    "company": {
+      "company_id": "US-AAPL",
+      "full_name": "Apple Inc.",
+      "short_name": "Apple Inc.",
+      "stock_code": "AAPL",
+      "market": "US",
+      "exchange": null
+    },
+    "source_document": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "source_documents": [
+      {
+        "document_id": "US-AAPL-2025-FY",
+        "document_type": "annual_report",
+        "document_title": "2025-FY",
+        "report_period": "2025-FY",
+        "disclosure_date": "2025-10-31",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      },
+      {
+        "document_id": "US-AAPL-2024-FY",
+        "document_type": "annual_report",
+        "document_title": "2024-FY",
+        "report_period": "2024-FY",
+        "disclosure_date": "2024-11-01",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      },
+      {
+        "document_id": "US-AAPL-2023-FY",
+        "document_type": "annual_report",
+        "document_title": "2023-FY",
+        "report_period": "2023-FY",
+        "disclosure_date": "2023-11-03",
+        "source_platform": "SEC EDGAR",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+        "version_type": "OFFICIAL",
+        "parse_status": "SUCCESS",
+        "information_completeness": "MEDIUM"
+      }
+    ],
+    "report_type": "plain",
+    "extraction_mode": "two_stage_agent",
+    "generation_meta": {
+      "agent_version": "company_profile_agent_v2",
+      "extraction_mode": "two_stage_agent",
+      "llm_model": "deepseek-v4-flash",
+      "llm_provider": "deepseek",
+      "document_fact_batches": 2,
+      "confidence": "medium",
+      "missing_information_count": 6,
+      "field_source_summary": {
+        "filing_evidence_count": 3,
+        "key_people_count": 0,
+        "risk_count": 3,
+        "has_business_evidence": true,
+        "has_ownership_evidence": false
+      },
+      "risk_assessment_version": "v1",
+      "has_industry_benchmark": false,
+      "cache_status": "HIT"
+    },
+    "risk_facts": [
+      {
+        "fact_id": "risk_fact_0",
+        "risk_category": "Macroeconomic and Industry Risks",
+        "risk_name": "Global and regional economic conditions",
+        "description": "The Company's operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company's business, results of operations, financial condition and stock price.",
+        "trend": "unknown",
+        "mitigation_disclosed": [],
+        "evidence_refs": [
+          "ev_4cc02503e7ac"
+        ],
+        "evidence_block_ids": [
+          "US-AAPL-2025-FY-p001-b001"
+        ]
+      },
+      {
+        "fact_id": "risk_fact_1",
+        "risk_category": "Macroeconomic and Industry Risks",
+        "risk_name": "Political events and business interruptions",
+        "description": "The Company's business can be impacted by political events, trade and other international disputes, geopolitical tensions, conflict, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions.",
+        "trend": "unknown",
+        "mitigation_disclosed": [],
+        "evidence_refs": [
+          "ev_d8fbf1d11c71"
+        ],
+        "evidence_block_ids": [
+          "US-AAPL-2025-FY-p001-b001"
+        ]
+      },
+      {
+        "fact_id": "risk_fact_2",
+        "risk_category": "Legal and Regulatory Compliance Risks",
+        "risk_name": "Antitrust litigation",
+        "description": "On March 21, 2024, the DOJ and a number of state and district attorneys general filed a civil antitrust lawsuit against the Company alleging monopolization or attempted monopolization in the markets for 'performance smartphones' and 'smartphones' generally in violation of U.S. antitrust laws.",
+        "trend": "unknown",
+        "mitigation_disclosed": [],
+        "evidence_refs": [
+          "ev_e7bc4f20c3e2"
+        ],
+        "evidence_block_ids": [
+          "US-AAPL-2025-FY-p001-b001"
+        ]
+      },
+      {
+        "fact_id": "risk_fact_3",
+        "risk_category": "macroeconomic",
+        "risk_name": "adverse economic conditions",
+        "description": "The Company's operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company's business, results of operations and financial condition.",
+        "trend": "unknown",
+        "mitigation_disclosed": [],
+        "evidence_refs": [
+          "ev_dc7354748aae"
+        ],
+        "evidence_block_ids": [
+          "US-AAPL-2023-FY-p001-b001"
+        ]
+      }
+    ],
+    "risk_assessments": [
+      {
+        "risk_category": "Macroeconomic and Industry Risks",
+        "attention_level": "medium",
+        "assessment_reason": "存在不利暴露，但无重大事件或持续恶化证据，且无缓释措施披露。",
+        "positive_signals": [],
+        "negative_signals": [
+          "业务依赖全球和区域经济条件",
+          "可能受政治事件、贸易争端、地缘政治紧张、冲突、恐怖主义、自然灾害、公共卫生事件、工业事故等影响"
+        ],
+        "uncertainties": [
+          "经济条件的不确定性",
+          "政治和业务中断事件的不确定性"
+        ],
+        "evidence_fact_ids": [
+          "risk_fact_0",
+          "risk_fact_1",
+          "risk_fact_3"
+        ]
+      },
+      {
+        "risk_category": "Legal and Regulatory Compliance Risks",
+        "attention_level": "high",
+        "assessment_reason": "重大事件：美国司法部及多州检察长于2024年3月21日提起反垄断诉讼，指控公司违反反垄断法，且无缓释措施披露。",
+        "positive_signals": [],
+        "negative_signals": [
+          "被提起反垄断诉讼，指控垄断或试图垄断'性能智能手机'和'智能手机'市场"
+        ],
+        "uncertainties": [
+          "诉讼结果及潜在处罚的不确定性"
+        ],
+        "evidence_fact_ids": [
+          "risk_fact_2"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "section_id": "profile_sec_ad198cccba01",
+        "section_type": "source_document",
+        "title": "本次使用的资料",
+        "content_blocks": [
+          {
+            "type": "notice",
+            "text": "以下内容仅基于公司公开披露的年度报告生成，未引入新闻、研报、社区评论或第三方观点。"
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_63fe1754a444",
+        "section_type": "one_sentence_summary",
+        "title": "一句话看懂",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "Apple Inc.主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wearables and...”开展业务。普通人可以理解为，公司通过披露文件中的核心产品或服务向客户提供价值。"
+          }
+        ],
+        "evidence_refs": [
+          "ev_4dd2480a0c36"
+        ]
+      },
+      {
+        "section_id": "profile_sec_fdbe832fe4a5",
+        "section_type": "basic_info",
+        "title": "基本信息",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "full_name": "Apple Inc.",
+              "short_name": "Apple Inc.",
+              "stock_code": "AAPL",
+              "market": "US",
+              "exchange": null,
+              "industry": "未披露",
+              "main_business": "designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services",
+              "controlling_shareholder": "未披露",
+              "actual_controller": "未披露",
+              "headquarters": "",
+              "evidence_refs": [
+                "ev_4dd2480a0c36"
+              ]
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_4dd2480a0c36"
+        ]
+      },
+      {
+        "section_id": "profile_sec_b867003dc225",
+        "section_type": "business_model",
+        "title": "业务与收入来源",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services"
+          },
+          {
+            "type": "table",
+            "rows": [
+              {
+                "name": "Americas",
+                "core_products_or_services": [],
+                "revenue_source_description": "公司通过披露文件所述产品或服务获得收入。",
+                "plain_explanation": "Apple Inc.主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wearables and ”开展业务。",
+                "evidence_refs": [
+                  "ev_4dd2480a0c36"
+                ]
+              },
+              {
+                "name": "Europe",
+                "core_products_or_services": [],
+                "revenue_source_description": "公司通过披露文件所述产品或服务获得收入。",
+                "plain_explanation": "Apple Inc.主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wearables and ”开展业务。",
+                "evidence_refs": [
+                  "ev_4dd2480a0c36"
+                ]
+              },
+              {
+                "name": "Greater China",
+                "core_products_or_services": [],
+                "revenue_source_description": "公司通过披露文件所述产品或服务获得收入。",
+                "plain_explanation": "Apple Inc.主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wearables and ”开展业务。",
+                "evidence_refs": [
+                  "ev_4dd2480a0c36"
+                ]
+              },
+              {
+                "name": "Japan",
+                "core_products_or_services": [],
+                "revenue_source_description": "公司通过披露文件所述产品或服务获得收入。",
+                "plain_explanation": "Apple Inc.主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wearables and ”开展业务。",
+                "evidence_refs": [
+                  "ev_4dd2480a0c36"
+                ]
+              },
+              {
+                "name": "Rest of Asia Pacific",
+                "core_products_or_services": [],
+                "revenue_source_description": "公司通过披露文件所述产品或服务获得收入。",
+                "plain_explanation": "Apple Inc.主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wearables and ”开展业务。",
+                "evidence_refs": [
+                  "ev_4dd2480a0c36"
+                ]
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ev_4dd2480a0c36"
+        ]
+      },
+      {
+        "section_id": "profile_sec_b714bb8d25df",
+        "section_type": "ownership",
+        "title": "股东与控制权",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "当前披露文件中未能确认控股股东或实际控制人。"
+          },
+          {
+            "type": "kv",
+            "items": {
+              "controlling_shareholder": "未披露",
+              "actual_controller": "未披露",
+              "control_type": "unknown",
+              "shareholders": [],
+              "ownership_tags": [
+                "控制权待进一步核验"
+              ],
+              "plain_explanation": "当前披露文件中未能确认控股股东或实际控制人。",
+              "evidence_refs": []
+            }
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_13b2b5a450b2",
+        "section_type": "key_people",
+        "title": "关键少数人",
+        "content_blocks": [
+          {
+            "type": "cards",
+            "items": []
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_756ef8389d9d",
+        "section_type": "industry_chain",
+        "title": "上下游产业链",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "upstream": [],
+              "company_position": "designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services",
+              "downstream": [],
+              "end_users": [],
+              "major_customers": [],
+              "major_suppliers": [],
+              "bargaining_power_note": "不进行竞争力或议价能力评级。",
+              "risk_note": "如披露客户或供应商集中，建议查看风险章节。",
+              "evidence_refs": []
+            }
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_093f67a54e0d",
+        "section_type": "capital_actions",
+        "title": "融资、分红与资本动作",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "dividends": [],
+              "buybacks": [],
+              "equity_incentives": [],
+              "financing_actions": [],
+              "summary": "In fiscal 2025, Apple returned capital to shareholders through $89.3 billion in stock repurchases and $15.4 billion in dividends.",
+              "evidence_refs": [
+                "ev_a76bba12146c"
+              ]
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_a76bba12146c"
+        ]
+      },
+      {
+        "section_id": "profile_sec_0695ee9be5cf",
+        "section_type": "non_financial_risks",
+        "title": "风险事实与需关注程度",
+        "content_blocks": [
+          {
+            "type": "risk_facts",
+            "items": [
+              {
+                "fact_id": "risk_fact_0",
+                "risk_category": "Macroeconomic and Industry Risks",
+                "risk_name": "Global and regional economic conditions",
+                "description": "The Company's operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company's business, results of operations, financial condition and stock price.",
+                "trend": "unknown",
+                "mitigation_disclosed": [],
+                "evidence_refs": [
+                  "ev_4cc02503e7ac"
+                ],
+                "evidence_block_ids": [
+                  "US-AAPL-2025-FY-p001-b001"
+                ]
+              },
+              {
+                "fact_id": "risk_fact_1",
+                "risk_category": "Macroeconomic and Industry Risks",
+                "risk_name": "Political events and business interruptions",
+                "description": "The Company's business can be impacted by political events, trade and other international disputes, geopolitical tensions, conflict, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions.",
+                "trend": "unknown",
+                "mitigation_disclosed": [],
+                "evidence_refs": [
+                  "ev_d8fbf1d11c71"
+                ],
+                "evidence_block_ids": [
+                  "US-AAPL-2025-FY-p001-b001"
+                ]
+              },
+              {
+                "fact_id": "risk_fact_2",
+                "risk_category": "Legal and Regulatory Compliance Risks",
+                "risk_name": "Antitrust litigation",
+                "description": "On March 21, 2024, the DOJ and a number of state and district attorneys general filed a civil antitrust lawsuit against the Company alleging monopolization or attempted monopolization in the markets for 'performance smartphones' and 'smartphones' generally in violation of U.S. antitrust laws.",
+                "trend": "unknown",
+                "mitigation_disclosed": [],
+                "evidence_refs": [
+                  "ev_e7bc4f20c3e2"
+                ],
+                "evidence_block_ids": [
+                  "US-AAPL-2025-FY-p001-b001"
+                ]
+              },
+              {
+                "fact_id": "risk_fact_3",
+                "risk_category": "macroeconomic",
+                "risk_name": "adverse economic conditions",
+                "description": "The Company's operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company's business, results of operations and financial condition.",
+                "trend": "unknown",
+                "mitigation_disclosed": [],
+                "evidence_refs": [
+                  "ev_dc7354748aae"
+                ],
+                "evidence_block_ids": [
+                  "US-AAPL-2023-FY-p001-b001"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "risk_assessments",
+            "items": [
+              {
+                "risk_category": "Macroeconomic and Industry Risks",
+                "attention_level": "medium",
+                "assessment_reason": "存在不利暴露，但无重大事件或持续恶化证据，且无缓释措施披露。",
+                "positive_signals": [],
+                "negative_signals": [
+                  "业务依赖全球和区域经济条件",
+                  "可能受政治事件、贸易争端、地缘政治紧张、冲突、恐怖主义、自然灾害、公共卫生事件、工业事故等影响"
+                ],
+                "uncertainties": [
+                  "经济条件的不确定性",
+                  "政治和业务中断事件的不确定性"
+                ],
+                "evidence_fact_ids": [
+                  "risk_fact_0",
+                  "risk_fact_1",
+                  "risk_fact_3"
+                ]
+              },
+              {
+                "risk_category": "Legal and Regulatory Compliance Risks",
+                "attention_level": "high",
+                "assessment_reason": "重大事件：美国司法部及多州检察长于2024年3月21日提起反垄断诉讼，指控公司违反反垄断法，且无缓释措施披露。",
+                "positive_signals": [],
+                "negative_signals": [
+                  "被提起反垄断诉讼，指控垄断或试图垄断'性能智能手机'和'智能手机'市场"
+                ],
+                "uncertainties": [
+                  "诉讼结果及潜在处罚的不确定性"
+                ],
+                "evidence_fact_ids": [
+                  "risk_fact_2"
+                ]
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ev_4cc02503e7ac",
+          "ev_d8fbf1d11c71",
+          "ev_e7bc4f20c3e2",
+          "ev_dc7354748aae"
+        ]
+      },
+      {
+        "section_id": "profile_sec_80dbc69cb9fe",
+        "section_type": "plain_conclusion",
+        "title": "普通人版结论",
+        "content_blocks": [
+          {
+            "type": "paragraph",
+            "text": "Apple Inc.是一家披露文件显示主要围绕“designs, manufactures and markets smartphones, personal computers, tablets, wear...”开展经营的公司。从公司画像角度，建议重点看业务模式、控制权结构、关键人物、上下游关系和非财务风险。"
+          }
+        ],
+        "evidence_refs": [
+          "ev_4dd2480a0c36",
+          "ev_a76bba12146c",
+          "ev_1e5d6233c95f"
+        ]
+      },
+      {
+        "section_id": "profile_sec_accba06000a5",
+        "section_type": "missing_information",
+        "title": "缺失与待核验信息",
+        "content_blocks": [
+          {
+            "type": "kv",
+            "items": {
+              "item_1": "company_profile.industry：Not disclosed in filing（建议来源：Company's official website or annual report overview）",
+              "item_2": "company_profile.headquarters：Not disclosed in filing（建议来源：Company's official website or Form 10-K Item 1）",
+              "item_3": "ownership：No shareholder or controller information disclosed in filing（建议来源：Proxy statement or regulatory filings）",
+              "item_4": "key_people：No executive officers or directors listed in the provided filing excerpt（建议来源：Form 10-K Item 10 or proxy statement）",
+              "item_5": "industry_chain：No details on upstream, downstream, customers, or suppliers in the provided filing excerpt（建议来源：Form 10-K MD&A or Form 10-K Item 1A risk factors）",
+              "item_6": "key_people：未从披露文件中确认关键人物履历。（建议来源：年报董监高章节、招股书董事监事高级管理人员章节）"
+            }
+          }
+        ],
+        "evidence_refs": [
+          "ev_4dd2480a0c36"
+        ]
+      },
+      {
+        "section_id": "profile_sec_c9c6b47d3100",
+        "section_type": "finance_agent_entry",
+        "title": "财务 Agent 入口",
+        "content_blocks": [
+          {
+            "type": "notice",
+            "text": "想进一步看收入增长、利润率、现金流、资产负债和财务风险，可进入财报掘金继续分析。"
+          }
+        ],
+        "evidence_refs": []
+      },
+      {
+        "section_id": "profile_sec_0bf43b6a2a8e",
+        "section_type": "follow_up_questions",
+        "title": "继续追问",
+        "content_blocks": [
+          {
+            "type": "questions",
+            "items": [
+              "这家公司到底靠什么业务获得收入？",
+              "谁真正控制这家公司？",
+              "它的上游和下游分别是谁？",
+              "有哪些非财务风险？",
+              "有哪些资本动作？"
+            ]
+          }
+        ],
+        "evidence_refs": []
+      }
+    ],
+    "finance_agent_entry": {
+      "enabled": true,
+      "handoff_context_id": "profile_finance_handoff_2932685d9648",
+      "target_url": "/index.html?ticker=AAPL&market=US"
+    },
+    "suggested_questions": [
+      "这家公司到底靠什么业务获得收入？",
+      "谁真正控制这家公司？",
+      "它的上游和下游分别是谁？",
+      "有哪些非财务风险？",
+      "有哪些资本动作？"
+    ],
+    "disclaimer": "本报告仅基于公开披露文件自动生成，用于帮助理解公司，不构成投资建议。",
+    "created_at": "2026-06-25T23:42:54+0800"
   }
 }

@@ -1,0 +1,82 @@
+:root {
+  --fm-bg: #fafbfc;
+  --fm-surface: #ffffff;
+  --fm-surface-muted: #f8fafc;
+  --fm-ink: #0f172a;
+  --fm-muted: #64748b;
+  --fm-line: #e2e8f0;
+  --fm-blue: #2563eb;
+  --fm-green: #10b981;
+  --fm-red: #ef4444;
+  --fm-shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
+}
+
+.fm-card {
+  border: 1px solid var(--fm-line);
+  border-radius: 18px;
+  background: var(--fm-surface);
+  box-shadow: var(--fm-shadow);
+}
+
+.fm-muted {
+  color: var(--fm-muted);
+}
+
+.fm-button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 11px;
+  padding: 0 14px;
+  background: var(--fm-ink);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.fm-button.secondary {
+  border: 1px solid var(--fm-line);
+  background: var(--fm-surface);
+  color: #334155;
+}
+
+.fm-status {
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--fm-line);
+  border-radius: 16px;
+  padding: 18px;
+  background: var(--fm-surface-muted);
+  color: var(--fm-muted);
+}
+
+.fm-status h3,
+.fm-status p {
+  margin: 0;
+}
+
+.fm-status h3 {
+  color: var(--fm-ink);
+}
+
+.fm-status.error {
+  border-color: rgba(239, 68, 68, 0.24);
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.fm-skeleton {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #eef2f7, #ffffff, #eef2f7);
+  background-size: 220% 100%;
+  animation: fm-skeleton 1.4s infinite linear;
+}
+
+@keyframes fm-skeleton {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -120% 0;
+  }
+}

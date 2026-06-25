@@ -423,3 +423,110 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* V3 unified SaaS visual refresh. Business logic remains page-local. */
+:root {
+  --bg: #fafbfc;
+  --surface: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --green: #10b981;
+  --gold: #2563eb;
+  --red: #ef4444;
+  --blue: #2563eb;
+  --shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
+}
+
+body {
+  background:
+    radial-gradient(circle at 70% 0%, rgba(37, 99, 235, 0.08), transparent 30%),
+    var(--bg);
+}
+
+.profile-shell {
+  width: min(1160px, calc(100% - 40px));
+}
+
+.profile-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  min-height: 64px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.78);
+  background: rgba(250, 251, 252, 0.86);
+  backdrop-filter: blur(18px);
+}
+
+.brand-mark {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #0f172a, #2563eb);
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.16);
+}
+
+.header-actions a,
+.header-actions button,
+.finance-card button,
+.question-row button,
+.drawer-head button {
+  border-radius: 11px;
+}
+
+.header-actions a {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  background: #ffffff;
+  color: #334155;
+}
+
+.header-actions button,
+.finance-card button,
+.question-row button {
+  background: #0f172a;
+}
+
+.profile-hero > div,
+.source-card,
+.task-panel,
+.section-card,
+.qa-panel > div,
+.kv-item,
+.evidence-drawer {
+  border-color: rgba(226, 232, 240, 0.9);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  color: #2563eb;
+}
+
+.profile-hero h1 {
+  color: #0f172a;
+}
+
+.progress-bar {
+  background: #eef2f7;
+}
+
+.progress-bar span {
+  background: linear-gradient(90deg, #2563eb, #10b981);
+}
+
+.kv-item,
+.answer-box,
+.suggested-questions button {
+  background: #f8fafc;
+}
+
+.question-row input {
+  border-color: #e2e8f0;
+  border-radius: 11px;
+}
+
+.question-row input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.13);
+  outline: none;
+}

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>登录 - 财报掘金</title>
-    <link rel="stylesheet" href="./account.css?v=20260617-2" />
+    <link rel="stylesheet" href="./account.css?v=20260625-3" />
   </head>
-  <body>
+  <body class="login-page">
     <main class="auth-shell">
       <section class="auth-copy">
         <a class="brand" href="./home.html">
@@ -20,6 +20,26 @@
           <div class="auth-point"><span>2</span>白话解释关键指标和风险</div>
           <div class="auth-point"><span>3</span>一键进入财报分析服务页</div>
         </div>
+        <section class="auth-snapshot" aria-label="随机真实财报快照">
+          <div class="auth-snapshot-head">
+            <div>
+              <p id="authSnapshotEyebrow">随机真实财报快照</p>
+              <h3 id="authSnapshotTitle">正在读取真实财报...</h3>
+              <span id="authSnapshotMeta">公开披露数据预览</span>
+            </div>
+            <div id="authSnapshotScore" class="auth-snapshot-score">--</div>
+          </div>
+          <p id="authSnapshotSummary" class="auth-snapshot-summary">正在读取一家公司的真实财报快照...</p>
+          <div id="authSnapshotMetrics" class="auth-snapshot-metrics"></div>
+          <div class="auth-snapshot-trend">
+            <span>营业收入趋势</span>
+            <div id="authSnapshotBars" class="auth-snapshot-bars"></div>
+          </div>
+          <div class="auth-snapshot-actions">
+            <button id="authSnapshotRefresh" type="button">换一家</button>
+            <span>登录后可查看完整财报掘金分析</span>
+          </div>
+        </section>
       </section>
 
       <section class="auth-card">
@@ -40,6 +60,6 @@
         <p class="auth-switch">还没有账号？<a href="./register.html">立即注册</a></p>
       </section>
     </main>
-    <script src="./auth.js?v=20260617-2"></script>
+    <script src="./auth.js?v=20260625-3"></script>
   </body>
 </html>

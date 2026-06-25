@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from backend.api import analysis, auth, companies, metrics, qa, reports, watchlists
+from backend.api import analysis, auth, companies, home, metrics, qa, reports, watchlists
 from backend.company_profile.router import router as company_profile_router
 from backend.company_profile.orchestrator import CompanyProfileOrchestrator
 from backend.financial_agent.orchestrator import FinancialAnalysisOrchestrator
@@ -44,6 +44,7 @@ app.state.maintenance_scheduler = MaintenanceScheduler(app.state.services.data_s
 app.state.maintenance_scheduler.start_if_enabled()
 
 app.include_router(companies.router)
+app.include_router(home.router)
 app.include_router(auth.router)
 app.include_router(reports.router)
 app.include_router(analysis.router)

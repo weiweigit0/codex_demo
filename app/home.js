@@ -2,157 +2,269 @@ const AUTH_TOKEN_KEY = "financial_mining_token";
 const AUTH_USER_KEY = "financial_mining_user";
 const API_BASE = window.location.protocol === "file:" ? "http://localhost:8765" : "";
 const PAGE_BASE = window.location.protocol === "file:" ? "http://localhost:8765" : "";
-const token = localStorage.getItem(AUTH_TOKEN_KEY);
+const UI = window.FinancialMiningUI || {};
+
 const userLabel = document.querySelector("#userLabel");
-const logoutButton = document.querySelector("#logoutButton");
-const marketButtons = document.querySelectorAll("[data-market]");
 const tickerInput = document.querySelector("#homeTickerInput");
 const analyzeButton = document.querySelector("#homeAnalyzeButton");
-const profileAnalyzeButton = document.querySelector("#profileAnalyzeButton");
-const summaryAnalyzeButton = document.querySelector("#summaryAnalyzeButton");
-const documentTypeSelect = document.querySelector("#documentTypeSelect");
 const searchMessage = document.querySelector("#homeSearchMessage");
-const quickCompanies = document.querySelector("#homeQuickCompanies");
-const focusSearchButtons = document.querySelectorAll("[data-focus-search]");
+const hotCompaniesNode = document.querySelector("#homeHotCompanies");
+const snapshotContent = document.querySelector("#snapshotContent");
+const moreHotButton = document.querySelector("#moreHotButton");
 
-let selectedMarket = "US";
-let topCompanies = [
-  { ticker: "AAPL", name: "Apple", market: "US" },
-  { ticker: "MSFT", name: "Microsoft", market: "US" },
-  { ticker: "NVDA", name: "NVIDIA", market: "US" },
-  { ticker: "000333", name: "美的集团", market: "CN" },
-  { ticker: "002594", name: "比亚迪", market: "CN" },
-  { ticker: "600519", name: "贵州茅台", market: "CN" }
+const fallbackHotCompanies = [
+  { ticker: "AAPL", name: "Apple Inc.", market: "US", industry: "消费电子", price: "可分析", change: "" },
+  { ticker: "600519", name: "贵州茅台", market: "CN", industry: "食品饮料", price: "可分析", change: "" },
+  { ticker: "300750", name: "宁德时代", market: "CN", industry: "电力设备", price: "可分析", change: "" }
 ];
 
-if (!token) {
-  window.location.href = `${PAGE_BASE}/login.html`;
+function boot() {
+  loadCurrentUser();
+  bindEvents();
+  renderHotCompanies(fallbackHotCompanies);
+  loadHotCompanies();
+  loadFinancialSnapshot();
 }
 
 async function loadCurrentUser() {
-  const response = await fetch(`${API_BASE}/api/auth/me`, {
-    headers: { Authorization: `Bearer ${token}` }
-  });
-  if (!response.ok) {
-    localStorage.removeItem(AUTH_TOKEN_KEY);
-    localStorage.removeItem(AUTH_USER_KEY);
-    window.location.href = `${PAGE_BASE}/login.html`;
+  const token = localStorage.getItem(AUTH_TOKEN_KEY);
+  if (!token) {
+    enterDemoMode();
     return;
   }
-  const data = await response.json();
-  localStorage.setItem(AUTH_USER_KEY, JSON.stringify(data.user));
-  userLabel.textContent = data.user.username;
-}
-
-async function logout() {
-  await fetch(`${API_BASE}/api/auth/logout`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${token}` }
-  }).catch(() => {});
-  localStorage.removeItem(AUTH_TOKEN_KEY);
-  localStorage.removeItem(AUTH_USER_KEY);
-  window.location.href = `${PAGE_BASE}/login.html`;
-}
-
-function startService() {
-  startFinancialService();
-}
-
-function startFinancialService() {
-  const raw = tickerInput.value.trim();
-  if (!ensureTicker(raw)) return;
-  const market = inferMarket(raw, selectedMarket);
-  const params = new URLSearchParams({ ticker: raw, market });
-  window.location.href = `${PAGE_BASE}/index.html?${params.toString()}`;
-}
-
-function startProfileService() {
-  const raw = tickerInput.value.trim();
-  if (!ensureTicker(raw)) return;
-  const market = inferMarket(raw, selectedMarket);
-  const params = new URLSearchParams({ query: raw, market, document_type: documentTypeSelect?.value || "auto" });
-  window.location.href = `${PAGE_BASE}/profile.html?${params.toString()}`;
-}
-
-function startSummaryService() {
-  const raw = tickerInput.value.trim();
-  if (!ensureTicker(raw)) return;
-  const market = inferMarket(raw, selectedMarket);
-  const params = new URLSearchParams({ ticker: raw, market });
-  window.location.href = `${PAGE_BASE}/summary.html?${params.toString()}`;
-}
-
-function ensureTicker(raw) {
-  if (raw) return true;
-  searchMessage.textContent = "请先输入股票代码或公司名。";
-  searchMessage.classList.add("error");
-  tickerInput.focus();
-  return false;
-}
-
-logoutButton.addEventListener("click", logout);
-analyzeButton.addEventListener("click", startFinancialService);
-profileAnalyzeButton.addEventListener("click", startProfileService);
-summaryAnalyzeButton.addEventListener("click", startSummaryService);
-tickerInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") startService();
-});
-marketButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    selectedMarket = button.dataset.market;
-    renderMarket();
-    renderQuickCompanies();
-  });
-});
-focusSearchButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    tickerInput.focus();
-    tickerInput.scrollIntoView({ behavior: "smooth", block: "center" });
-  });
-});
-
-async function loadTopCompanies() {
   try {
-    const response = await fetch(`${API_BASE}/api/companies/top?market=ALL`);
-    if (!response.ok) return;
+    const response = await fetch(`${API_BASE}/api/auth/me`, {
+      headers: { Authorization: `Bearer ${token}` }
+    });
+    if (!response.ok) {
+      enterDemoMode();
+      return;
+    }
     const data = await response.json();
-    if (data.items?.length) topCompanies = data.items;
+    userLabel.textContent = data.user?.username || "演示模式";
   } catch (error) {
-    // Use the local fallback above.
-  } finally {
-    renderQuickCompanies();
+    enterDemoMode();
   }
 }
 
-function renderMarket() {
-  marketButtons.forEach((button) => button.classList.toggle("active", button.dataset.market === selectedMarket));
-  tickerInput.placeholder = selectedMarket === "CN" ? "例如 000333 / 比亚迪 / 600519" : "例如 AAPL / MSFT / NVDA";
-  searchMessage.textContent = selectedMarket === "CN"
-    ? "将自动从巨潮资讯获取公告和财报 PDF。"
-    : "将自动从 SEC 获取结构化财务数据。";
-  searchMessage.classList.remove("error");
+function enterDemoMode() {
+  localStorage.removeItem(AUTH_TOKEN_KEY);
+  localStorage.removeItem(AUTH_USER_KEY);
+  userLabel.textContent = "演示模式";
 }
 
-function renderQuickCompanies() {
-  const items = topCompanies.filter((item) => item.market === selectedMarket).slice(0, 6);
-  quickCompanies.innerHTML = items
-    .map((item) => `<button type="button" data-ticker="${item.ticker}" data-market="${item.market}">${item.ticker} · ${item.name}</button>`)
-    .join("");
-  quickCompanies.querySelectorAll("button").forEach((button) => {
+function bindEvents() {
+  analyzeButton.addEventListener("click", startFinancialAnalysis);
+  tickerInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") startFinancialAnalysis();
+  });
+  moreHotButton.addEventListener("click", () => {
+    window.location.href = `${PAGE_BASE}/support.html?source=home_hot`;
+  });
+  document.querySelectorAll("[data-scroll-target]").forEach((button) => {
     button.addEventListener("click", () => {
-      selectedMarket = button.dataset.market;
-      tickerInput.value = button.dataset.ticker;
-      renderMarket();
-      startService();
+      document.querySelector(`#${button.dataset.scrollTarget}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+  document.querySelector("[data-nav-action='financial']")?.addEventListener("click", () => {
+    if (tickerInput.value.trim()) {
+      startFinancialAnalysis();
+      return;
+    }
+    focusSearch("请输入股票代码或公司名后开始财报洞察。");
+  });
+}
+
+function startFinancialAnalysis() {
+  const raw = tickerInput.value.trim();
+  if (!raw) {
+    focusSearch("请输入股票代码或公司名。");
+    return;
+  }
+  const market = inferMarket(raw);
+  window.location.href = toFinancialUrl(raw, market);
+}
+
+function focusSearch(message) {
+  searchMessage.textContent = message;
+  searchMessage.classList.add("error");
+  tickerInput.focus();
+  tickerInput.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+async function loadHotCompanies() {
+  try {
+    const response = await fetch(`${API_BASE}/api/companies/top?market=ALL`);
+    if (!response.ok) throw new Error("top companies unavailable");
+    const data = await response.json();
+    const items = normalizeHotCompanies(data.items || []);
+    renderHotCompanies(items.length ? items.slice(0, 3) : fallbackHotCompanies);
+  } catch (error) {
+    renderHotCompanies(fallbackHotCompanies);
+  }
+}
+
+function normalizeHotCompanies(items) {
+  const preferred = ["AAPL", "600519", "300750", "NVDA", "BIDU", "000001"];
+  const ranked = [...items].sort((a, b) => {
+    const ai = preferred.indexOf(a.ticker);
+    const bi = preferred.indexOf(b.ticker);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+  return ranked.map((item) => ({
+    ticker: item.ticker,
+    name: item.name || item.short_name || item.ticker,
+    market: item.market || inferMarket(item.ticker),
+    industry: item.industry || "待识别行业",
+    price: "可分析",
+    change: ""
+  }));
+}
+
+function renderHotCompanies(items) {
+  hotCompaniesNode.innerHTML = items.slice(0, 3).map((item) => `
+    <article class="hot-company-card" data-ticker="${escapeHtml(item.ticker)}" data-market="${escapeHtml(item.market)}">
+      <div class="company-avatar">${escapeHtml(avatarText(item.name))}</div>
+      <div>
+        <h3>${escapeHtml(item.name)}</h3>
+        <p>${escapeHtml(item.ticker)} · ${escapeHtml(marketLabel(item.market))} · ${escapeHtml(item.industry)}</p>
+      </div>
+      <div class="hot-card-meta">
+        <strong>${escapeHtml(item.price || "可分析")}</strong>
+        ${item.change ? `<span class="${String(item.change).includes("-") ? "down" : ""}">${escapeHtml(item.change)}</span>` : ""}
+      </div>
+      <button type="button">查看分析 →</button>
+    </article>
+  `).join("");
+  hotCompaniesNode.querySelectorAll(".hot-company-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      window.location.href = toFinancialUrl(card.dataset.ticker, card.dataset.market);
     });
   });
 }
 
-function inferMarket(value, fallback) {
-  return /^\d{6}$/.test(value.trim()) ? "CN" : fallback;
+async function loadFinancialSnapshot() {
+  renderSnapshotLoading();
+  try {
+    const response = await fetch(`${API_BASE}/api/home/financial-snapshot?market=US`);
+    if (!response.ok) throw new Error("snapshot unavailable");
+    const snapshot = await response.json();
+    renderInsightPreview(snapshot, Boolean(snapshot.is_demo));
+  } catch (error) {
+    renderInsightPreview(fallbackSnapshot(), true);
+  }
 }
 
-renderMarket();
-renderQuickCompanies();
-loadCurrentUser();
-loadTopCompanies();
+function renderSnapshotLoading() {
+  snapshotContent.className = "insight-preview-content loading";
+  snapshotContent.innerHTML = `
+    <p class="snapshot-eyebrow">财报洞察</p>
+    <h2>正在读取一家公司的财报摘要...</h2>
+    <div class="snapshot-skeleton"></div>
+  `;
+}
+
+function renderInsightPreview(snapshot, isFallback) {
+  const company = snapshot.company || {};
+  const metrics = normalizeSnapshotMetrics(snapshot.metrics || []);
+  const targetUrl = snapshot.target_url || toFinancialUrl(company.ticker || "AAPL", company.market || "US");
+  const watchUrl = appendIntent(targetUrl, "watch");
+  snapshotContent.className = `insight-preview-content${isFallback ? " fallback" : ""}`;
+  snapshotContent.innerHTML = `
+    <div class="insight-preview-head">
+      <div>
+        <p class="snapshot-eyebrow">财报洞察</p>
+        <h2>${escapeHtml(company.name || "Apple Inc.")}</h2>
+        <span>${escapeHtml(company.ticker || "AAPL")} · ${escapeHtml(marketLabel(company.market))} · ${escapeHtml(company.industry || "待识别行业")} · ${escapeHtml(snapshot.period || "最近报告期")}</span>
+      </div>
+      <button type="button" data-watch-company>☆ 关注</button>
+    </div>
+    <div class="preview-metrics">
+      ${metrics.map((item) => `
+        <article>
+          <span>${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(item.value)}</strong>
+          <small class="${String(item.change || "").includes("-") ? "down" : ""}">${escapeHtml(item.change || "同比待补充")}</small>
+        </article>
+      `).join("")}
+    </div>
+    <button class="preview-report-link" type="button" data-open-report>查看完整报告 →</button>
+  `;
+  snapshotContent.querySelector("[data-open-report]")?.addEventListener("click", () => {
+    window.location.href = targetUrl.startsWith("/") ? `${PAGE_BASE}${targetUrl}` : targetUrl;
+  });
+  snapshotContent.querySelector("[data-watch-company]")?.addEventListener("click", () => {
+    window.location.href = watchUrl.startsWith("/") ? `${PAGE_BASE}${watchUrl}` : watchUrl;
+  });
+}
+
+function normalizeSnapshotMetrics(metrics) {
+  const preferred = ["revenue", "net_profit", "gross_margin", "operating_cashflow"];
+  const byKey = new Map(metrics.map((item) => [item.key, item]));
+  const fallback = {
+    revenue: { label: "营业收入", value: "待补充", change: "同比待补充" },
+    net_profit: { label: "净利润", value: "待补充", change: "同比待补充" },
+    gross_margin: { label: "毛利率", value: "待补充", change: "同比待补充" },
+    operating_cashflow: { label: "经营现金流", value: "待补充", change: "同比待补充" }
+  };
+  return preferred.map((key) => {
+    const item = byKey.get(key) || fallback[key];
+    return {
+      label: item.label || fallback[key].label,
+      value: item.value || "待补充",
+      change: item.change || "同比待补充"
+    };
+  });
+}
+
+function fallbackSnapshot() {
+  return {
+    company: { ticker: "AAPL", name: "Apple Inc.", market: "US", industry: "消费电子" },
+    period: "2025-FY",
+    is_demo: true,
+    metrics: [
+      { key: "revenue", label: "营业收入", value: "416.16B USD", change: "同比 +6.43%" },
+      { key: "net_profit", label: "净利润", value: "112.01B USD", change: "同比 +19.5%" },
+      { key: "gross_margin", label: "毛利率", value: "46.91%", change: "同比待补充" },
+      { key: "operating_cashflow", label: "经营现金流", value: "111.48B USD", change: "同比 -5.73%" }
+    ],
+    target_url: "/index.html?ticker=AAPL&market=US"
+  };
+}
+
+function appendIntent(url, intent) {
+  const absolute = url.startsWith("http") ? new URL(url) : new URL(url, window.location.origin);
+  absolute.searchParams.set("intent", intent);
+  return url.startsWith("http") ? absolute.toString() : `${absolute.pathname}${absolute.search}`;
+}
+
+function toFinancialUrl(ticker, market) {
+  if (UI.toFinancialUrl) return UI.toFinancialUrl(ticker, market);
+  return `${PAGE_BASE}/index.html?${new URLSearchParams({ ticker, market }).toString()}`;
+}
+
+function inferMarket(value) {
+  if (UI.inferMarket) return UI.inferMarket(value, "US");
+  return /^\d{6}$/.test(String(value || "").trim()) ? "CN" : "US";
+}
+
+function marketLabel(market) {
+  return market === "CN" ? "A股" : market === "US" ? "美股" : market || "市场";
+}
+
+function avatarText(name) {
+  return String(name || "财").trim().slice(0, 1).toUpperCase();
+}
+
+function escapeHtml(value) {
+  if (UI.escapeHtml) return UI.escapeHtml(value);
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+boot();

@@ -3022,5 +3022,221 @@
     "original_text": "宜宾五粮液股份有限公司 2025年度报告全文 21 实际完成： 2025年，白酒行业进入深度调整周期，公司主动应市调整，主动帮助渠道纾压解困。公 司实现营业总收入 405.29亿元，同比下降 54.55%。 （四）2026年发展目标 2026年主要发展目标：公司将以消费者为中心，拥抱变革、顺应趋势，坚守品质、传承文化、守正 创新、务实进取，顺势调整、积蓄力量，全力实现高质量的市场动销和市场份额的有效提升。 2026年是中国共产党成立 105周年，也是 “十五五”开局起步之年，做好开局工作至关重要。公司 将坚定以习近平新时代中国特色社会主义思想为指导，深入贯彻党的二十大和二十届历次全会精神，认 真落实中央、省委、市委经济工作会议部署要求和市委、市政府的各项决策部署，完整准确全面贯彻新 发展理念，牢牢把握高质量发展主题，坚持品质为基、文化铸魂、守正创新，加快拓展新供给、新场景、 新渠道、新市场、新机制，以新需求引领新供给、以新供给创造新需求，持续巩固和强化龙头企业地位。 （五）可能面对的风险 一是内外部环境不确定性风险；二是有效需求恢复不及预期；三是行业存量竞争尤其是头部企业竞 争加剧。 十二、报告期内接待调研、沟通、采访等活动...",
     "confidence": "MEDIUM",
     "extraction_method": "AGENT_LLM"
+  },
+  "ev_cb70e314b0ad": {
+    "evidence_id": "ev_cb70e314b0ad",
+    "company_id": "US-BIDU",
+    "document_id": "US-BIDU-2025-FY",
+    "claim_type": "agent_missing",
+    "claim": "完整资料阅读阶段未返回结构化事实。",
+    "source": {
+      "document_id": "US-BIDU-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "Baidu, Inc. 2025-FY 20-F",
+      "report_period": "2025-FY",
+      "disclosure_date": "2026-03-17",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1329099/000119312526109289/d38065d20f.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-BIDU-2025-FY-p001-b001"
+    },
+    "original_text": "Form 20-F",
+    "confidence": "MISSING",
+    "extraction_method": "MISSING"
+  },
+  "ev_4cc02503e7ac": {
+    "evidence_id": "ev_4cc02503e7ac",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "The Company's operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company's business, results of operations, financial condition and stock price.",
+    "source": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2025-FY-p001-b001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_d8fbf1d11c71": {
+    "evidence_id": "ev_d8fbf1d11c71",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "The Company's business can be impacted by political events, trade and other international disputes, geopolitical tensions, conflict, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions.",
+    "source": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2025-FY-p001-b001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_e7bc4f20c3e2": {
+    "evidence_id": "ev_e7bc4f20c3e2",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "On March 21, 2024, the DOJ and a number of state and district attorneys general filed a civil antitrust lawsuit against the Company alleging monopolization or attempted monopolization in the markets for 'performance smartphones' and 'smartphones' generally in violation of U.S. antitrust laws.",
+    "source": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2025-FY-p001-b001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_dc7354748aae": {
+    "evidence_id": "ev_dc7354748aae",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "risk_fact",
+    "claim": "The Company's operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company's business, results of operations and financial condition.",
+    "source": {
+      "document_id": "US-AAPL-2023-FY",
+      "document_type": "annual_report",
+      "document_title": "2023-FY",
+      "report_period": "2023-FY",
+      "disclosure_date": "2023-11-03",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2023-FY-p001-b001"
+    },
+    "original_text": "aapl-20230930 false 2023 FY 0000320193 P1Y 67 P1Y 25 P1Y 7 1 h p://fasb.org/us-gaap/2023#Marke ableSecuri iesCurren h p://fasb.org/us-gaap/2023#Marke ableSecuri iesNoncurren h p://fasb.org/us-gaap/2023#Marke ableSecuri iesCurren h p://fasb.org/us-gaap/2023#Marke ableSecuri iesNoncurren h p://fasb.org/us-gaap/2023#LongTermDeb Curren h p://fasb.org/us-gaap/2023#LongTermDeb Noncurren h p://fasb.org/us-gaap/2023#LongTermDeb Curren h p://fasb.org/us-gaap/2023#LongTermDeb Noncurren h p://fasb.org/us-gaap/2023#O herAsse s...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_4dd2480a0c36": {
+    "evidence_id": "ev_4dd2480a0c36",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "business_model",
+    "claim": "designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services",
+    "source": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2025-FY-p001-b001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_a76bba12146c": {
+    "evidence_id": "ev_a76bba12146c",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "capital_actions",
+    "claim": "In fiscal 2025, Apple returned capital to shareholders through $89.3 billion in stock repurchases and $15.4 billion in dividends.",
+    "source": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2025-FY-p001-b001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
+  },
+  "ev_1e5d6233c95f": {
+    "evidence_id": "ev_1e5d6233c95f",
+    "company_id": "US-AAPL",
+    "document_id": "US-AAPL-2025-FY",
+    "claim_type": "non_financial_risk",
+    "claim": "非财务风险",
+    "source": {
+      "document_id": "US-AAPL-2025-FY",
+      "document_type": "annual_report",
+      "document_title": "2025-FY",
+      "report_period": "2025-FY",
+      "disclosure_date": "2025-10-31",
+      "source_platform": "SEC EDGAR",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "version_type": "OFFICIAL",
+      "parse_status": "SUCCESS",
+      "information_completeness": "MEDIUM"
+    },
+    "location": {
+      "page": 1,
+      "section_title": "balance sheet",
+      "text_block_id": "US-AAPL-2025-FY-p001-b001"
+    },
+    "original_text": "aapl-20250927 false 2025 FY 0000320193 P1Y P1Y P1Y P1Y h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#LongTermDeb Noncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#O herAsse sNoncurren h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#Proper yPlan AndEquipmen Ne h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesCurren h p://fasb.org/us-gaap/2025#O herLiabili iesNoncurren...",
+    "confidence": "MEDIUM",
+    "extraction_method": "AGENT_LLM"
   }
 }

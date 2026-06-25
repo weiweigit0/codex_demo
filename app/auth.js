@@ -5,6 +5,16 @@ const PAGE_BASE = window.location.protocol === "file:" ? "http://localhost:8765"
 
 const form = document.querySelector("[data-auth-form]");
 const message = document.querySelector("#formMessage");
+const snapshotNodes = {
+  eyebrow: document.querySelector("#authSnapshotEyebrow"),
+  title: document.querySelector("#authSnapshotTitle"),
+  meta: document.querySelector("#authSnapshotMeta"),
+  score: document.querySelector("#authSnapshotScore"),
+  summary: document.querySelector("#authSnapshotSummary"),
+  metrics: document.querySelector("#authSnapshotMetrics"),
+  bars: document.querySelector("#authSnapshotBars"),
+  refresh: document.querySelector("#authSnapshotRefresh")
+};
 
 function setMessage(text, ok = false) {
   message.textContent = text || "";
@@ -22,6 +32,85 @@ async function api(path, payload) {
     throw new Error(data.detail || "请求失败，请稍后重试");
   }
   return data;
+}
+
+async function loadAuthSnapshot(refresh = false) {
+  if (!snapshotNodes.title) return;
+  renderAuthSnapshotLoading(refresh ? "正在换一家真实公司..." : "正在读取真实财报...");
+  try {
+    const market = refresh ? randomMarket() : "US";
+    const response = await fetch(`${API_BASE}/api/home/financial-snapshot?market=${market}${refresh ? "&refresh=true" : ""}`);
+    if (!response.ok) throw new Error("snapshot unavailable");
+    const snapshot = await response.json();
+    renderAuthSnapshot(snapshot, Boolean(snapshot.is_demo));
+  } catch (error) {
+    renderAuthSnapshot(authFallbackSnapshot(), true);
+  }
+}
+
+function renderAuthSnapshotLoading(text) {
+  snapshotNodes.eyebrow.textContent = "随机真实财报快照";
+  snapshotNodes.title.textContent = text;
+  snapshotNodes.meta.textContent = "公开披露数据预览";
+  snapshotNodes.score.textContent = "--";
+  snapshotNodes.summary.textContent = "正在读取一家公司的真实财报快照...";
+  snapshotNodes.metrics.innerHTML = Array.from({ length: 4 }, () => "<article class=\"loading\"></article>").join("");
+  snapshotNodes.bars.innerHTML = [38, 52, 66, 80].map((height) => `<i style="height: ${height}%"></i>`).join("");
+}
+
+function renderAuthSnapshot(snapshot, isFallback) {
+  const company = snapshot.company || {};
+  const metrics = (snapshot.metrics || []).slice(0, 4);
+  const trend = snapshot.trend?.length ? snapshot.trend : [38, 52, 66, 80];
+  snapshotNodes.eyebrow.textContent = isFallback ? "示例财报快照" : "随机真实财报快照";
+  snapshotNodes.title.textContent = `${company.name || "Apple Inc."} · ${company.ticker || "AAPL"}`;
+  snapshotNodes.meta.textContent = `${marketLabel(company.market)} · ${snapshot.period || "2025-FY"} · 公开披露数据`;
+  snapshotNodes.score.textContent = snapshot.score ? `${snapshot.health_label || "中性"} ${snapshot.score}分` : (snapshot.health_label || "中性");
+  snapshotNodes.summary.textContent = snapshot.summary || "公开财报数据已接入，注册后可查看完整财报掘金分析。";
+  snapshotNodes.metrics.innerHTML = metrics.map((item) => `
+    <article>
+      <span>${escapeHtml(item.label)}</span>
+      <strong>${escapeHtml(item.value)}</strong>
+      <small class="${String(item.change || "").includes("-") ? "down" : ""}">${escapeHtml(item.change || "同比待补充")}</small>
+    </article>
+  `).join("");
+  snapshotNodes.bars.innerHTML = trend.map((height) => `<i style="height: ${Number(height) || 42}%"></i>`).join("");
+}
+
+function authFallbackSnapshot() {
+  return {
+    company: { ticker: "AAPL", name: "Apple Inc.", market: "US" },
+    period: "2025-FY",
+    health_label: "中性",
+    score: null,
+    is_demo: true,
+    summary: "示例快照：收入、利润和现金流指标会在后端可用时自动替换为真实随机公司数据。",
+    metrics: [
+      { label: "营业收入", value: "416.16B USD", change: "同比 +6.43%" },
+      { label: "净利润", value: "112.01B USD", change: "同比 +19.5%" },
+      { label: "毛利率", value: "46.91%", change: "同比待补充" },
+      { label: "经营现金流", value: "111.48B USD", change: "同比 -5.73%" }
+    ],
+    trend: [38, 48, 62, 76]
+  };
+}
+
+function randomMarket() {
+  return Math.random() > 0.5 ? "US" : "CN";
+}
+
+function marketLabel(market) {
+  return market === "CN" ? "A股" : market === "US" ? "美股" : "市场";
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
 }
 
 function saveSession(data) {
@@ -80,3 +169,5 @@ async function handleSubmit(event) {
 }
 
 form.addEventListener("submit", handleSubmit);
+snapshotNodes.refresh?.addEventListener("click", () => loadAuthSnapshot(true));
+loadAuthSnapshot();

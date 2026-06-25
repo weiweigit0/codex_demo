@@ -42,8 +42,12 @@ const state = {
   periodType: "annual",
   periods: { annual: [], quarterly: [], reports: [] },
   analysis: null,
+  analysisStatus: "idle",
+  analysisMessage: "正在载入公司与报告期...",
+  analysisError: null,
   metricDictionary: {},
-  periodChangeTimer: null
+  periodChangeTimer: null,
+  analysisRequestSeq: 0
 };
 
 const nodes = {};
@@ -112,10 +116,9 @@ async function boot() {
   } catch (error) {
     state.backendReady = false;
     setStatus("后端未运行，显示本地 Demo", "error");
-    state.analysis = fallbackAnalysis();
+    setAnalysisReady(fallbackAnalysis());
     renderSelectedCompany(fallbackCompany);
     renderPeriodOptions(["2021-FY", "2022-FY", "2023-FY"]);
-    render();
     resetChat();
   }
 }
@@ -143,6 +146,15 @@ function setView(view) {
   document.querySelectorAll(".tab").forEach((tab) => tab.classList.toggle("active", tab.dataset.view === view));
   ["industry", "reports", "learning", "watchlist"].forEach((name) => {
     document.querySelector(`#${name}View`).classList.toggle("hidden", view !== name);
+  });
+  scrollToView(view);
+}
+
+function scrollToView(view) {
+  const target = document.querySelector(`#${view}View`) || document.querySelector("#overviewView");
+  if (!target) return;
+  window.requestAnimationFrame(() => {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
 
@@ -177,6 +189,7 @@ async function searchCompany() {
 
 async function selectCompany(company) {
   state.company = company;
+  setAnalysisLoading("正在切换公司并读取报告期...", true);
   renderSelectedCompany(company);
   await loadPeriods(company.ticker, company.market);
   await refreshReports();
@@ -187,11 +200,13 @@ async function loadCompany(ticker, market) {
   state.launchTicker = ticker;
   state.launchMarket = market;
   state.market = market;
+  setAnalysisLoading("正在识别公司并载入披露资料...", true);
   await searchCompany();
 }
 
 async function loadPeriods(ticker, market) {
   if (!state.backendReady) return;
+  setAnalysisLoading("正在获取可分析的报告期...", true);
   setStatus("获取报告期", "ok");
   try {
     const data = await api(`/api/reports/options?ticker=${encodeURIComponent(ticker)}&market=${market || "US"}`);
@@ -202,17 +217,21 @@ async function loadPeriods(ticker, market) {
     setStatus("报告期已加载", "ok");
   } catch (error) {
     setStatus(error.message, "error");
+    setAnalysisFailed(error.message);
+    throw error;
   }
 }
 
 async function analyzeOnline() {
   if (!state.backendReady) {
-    state.analysis = fallbackAnalysis();
-    render();
+    setAnalysisReady(fallbackAnalysis());
     return;
   }
   const selected = Array.from(nodes.periodSelect.selectedOptions).map((option) => option.value);
+  const requestSeq = ++state.analysisRequestSeq;
   const originalButtonText = nodes.onlineAnalyzeButton.textContent;
+  const periodText = selected.length ? selected.join("、") : "默认报告期";
+  setAnalysisLoading(`正在读取 ${state.company?.ticker || state.launchTicker} · ${periodText} 的披露数据并生成分析...`);
   setStatus("财报 Agent 正在准备披露证据", "ok");
   nodes.onlineAnalyzeButton.textContent = "AI 分析中...";
   nodes.onlineAnalyzeButton.disabled = true;
@@ -230,16 +249,18 @@ async function analyzeOnline() {
       })
     });
     const data = await waitForFinancialAnalysis(task.task_id, controller.signal);
-    state.analysis = data;
+    if (requestSeq !== state.analysisRequestSeq) return;
     state.company = data.company;
     setStatus("分析完成", "ok");
-    render();
+    setAnalysisReady(data);
     resetChat();
   } catch (error) {
+    if (requestSeq !== state.analysisRequestSeq) return;
     const message = error.name === "AbortError"
       ? "解析超时，请减少选择的报告期或稍后重试"
       : error.message;
     setStatus(message, "error");
+    setAnalysisFailed(message);
   } finally {
     window.clearTimeout(timeout);
     nodes.onlineAnalyzeButton.textContent = originalButtonText;
@@ -368,7 +389,7 @@ async function addDefaultAlert() {
 }
 
 function renderPeriodOptions(periods) {
-  const selected = periods.slice(0, Math.min(4, periods.length));
+  const selected = periods.slice(0, Math.min(2, periods.length));
   nodes.periodSelect.innerHTML = periods
     .map((period) => `<option value="${period}" ${selected.includes(period) ? "selected" : ""}>${period}</option>`)
     .join("");
@@ -384,13 +405,26 @@ function setPeriodType(type) {
 
 function scheduleAnalysis() {
   window.clearTimeout(state.periodChangeTimer);
+  setAnalysisLoading("报告期已变化，正在准备重新分析...", true);
   state.periodChangeTimer = window.setTimeout(() => {
     analyzeOnline();
   }, 350);
 }
 
 function render() {
-  const analysis = state.analysis || fallbackAnalysis();
+  if (state.analysisStatus === "loading") {
+    renderAnalysisLoading(state.analysisMessage);
+    return;
+  }
+  if (state.analysisStatus === "failed") {
+    renderAnalysisFailed(state.analysisError);
+    return;
+  }
+  if (!state.analysis) {
+    renderAnalysisEmpty();
+    return;
+  }
+  const analysis = state.analysis;
   const company = state.company || analysis.company;
   nodes.reportPeriod.textContent = analysis.latest_period || "多期分析";
   nodes.companyTitle.textContent = `${company.name} ${company.ticker ? `(${company.ticker})` : ""}`;
@@ -403,6 +437,110 @@ function render() {
   renderReportCard(company, analysis);
   renderRisks(analysis.risks || []);
   renderComparison(analysis.comparison?.rows || []);
+}
+
+function setAnalysisLoading(message, invalidateRequests = false) {
+  if (invalidateRequests) state.analysisRequestSeq += 1;
+  state.analysis = null;
+  state.analysisStatus = "loading";
+  state.analysisMessage = message || "正在读取披露数据并生成分析...";
+  state.analysisError = null;
+  render();
+}
+
+function setAnalysisReady(analysis) {
+  state.analysis = analysis;
+  state.analysisStatus = "ready";
+  state.analysisMessage = "";
+  state.analysisError = null;
+  render();
+}
+
+function setAnalysisFailed(message) {
+  state.analysis = null;
+  state.analysisStatus = "failed";
+  state.analysisMessage = "";
+  state.analysisError = message || "披露资料、网络或模型服务暂时不可用，请稍后重试。";
+  render();
+}
+
+function renderAnalysisLoading(message) {
+  const company = state.company || { name: "正在识别公司", ticker: state.launchTicker, market: state.launchMarket };
+  const selected = Array.from(nodes.periodSelect.selectedOptions || []).map((option) => option.value);
+  nodes.reportPeriod.textContent = selected.length ? selected.join(" / ") : "报告期载入中";
+  nodes.companyTitle.textContent = `${company.name || "正在识别公司"} ${company.ticker ? `(${company.ticker})` : ""}`;
+  nodes.stanceBadge.className = "stance-badge neutral";
+  nodes.stanceBadge.textContent = "分析中";
+  nodes.oneLineSummary.textContent = message || "正在读取公开披露数据、校验财务事实，并生成通俗分析...";
+  nodes.healthScore.textContent = "--";
+  nodes.sourceTag.textContent = "正在联网分析";
+  renderMetricsSkeleton();
+  nodes.reportCard.innerHTML = `
+    <div class="analysis-state">
+      <h3>正在联网分析</h3>
+      <p>${escapeHtml(message || "正在读取公开披露数据、校验财务事实，并生成通俗分析...")}</p>
+      <small>当前对象：${escapeHtml(company.ticker || state.launchTicker)} · ${escapeHtml(selected.join("、") || "默认报告期")}</small>
+      <div class="analysis-skeleton-lines">
+        <i></i><i></i><i></i>
+      </div>
+    </div>
+  `;
+  nodes.riskRadar.innerHTML = skeletonItems(4);
+  nodes.periodCompare.innerHTML = `<div class="skeleton-chart"></div>`;
+}
+
+function renderAnalysisFailed(message) {
+  const company = state.company || { name: "当前公司", ticker: state.launchTicker };
+  nodes.reportPeriod.textContent = "分析失败";
+  nodes.companyTitle.textContent = `${company.name || "当前公司"} ${company.ticker ? `(${company.ticker})` : ""}`;
+  nodes.stanceBadge.className = "stance-badge cautious";
+  nodes.stanceBadge.textContent = "需重试";
+  nodes.oneLineSummary.textContent = "本次分析没有生成可展示结果。";
+  nodes.healthScore.textContent = "--";
+  nodes.sourceTag.textContent = "未生成结果";
+  renderMetricsSkeleton();
+  nodes.reportCard.innerHTML = `
+    <div class="analysis-state failed">
+      <h3>分析暂时失败</h3>
+      <p>${escapeHtml(message || "披露资料、网络或模型服务暂时不可用，请稍后重试。")}</p>
+      <button type="button" class="ghost-button" data-retry-analysis>重新分析</button>
+    </div>
+  `;
+  nodes.reportCard.querySelector("[data-retry-analysis]")?.addEventListener("click", analyzeOnline);
+  nodes.riskRadar.innerHTML = `<div class="analysis-state failed"><p>风险雷达暂无本次分析结果。</p></div>`;
+  nodes.periodCompare.innerHTML = "本次分析失败，暂无可对比数据。";
+}
+
+function renderAnalysisEmpty() {
+  const company = state.company || { name: "等待载入", ticker: state.launchTicker };
+  nodes.reportPeriod.textContent = "等待分析";
+  nodes.companyTitle.textContent = `${company.name || "等待载入"} ${company.ticker ? `(${company.ticker})` : ""}`;
+  nodes.stanceBadge.className = "stance-badge neutral";
+  nodes.stanceBadge.textContent = "待分析";
+  nodes.oneLineSummary.textContent = "请选择报告期并点击联网获取并分析。";
+  nodes.healthScore.textContent = "--";
+  nodes.sourceTag.textContent = "等待数据";
+  nodes.metricsGrid.innerHTML = "";
+  nodes.reportCard.innerHTML = `<div class="analysis-state"><p>暂无分析结果。</p></div>`;
+  nodes.riskRadar.innerHTML = "";
+  nodes.periodCompare.innerHTML = "";
+}
+
+function renderMetricsSkeleton() {
+  nodes.metricsGrid.innerHTML = Array.from({ length: 8 }, () => `
+    <article class="metric-card skeleton-card">
+      <i></i><i></i><i></i>
+    </article>
+  `).join("");
+}
+
+function skeletonItems(count) {
+  return Array.from({ length: count }, () => `
+    <div class="risk-item skeleton-risk">
+      <span class="risk-dot"></span>
+      <div><i></i><i></i></div>
+    </div>
+  `).join("");
 }
 
 function renderStance(stance) {
@@ -643,6 +781,16 @@ function labelForMetric(key) {
     net_margin: "净利率",
     debt_ratio: "资产负债率"
   }[key] || key;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
 }
 
 function getLaunchCompany() {

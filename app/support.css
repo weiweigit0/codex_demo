@@ -238,3 +238,87 @@ td {
     flex-direction: column;
   }
 }
+
+/* V3 unified SaaS visual refresh. */
+:root {
+  --bg: #fafbfc;
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --green: #10b981;
+  --amber: #d97706;
+  --red: #ef4444;
+  --blue: #2563eb;
+  --shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
+}
+
+body {
+  background:
+    radial-gradient(circle at 70% 0%, rgba(37, 99, 235, 0.08), transparent 30%),
+    var(--bg);
+}
+
+.support-shell {
+  width: min(1160px, calc(100% - 32px));
+}
+
+.support-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  min-height: 64px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.78);
+  background: rgba(250, 251, 252, 0.86);
+  backdrop-filter: blur(18px);
+}
+
+.support-header p {
+  color: #2563eb;
+}
+
+.back-link,
+button {
+  border-radius: 11px;
+  background: #0f172a;
+}
+
+.back-link.secondary {
+  background: #ffffff;
+  color: #334155;
+}
+
+.coverage-card,
+.query-panel,
+.table-panel {
+  border-color: rgba(226, 232, 240, 0.9);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+input,
+select {
+  border-color: #e2e8f0;
+  border-radius: 11px;
+}
+
+input:focus,
+select:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.13);
+}
+
+.status.full {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.status.partial {
+  background: #fffbeb;
+  color: #d97706;
+}
+
+.ability {
+  background: #f8fafc;
+}
